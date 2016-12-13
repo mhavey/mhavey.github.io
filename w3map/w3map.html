@@ -1,39 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Who Said What, Where, When: Map and Timeline of Bible and Greek Philosophy</title>
-    <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
-  </head>
-  <body>
-    <h1>Who Said What, Where, When: Map and Timeline of Bible and Greek Philosophy</h1>
-    <div id="map"></div>
-    <script>
-	  var iconBase = 'http://mhavey.github.io/w3map/';
-      function initMap() {
-        var jerusalem = {lat: 31.783333, lng: 35.216667};
-		var markerPos = {lat:37.530233, lng: 27.278369};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: jerusalem
-        });
-        var marker = new google.maps.Marker({
-          position: markerPos,
-          map: map
-        });
-        var marker2 = new google.maps.Marker({
-          position: jerusalem,
-		  icon: iconBase + 'jerusalem.jpg',
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD_6gUgxcdBn7Egs-tepQWXpNz6ggAmQ8&callback=initMap">
-    </script>
-  </body>
+<head>
+<title>Who Said What, Where, When: Map and Timeline of Bible and
+	Greek Philosophy</title>
+<style>
+#map {
+	height: 400px;
+	width: 100%;
+}
+</style>
+</head>
+<body>
+	<h1>Who Said What, Where, When: Map and Timeline of Bible and
+		Greek Philosophy</h1>
+	<div id="map"></div>
+	<script type="text/javascript" src="grbibdata.js">
+		
+	</script>
+	<script>
+		// If two entries are in the same location, offset one from the other by a small random distance
+		var posDB = [];
+		function resolvePos(pos) {
+			for (var i = 0; i < posDB.length; i++) {
+				if (pos.lat == posDB[i].lat && pos.lng == posDB[i].lng) {
+					var latDiff = Math.random() / 100;
+					var lngDiff = Math.random() / 100;
+					console.log("Change pos " + JSON.stringify(pos));
+					pos = {
+						lat : pos.lat + latDiff,
+						lng : pos.lng + lngDiff
+					};
+					console.log("   to " + JSON.stringify(pos));
+					break;
+				}
+			}
+			posDB.push(pos);
+			return pos;
+		}
+
+		function initMap() {
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom : 5,
+				center : centerPos
+			});
+
+			// draw the markers for the major centers
+			var pinImage = new google.maps.MarkerImage(
+					"http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_sleft|%E2%80%A2|00FF00|000000",
+					new google.maps.Size(21, 34), new google.maps.Point(0, 0),
+					new google.maps.Point(10, 34));
+			for (var i = 0; i < mainCenters.length; i++) {
+				var title = mainCenters[i].title;
+				var pos = resolvePos(mainCenters[i].pos);
+				var marker = new google.maps.Marker({
+					title : title,
+					icon : pinImage,
+					position : pos,
+					map : map
+				});
+			}
+
+			// draw each greek, biblical, and event marker
+			for (var i = 0; i < dataset.length; i++) {
+				var syear = "" + dataset[i].StartYear;
+				if (dataset[i].StartYear < 0)
+					syear = (-1 * (dataset[i].StartYear)) + "BC";
+				var eyear = "" + dataset[i].EndYear;
+				if (dataset[i].EndYear < 0)
+					eyear = (-1 * (dataset[i].EndYear)) + "BC";
+				var title = dataset[i].Location + ': ' + dataset[i].Author
+						+ ' (' + syear + '-' + eyear + ')';
+				var pos = resolvePos({
+					lat : dataset[i].Latitude,
+					lng : dataset[i].Longitude
+				});
+                var fillColor;
+				if (dataset[i].Tradition == "GR") {
+					fillColor = "00b3e6";
+				}
+				else if (dataset[i].Tradition == "B") {
+					fillColor = "c1ccd2";
+				}
+				else if (dataset[i].Tradition == "E") {
+					fillColor = "fcd7cf"
+				}
+				else {
+					throw "Illegal tradition *" + dataset[i].Tradition;
+				}
+				var starColor;
+				if (dataset[i].StartYear < -650) {
+					starColor = "fefef4";
+				}
+				else if (dataset[i].StartYear < -500) {
+                    starColor = "fffce9";
+                }
+                else if (dataset[i].StartYear < -350) {
+                    starColor = "fefddf";
+                }
+                else if (dataset[i].StartYear < -200) {
+                    starColor = "f6f396";
+                }
+                else if (dataset[i].StartYear < -50) {
+                    starColor = "ede556";
+                }
+                else if (dataset[i].StartYear < 100) {
+                    starColor = "fef56c";
+                }
+                else if (dataset[i].StartYear < 250) {
+                    starColor = "fef200";
+                }
+                else {
+                    starColor = "caa869";                	
+                }
+				
+	            var innerPinImage = new google.maps.MarkerImage(
+	                    "http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_star|.|" + fillColor + "|000000|" + starColor,
+	                    new google.maps.Size(21, 34), new google.maps.Point(0, 0),
+	                    new google.maps.Point(10, 34));
+				var marker = new google.maps.Marker({
+					title : title,
+                    icon : innerPinImage,
+					position : pos,
+					map : map
+				});
+			}
+		}
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD_6gUgxcdBn7Egs-tepQWXpNz6ggAmQ8&callback=initMap">
+		
+	</script>
+</body>
 </html>
