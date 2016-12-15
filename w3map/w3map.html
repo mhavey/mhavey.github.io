@@ -39,82 +39,28 @@
 		}
 
 		function initMap() {
+			prepAncientEntities();
+			var centerPos = resolvePos(centerLocation);
+			
 			var map = new google.maps.Map(document.getElementById('map'), {
 				zoom : 5,
 				center : centerPos
 			});
 
-			// draw the markers for the major centers
-			var pinImage = new google.maps.MarkerImage(
-					"http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_sleft|%E2%80%A2|00FF00|000000",
-					new google.maps.Size(21, 34), new google.maps.Point(0, 0),
-					new google.maps.Point(10, 34));
-			for (var i = 0; i < mainCenters.length; i++) {
-				var title = mainCenters[i].title;
-				var pos = resolvePos(mainCenters[i].pos);
-				var marker = new google.maps.Marker({
-					title : title,
-					icon : pinImage,
-					position : pos,
-					map : map
-				});
-			}
-
 			// draw each greek, biblical, and event marker
-			for (var i = 0; i < dataset.length; i++) {
-				var syear = "" + dataset[i].StartYear;
-				if (dataset[i].StartYear < 0)
-					syear = (-1 * (dataset[i].StartYear)) + "BC";
-				var eyear = "" + dataset[i].EndYear;
-				if (dataset[i].EndYear < 0)
-					eyear = (-1 * (dataset[i].EndYear)) + "BC";
-				var title = dataset[i].Location + ': ' + dataset[i].Author
+			for (var i = 0; i < ancientEntities.length; i++) {
+				var syear = "" + ancientEntities[i].StartYear;
+				if (ancientEntities[i].StartYear < 0)
+					syear = (-1 * (ancientEntities[i].StartYear)) + "BC";
+				var eyear = "" + ancientEntities[i].EndYear;
+				if (ancientEntities[i].EndYear < 0)
+					eyear = (-1 * (ancientEntities[i].EndYear)) + "BC";
+				var title = ancientEntities[i].LocationName + ': ' + ancientEntities[i].Subject
 						+ ' (' + syear + '-' + eyear + ')';
-				var pos = resolvePos({
-					lat : dataset[i].Latitude,
-					lng : dataset[i].Longitude
-				});
-                var fillColor;
-				if (dataset[i].Tradition == "GR") {
-					fillColor = "00b3e6";
-				}
-				else if (dataset[i].Tradition == "B") {
-					fillColor = "c1ccd2";
-				}
-				else if (dataset[i].Tradition == "E") {
-					fillColor = "fcd7cf"
-				}
-				else {
-					throw "Illegal tradition *" + dataset[i].Tradition;
-				}
-				var starColor;
-				if (dataset[i].StartYear < -650) {
-					starColor = "fefef4";
-				}
-				else if (dataset[i].StartYear < -500) {
-                    starColor = "fffce9";
-                }
-                else if (dataset[i].StartYear < -350) {
-                    starColor = "fefddf";
-                }
-                else if (dataset[i].StartYear < -200) {
-                    starColor = "f6f396";
-                }
-                else if (dataset[i].StartYear < -50) {
-                    starColor = "ede556";
-                }
-                else if (dataset[i].StartYear < 100) {
-                    starColor = "fef56c";
-                }
-                else if (dataset[i].StartYear < 250) {
-                    starColor = "fef200";
-                }
-                else {
-                    starColor = "caa869";                	
-                }
-				
+				var pos = resolvePos(ancientEntities[i].Location);
 	            var innerPinImage = new google.maps.MarkerImage(
-	                    "http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_star|.|" + fillColor + "|000000|" + starColor,
+	                    "http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_star|.|" + 
+	                    		ancientEntities[i].Brightness + "|000000|" + ancientEntities[i].CategoryColor,
 	                    new google.maps.Size(21, 34), new google.maps.Point(0, 0),
 	                    new google.maps.Point(10, 34));
 				var marker = new google.maps.Marker({
