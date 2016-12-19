@@ -13,7 +13,14 @@
 <body>
 	<h1>Who Said What, Where, When: Map and Timeline of Bible and
 		Greek Philosophy</h1>
-	<div id="map"></div>
+	<div id="mainDisplay">
+		<input type="button" value="Map"
+			onclick="document.getElementById('map').style.visibility = 'visible'; document.getElementById('timeline').style.visibility = 'hidden'; document.getElementById('map').style.display = 'block'; document.getElementById('timeline').style.display = 'none';" />
+		<input type="button" value="Timeline"
+			onclick="document.getElementById('map').style.visibility = 'hidden'; document.getElementById('timeline').style.visibility = 'visible'; document.getElementById('map').style.display = 'none'; document.getElementById('timeline').style.display = 'block';" />
+		<div id="map" style="visibility: visible; display: block"></div>
+		<div id="timeline" style="visibility: hidden; display: none"></div>
+	</div>
 
 	<div id="selector"</div>
 
@@ -50,6 +57,7 @@
 						+ "'" + ' onclick="showHide();" /></span>';
 			}
 
+			html += "<p><b>Show Advanced Selector</b> <input type='checkbox' id='incAdvanced' onclick='toggleAdvanced();'/> <div id='advanced' style='visibility:hidden'>";
 			html += "<p><b>Restrict by Tags</b>: <input type='button' value='Apply Changes' onclick='showHide();'/><input type='button' value='Select All' onclick='selectAllTags(true);'/><input type='button' value='Clear All' onclick='selectAllTags(false);'/>";
 			for (var i = 0; i < categories.length; i++) {
 				html += "<p>";
@@ -62,7 +70,108 @@
 							+ "_" + j + '"/></span>';
 				}
 			}
+			html += "</div>";
 			document.getElementById("selector").innerHTML = html;
+		}
+
+		/**
+		 * Draw the timeline view
+		 */
+		function drawTimeline() {
+
+			var tlPeriods = [];
+
+			// for each brightness period, get a chronological list of entities
+			// look only at enabled periods
+			for (var i = 0; i < brightnesses.length; i++) {
+				var periodShow = document.getElementById("incPeriod_" + i).checked;
+				if (periodShow == false)
+					continue;
+				var thisPeriod = {
+					idx : i,
+					entities : []
+				};
+
+				// get each entity allowed by category and tag selector
+				for (var j = 0; j < ancientEntities.length; j++) {
+
+					// must be in this period
+					if (ancientEntities[j].brightness != brightnesses[i].color)
+						continue;
+
+					// make visible/invisible by category
+					for (var k = 0; k < categories.length; k++) {
+						var catShow = document.getElementById("incCat_"
+								+ categories[k].name).checked;
+						if (catShow == false
+								|| ancientEntities[j].category.name != categories[k].name)
+							continue;
+
+						// make visible/invisible by tag
+						for (var m = 0; m < categories[k].tags.length; m++) {
+							var tagShow = document.getElementById("incTag_" + k
+									+ "_" + m).checked;
+							if (!(ancientEntities[j].locName == categories[k].tags[m]
+									|| ancientEntities[j].subject == categories[k].tags[m] || ancientEntities[j].tags
+									.indexOf(categories[k].tags[m]) >= 0))
+								continue;
+
+							console.log("Considering " + ancientEntities[j]
+									+ " on " + categories[k].tags[m]);
+							if (tagShow == true) {
+								console.log("added");
+								thisPeriod.entities.push(j);
+								break;
+
+							}
+						}
+					}
+				}
+
+				tlPeriods.push(thisPeriod);
+
+				// Sort the entities...
+				thisPeriod.entities
+						.sort(function(a, b) {
+							ancientEntities[a].startYear
+									- ancientEntities[b].startYear;
+						});
+			}
+
+			var html = "<table border='1'>";
+			for (var i = 0; i < tlPeriods.length; i++) {
+				var col0 = printYear(brightnesses[tlPeriods[i].idx].startYear)
+						+ " - "
+						+ printYear(brightnesses[tlPeriods[i].idx].endYear);
+				var col1 = "";
+				for (var j = 0; j < tlPeriods[i].entities.length; j++) {
+					var theEntity = ancientEntities[tlPeriods[i].entities[j]];
+					col1 += "<span style='color:" + theEntity.category.textcolor + ";background-color:#" + theEntity.category.color + "'>"
+							+ theEntity.subject
+							+ " of "
+							+ theEntity.locName
+							+ " ("
+							+ printYear(theEntity.startYear)
+							+ " to "
+							+ printYear(theEntity.endYear) + ")</span> | ";
+				}
+				var entity = "";
+				html += "<tr><td>" + col0 + "</td><td>" + col1 + "</td></tr>";
+			}
+			html += "</table>";
+			document.getElementById("timeline").innerHTML = html;
+		}
+
+		/**
+		 * Show/hide advanced
+		 */
+		function toggleAdvanced() {
+			var show = document.getElementById("incAdvanced").checked;
+			if (show == true) {
+				document.getElementById("advanced").style.visibility = 'visible';
+			} else {
+				document.getElementById("advanced").style.visibility = 'hidden';
+			}
 		}
 
 		/**
@@ -126,9 +235,8 @@
 							var tagShow = document.getElementById("incTag_" + j
 									+ "_" + m).checked;
 							if (!(ancientEntities[i].locName == categories[j].tags[m]
-									|| ancientEntities[i].subject == categories[j].tags[m]
-									|| ancientEntities[i].tags
-											.indexOf(categories[j].tags[m]) >= 0))
+									|| ancientEntities[i].subject == categories[j].tags[m] || ancientEntities[i].tags
+									.indexOf(categories[j].tags[m]) >= 0))
 								continue;
 							ancientEntities[i].mapMarker.setVisible(tagShow);
 							if (tagShow == true) {
@@ -138,6 +246,7 @@
 					}
 				}
 			}
+			drawTimeline();
 		}
 
 		/**
@@ -212,6 +321,7 @@
 			}
 
 			initSelector();
+			drawTimeline();
 		}
 	</script>
 	<script async defer
