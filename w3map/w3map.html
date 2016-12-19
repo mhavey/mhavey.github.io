@@ -14,23 +14,161 @@
 	<h1>Who Said What, Where, When: Map and Timeline of Bible and
 		Greek Philosophy</h1>
 	<div id="map"></div>
-	<script type="text/javascript" src="grbibdata.js">
-		
-	</script>
+
+	<div id="selector"</div>
+
+	<script type="text/javascript" src="grbibdata.js"></script>
 	<script>
-		// If two entries are in the same location, offset one from the other by a small random distance
+		// ..
+		// THIS EMBEDDED SCRIPT IS JUST PRESENTATION LOGIC. The DATA AND ITS MAINTENANCE LOGIC ARE IN grbibdata.js
+		// ..
+
+		/**
+		 * Render show/hide selector
+		 */
+		function initSelector() {
+			var html = "<p><b>Show By Category</b>: ";
+			for (var i = 0; i < categories.length; i++) {
+
+				html += '<span style="color:' + categories[i].textcolor + ';background-color:#' + categories[i].color + '">'
+						+ categories[i].desc
+						+ "<input type='checkbox' checked id='incCat_"
+						+ categories[i].name
+						+ "'"
+						+ ' onclick="showHide();" /></span>';
+			}
+			html += ' | <b>Show Labels</b>: <input type="checkbox" id="incLabels" onclick="showHideLabels();"; />';
+			html += "<p><b>Show By Period</b>: ";
+			for (var i = 0; i < brightnesses.length; i++) {
+				html += '<span style="color:' + brightnesses[i].textcolor + ';background-color:#' + brightnesses[i].color + '">'
+						+ " ("
+						+ printYear(brightnesses[i].startYear)
+						+ "-"
+						+ printYear(brightnesses[i].endYear)
+						+ ") <input type='checkbox' checked id='incPeriod_"
+						+ i
+						+ "'" + ' onclick="showHide();" /></span>';
+			}
+
+			html += "<p><b>Restrict by Tags</b>: <input type='button' value='Apply Changes' onclick='showHide();'/><input type='button' value='Select All' onclick='selectAllTags(true);'/><input type='button' value='Clear All' onclick='selectAllTags(false);'/>";
+			for (var i = 0; i < categories.length; i++) {
+				html += "<p>";
+
+				for (var j = 0; j < categories[i].tags.length; j++) {
+					html += '<span style="border:2px solid black;color:' + categories[i].textcolor + ';background-color:#' + categories[i].color + '">'
+							+ categories[i].tags[j]
+							+ '<input type="checkbox" checked id="incTag_'
+							+ i
+							+ "_" + j + '"/></span>';
+				}
+			}
+			document.getElementById("selector").innerHTML = html;
+		}
+
+		/**
+		 * Select/deselect tags for show/hide
+		 */
+		function selectAllTags(show) {
+			for (var i = 0; i < categories.length; i++) {
+				for (var j = 0; j < categories[i].tags.length; j++) {
+					document.getElementById("incTag_" + i + "_" + j).checked = show;
+				}
+			}
+		}
+
+		/**
+		 * show/hide labels
+		 */
+		function showHideLabels() {
+			// for all visible, setLabel to value or empty string
+			var labelsShow = document.getElementById("incLabels").checked;
+			for (var j = 0; j < ancientEntities.length; j++) {
+				if (labelsShow == true) {
+					ancientEntities[j].mapMarker
+							.setLabel(ancientEntities[j].subject + ' ('
+									+ printYear(ancientEntities[j].startYear)
+									+ '-'
+									+ printYear(ancientEntities[j].endYear));
+				} else {
+					ancientEntities[j].mapMarker.setLabel("");
+				}
+			}
+		}
+
+		/**
+		 * show/hide markers according to selector criteria
+		 */
+		function showHide() {
+
+			for (var i = 0; i < ancientEntities.length; i++) {
+				// make visible/invisible by category
+				for (var j = 0; j < categories.length; j++) {
+					var catShow = document.getElementById("incCat_"
+							+ categories[j].name).checked;
+					if (ancientEntities[i].category.name != categories[j].name)
+						continue;
+					ancientEntities[i].mapMarker.setVisible(catShow);
+					if (catShow == false)
+						continue;
+
+					// make visible/invisible by period
+					for (var k = 0; k < brightnesses.length; k++) {
+						var periodShow = document.getElementById("incPeriod_"
+								+ k).checked;
+						if (ancientEntities[i].brightness != brightnesses[k].color)
+							continue;
+						ancientEntities[i].mapMarker.setVisible(periodShow);
+						if (periodShow == false)
+							continue;
+
+						// make visible/invisible by tag
+						for (var m = 0; m < categories[j].tags.length; m++) {
+							var tagShow = document.getElementById("incTag_" + j
+									+ "_" + m).checked;
+							if (!(ancientEntities[i].locName == categories[j].tags[m]
+									|| ancientEntities[i].subject == categories[j].tags[m]
+									|| ancientEntities[i].tags
+											.indexOf(categories[j].tags[m]) >= 0))
+								continue;
+							ancientEntities[i].mapMarker.setVisible(tagShow);
+							if (tagShow == true) {
+								break;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/**
+		 * Print year in nice format
+		 */
+		function printYear(year) {
+			var syear = "" + year;
+			if (syear == "-Infinity" || syear == "Infinity") {
+				return syear;
+			}
+			if (year < 0) {
+				syear = (-1 * year) + "BC";
+			}
+			return syear;
+		}
+
+		/*
+		 * If two entries are in the same location, offset map marker of one from the other by a small random distance
+		 */
 		var posDB = [];
 		function resolvePos(pos) {
 			for (var i = 0; i < posDB.length; i++) {
 				if (pos.lat == posDB[i].lat && pos.lng == posDB[i].lng) {
 					var latDiff = Math.random() / 100;
 					var lngDiff = Math.random() / 100;
-					console.log("Change pos " + JSON.stringify(pos));
+					//console.log("Change pos " + JSON.stringify(pos));
 					pos = {
 						lat : pos.lat + latDiff,
 						lng : pos.lng + lngDiff
 					};
-					console.log("   to " + JSON.stringify(pos));
+					//console.log("   to " + JSON.stringify(pos));
 					break;
 				}
 			}
@@ -38,10 +176,13 @@
 			return pos;
 		}
 
+		/**
+		 * init the google map
+		 */
 		function initMap() {
 			prepAncientEntities();
 			var centerPos = resolvePos(centerLocation);
-			
+
 			var map = new google.maps.Map(document.getElementById('map'), {
 				zoom : 5,
 				center : centerPos
@@ -49,27 +190,28 @@
 
 			// draw each greek, biblical, and event marker
 			for (var i = 0; i < ancientEntities.length; i++) {
-				var syear = "" + ancientEntities[i].StartYear;
-				if (ancientEntities[i].StartYear < 0)
-					syear = (-1 * (ancientEntities[i].StartYear)) + "BC";
-				var eyear = "" + ancientEntities[i].EndYear;
-				if (ancientEntities[i].EndYear < 0)
-					eyear = (-1 * (ancientEntities[i].EndYear)) + "BC";
-				var title = ancientEntities[i].LocationName + ': ' + ancientEntities[i].Subject
-						+ ' (' + syear + '-' + eyear + ')';
-				var pos = resolvePos(ancientEntities[i].Location);
-	            var innerPinImage = new google.maps.MarkerImage(
-	                    "http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_star|.|" + 
-	                    		ancientEntities[i].Brightness + "|000000|" + ancientEntities[i].CategoryColor,
-	                    new google.maps.Size(21, 34), new google.maps.Point(0, 0),
-	                    new google.maps.Point(10, 34));
+				var title = ancientEntities[i].locName + ': '
+						+ ancientEntities[i].subject + ' ('
+						+ printYear(ancientEntities[i].startYear) + '-'
+						+ printYear(ancientEntities[i].endYear) + ')\n'
+						+ ancientEntities[i].tags.join(",");
+				var pos = resolvePos(ancientEntities[i].location);
+				var innerPinImage = new google.maps.MarkerImage(
+						"http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_star|.|"
+								+ ancientEntities[i].brightness + "|000000|"
+								+ ancientEntities[i].category.color,
+						new google.maps.Size(21, 34), new google.maps.Point(0,
+								0), new google.maps.Point(10, 34));
 				var marker = new google.maps.Marker({
 					title : title,
-                    icon : innerPinImage,
+					icon : innerPinImage,
 					position : pos,
 					map : map
 				});
+				ancientEntities[i].mapMarker = marker;
 			}
+
+			initSelector();
 		}
 	</script>
 	<script async defer
