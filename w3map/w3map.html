@@ -130,7 +130,7 @@
 
 				tlPeriods.push(thisPeriod);
 
-				// Sort the entities...
+				// Sort the entities chronologically (start year)
 				thisPeriod.entities
 						.sort(function(a, b) {
 							ancientEntities[a].startYear
@@ -205,7 +205,7 @@
 		}
 
 		/**
-		 * show/hide markers according to selector criteria
+		 * show/hide entities according to selector criteria
 		 */
 		function showHide() {
 
@@ -246,6 +246,8 @@
 					}
 				}
 			}
+			
+			// update timeline too
 			drawTimeline();
 		}
 
@@ -320,6 +322,7 @@
 				ancientEntities[i].mapMarker = marker;
 			}
 
+			// do these too!
 			initSelector();
 			drawTimeline();
 		}
