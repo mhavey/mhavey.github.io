@@ -1,18 +1,26 @@
 // the categories and their colors
 var categories = [{
    name: "Greek Philosophers",
-   color: "00ff00",
+   color: "2440F2", // greek blue
+   textcolor: "white"
+}, {
+   name: "Bible - Old Testament Book",
+   color: "bce2d7", // aqua mint
    textcolor: "black"
 }, {
-   name: "Bible - Old Testament",
-   color: "ff0000",
-   textcolor: "white"
+   name: "Bible - Old Testament Event",
+   color: "59918e", // abyss green
+   textcolor: "black"
 }, {
-   name: "Bible - New Testament",
-   color: "ff0000", // TODO - need different color
-   textcolor: "white"
+   name: "Bible - New Testament Book",
+   color: "fef1e1", // pearl white
+   textcolor: "black"
 }, {
-   name: "Event",
-   color: "0000ff",
+   name: "Bible - New Testament Event",
+   color: "c5b9a9", // clay
+   textcolor: "black"
+}, {
+   name: "Historical Event",
+   color: "ff0000", //red
    textcolor: "white"
 }];

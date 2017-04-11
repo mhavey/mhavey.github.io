@@ -56,7 +56,6 @@ var otBooks = [{
    {
       "subcategories": ["pentateuch", "torah", "hebrew"],
       "name": "Exodus",
-      "name": "Genesis",
       "startYear": -586,
       "endYear": -332,
       "datingNotes": ["exilic or post-exilic work - contributions from yahwist, elohist, deteronomist, and priestly sources"],
