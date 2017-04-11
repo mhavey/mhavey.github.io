@@ -186,7 +186,7 @@ var otEvents = [{
    },
    {
       "subcategories": ["pentateuch"],
-      "name": "Jacob And His Sons",
+      "name": "Jacob And His Sons, The Ancestors of the Twelve Tribes",
       "startYear": -1921,
       "endYear": -1921,
       "locationName": "Paddan Aram",
@@ -200,43 +200,86 @@ var otEvents = [{
       "locationName": "Paddan Aram",
       "sources": ["Genesis"]
    },
-
-
-"1908 BC,	Jacob Leaves for Canaan	Genesis 31
-"1906 BC,	Jacob Wrestles with God	Genesis 32
-"1906 BC,	Jacob Meets Esau	Genesis 33
-"1906 BC,	Jacob Settles in Shechem	Genesis 33:18
-"1906 BC,	Shechem Defiles Dinah	Genesis 34
-"1906 BC,	Jacob Returns to Bethel	Genesis 35
-"1906 BC,	Jacob Named Israel	Genesis 35:10
-"1906 BC	,Descendants of Esau	Genesis 36
-"1903 BC,	Rachel Dies	Genesis 35:18
-"1898 BC,	Joseph's Dreams and Betrayal	Genesis 37
-"1898 BC,	Joseph Sold into Slavery	Genesis 37:25
-"1898 BC,	Tamar deceives Judah	Genesis 38
-"1898 BC,	Joseph Prospers Under Potiphar	Genesis 39
-"1889 BC,	Potiphar's Wife Accuses Joseph	Genesis 39:7
-"1889 BC,	Joseph Imprisoned	Genesis 39:20
-"1887 BC,	The Cupbearer and the Baker's Dreams	Genesis 40
-"1886 BC,	Joseph Interprets Pharaoh's Dreams	Genesis 41
-"1886 BC,	Joseph Put in Charge	Genesis 41:33
-"1886 BC,	Seven Years of Plenty Begin	Genesis 41:47
-"1875 BC,	Famine Begins	Genesis 41:53
-"1875 BC,	Joseph's Brothers6 Sent to Egypt	Genesis 42
-"1875 BC,	Simeon Detained by Joseph	Genesis 42:24
-"1875 BC	,The Return with Benjamin	Genesis 43
-"1875 BC,	Benjamin and the Silver Cup	Genesis 44
-"1875 BC,	Joseph Reveals His Identity	Genesis 45
-"1875 BC,	Joseph Sends for Jacob	Genesis 45:9
-"1875 BC,	Jacob and Family to Egypt	Genesis 46
-"1875 BC,	Jacob to Goshen	Genesis 47
-"1859 BC,	Jacob's Illness	Genesis 48
-"1859 BC,	Jacob's Blessing and Death	Genesis 49
-"1859 BC,	The Burial of Jacob	Genesis 50
-"1806 BC,	The Death of Joseph	Genesis 50:26			          
-*/
-
-
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Jacob Flees Laban To Gilead",
+      "startYear": -1908,
+      "endYear": -1908,
+      "locationName": "Gilead",
+      "sources": ["Genesis"]
+   },
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Jacob, Now Named Israel, Settles in Bethel - Isaac and Rachel Die",
+      "startYear": -1906,
+      "endYear": -1906,
+      "locationName": "Bethel",
+      "sources": ["Genesis"]
+   },
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Joseph Sold into Slavery",
+      "startYear": -1898,
+      "endYear": -1898,
+      "locationName": "Dothan",
+      "sources": ["Genesis"]
+   },
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Joseph Prospers Under Potiphar - Later Imprisoned",
+      "startYear": -1898,
+      "endYear": -1898,
+      "locationName": "Egypt", // TODO - put in nile delta somewhere
+      "sources": ["Genesis"]
+   },
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Joseph Interprets Pharaoh's Dreams- Pharaoh Puts Joseph in Charge of Egypt",
+      "startYear": -1886,
+      "endYear": -1886,
+      "locationName": "Egypt", // TODO - put in nile delta somewhere
+      "sources": ["Genesis"]
+   },
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Jacob Sends His Sons to Egypt To Buy Grain - After Several Events Joseph Reveals Himself to Them",
+      "startYear": -1875,
+      "endYear": -1875,
+      "locationName": "Egypt", // TODO - put in nile delta somewhere
+      "sources": ["Genesis"]
+   },
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Jacob and Family Setting in Egypt",
+      "startYear": -1875,
+      "endYear": -1875,
+      "locationName": "Goshen",
+      "sources": ["Genesis"]
+   },
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Jacob Dies",
+      "startYear": -1859,
+      "endYear": -1859,
+      "locationName": "Goshen",
+      "sources": ["Genesis"]
+   },
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Jacob is Buried",
+      "startYear": -1859,
+      "endYear": -1859,
+      "locationName": "Hebron",
+      "sources": ["Genesis"]
+   },
+   {
+      "subcategories": ["pentateuch"],
+      "name": "Joseph Dies",
+      "startYear": -1806,
+      "endYear": -1806,
+      "locationName": "Goshen",
+      "sources": ["Genesis"]
+   },
    {
       "subcategories": ["pentateuch"],
       "name": "Jacob's Family Stays in Egypt - Pharaoh's Order to Kill Firstborn",
