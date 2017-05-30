@@ -3,11 +3,11 @@ var ntBooks = [{
       "name": "Matthew",
       "startYear": 80,
       "endYear": 90,
-      "locationNames": "Rome",
+      "locationName": "Rome",
       "locationNotes": {
          "alternatives": ["antioch", "galilee"]
       },
-      "datingNodes": ["reflects final separation of church and synagogue around 85", "reflects capture of jerusalem in 70", "uses mark, so comes after mark"],
+      "datingNotes": ["reflects final separation of church and synagogue around 85", "reflects capture of jerusalem in 70", "uses mark, so comes after mark"],
       "pointform": ["content:46 mark/luke 24 luke 10 mark 20 unique",
          "uses mark", "son of man and son of god", "genealogy of jesus from abraham via david", "virgin birth", "massacre of innocents", "flight into egypt", "journey to nazareth",
          "john baptizes jesus", "jesus prays in the wilderness fo forty days", "jesus is tempted by satan", "early ministry in galilee", "sermon on the mount", "beatitudes",
@@ -23,7 +23,7 @@ var ntBooks = [{
       "startYear": 68,
       "endYear": 70,
       "locationName": "Rome",
-      "datingNodes": ["around time of jewish revolt or nero's persecution of christians in rome"],
+      "datingNotes": ["around time of jewish revolt or nero's persecution of christians in rome"],
       "pointform": ["greek", "content:76 matthew/luke 18 matthew 3 luke 3 unique"]
    },
    {
@@ -31,7 +31,7 @@ var ntBooks = [{
       "name": "Luke",
       "startYear": 80,
       "endYear": 90,
-      "locationNames": "Achaia",
+      "locationName": "Achaia",
       "locationNotes": {
          "alternatives": ["boetia"]
       },
@@ -42,7 +42,7 @@ var ntBooks = [{
       "name": "John",
       "startYear": 90,
       "endYear": 110,
-      "locationNames": "Antioch",
+      "locationName": "Antioch",
       "locationNotes": {
          "alternatives": ["alexandria", "ephesus"]
       },
@@ -64,7 +64,7 @@ var ntBooks = [{
       "name": "Acts of the Apostles",
       "startYear": 95,
       "endYear": 110,
-      "locationNames": "Antioch",
+      "locationName": "Antioch",
       "locationNotes": {
          "alternatives": ["alexandria", "ephesus"]
       },
@@ -245,7 +245,7 @@ var ntBooks = [{
       "name": "Titus",
       "startYear": 64,
       "endYear": 65,
-      "locationName": "Nicopolis in Achaia",
+      "locationName": "Nicopolis",
       "locationNotes": {
          "info": ["paul's post-imprisonment journeys"]
       },
@@ -300,9 +300,9 @@ var ntBooks = [{
       "name": "1 Peter",
       "startYear": 64,
       "endYear": 64,
-      "locationName": "Babylon as town on Euphrates",
+      "locationName": "Rome",
       "locationNotes": {
-         "alternatives": ["Egyptian Babylon", "Mesopotamian Babylon", "Jerusalem", "Rome"]
+         "alternatives": ["Egyptian Babylon", "Mesopotamian Babylon", "Jerusalem", "Babylon as town on Euphrates"]
       },
       "datingNotes": ["some commentators consider the writing too polished for Peter", "possibly closer to 100 by a different author"],
       "pointform": ["though we suffer persecution we must live a life of personal holiness",

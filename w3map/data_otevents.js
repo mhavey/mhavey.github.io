@@ -229,7 +229,7 @@ var otEvents = [{
       "name": "Joseph Prospers Under Potiphar - Later Imprisoned",
       "startYear": -1898,
       "endYear": -1898,
-      "locationName": "Egypt", // TODO - put in nile delta somewhere
+      "locationName": "Egypt", // put in nile delta somewhere
       "sources": ["Genesis"]
    },
    {
@@ -237,7 +237,7 @@ var otEvents = [{
       "name": "Joseph Interprets Pharaoh's Dreams- Pharaoh Puts Joseph in Charge of Egypt",
       "startYear": -1886,
       "endYear": -1886,
-      "locationName": "Egypt", // TODO - put in nile delta somewhere
+      "locationName": "Egypt", // put in nile delta somewhere
       "sources": ["Genesis"]
    },
    {
@@ -245,7 +245,7 @@ var otEvents = [{
       "name": "Jacob Sends His Sons to Egypt To Buy Grain - After Several Events Joseph Reveals Himself to Them",
       "startYear": -1875,
       "endYear": -1875,
-      "locationName": "Egypt", // TODO - put in nile delta somewhere
+      "locationName": "Egypt", // put in nile delta somewhere
       "sources": ["Genesis"]
    },
    {
@@ -364,7 +364,7 @@ var otEvents = [{
       "name": "Israelites Arrive At Plains of Moab - Joshua Chosen As Successor of Moses",
       "startYear": -1407,
       "endYear": -1407,
-      "locationName": "Plains of Moab At River Joran",
+      "locationName": "Plains of Moab At River Jordan",
       "sources": ["numbers"]
    },
    {
@@ -574,14 +574,6 @@ var otEvents = [{
    },
    {
       "subcategories": ["historical"],
-      "name": "Amnon Rapes Tamar, Absalom Kills Ammon",
-      "startYear": -990,
-      "endYear": -990,
-      "locationName": "Jerusalem",
-      "sources": ["2 samuel"]
-   },
-   {
-      "subcategories": ["historical"],
       "name": "David Forces a Census",
       "startYear": -979,
       "endYear": -979,
@@ -671,14 +663,6 @@ var otEvents = [{
    },
    {
       "subcategories": ["historical"],
-      "name": "Elijah Called",
-      "startYear": -855,
-      "endYear": -855,
-      "locationName": "Mt Horeb",
-      "sources": ["1 kings"]
-   },
-   {
-      "subcategories": ["historical"],
       "name": "Elijah Taken up to Heaven - Elisha Succeeds Him",
       "startYear": -851,
       "endYear": -851,
@@ -751,12 +735,6 @@ var otEvents = [{
    },
    {
       "subcategories": ["historical", "israel monarchy"],
-      "name": "Reign of Ahaziah of Israel",
-      "startYear": -853,
-      "endYear": -852
-   },
-   {
-      "subcategories": ["historical", "israel monarchy"],
       "name": "Reign of Jehoram of Israel",
       "startYear": -852,
       "endYear": -841,
@@ -774,7 +752,7 @@ var otEvents = [{
    },
    {
       "subcategories": ["historical", "israel monarchy"],
-      "name": "Reign of Jehoahaz",
+      "name": "Reign of Jehoahaz of Israel",
       "startYear": -814,
       "endYear": -798,
       "locationName": "Samaria",
@@ -812,14 +790,6 @@ var otEvents = [{
       "name": "Reign of Shallum",
       "startYear": -743,
       "endYear": -743,
-      "locationName": "Samaria",
-      "sources": ["2 kings"]
-   },
-   {
-      "subcategories": ["historical", "israel monarchy"],
-      "name": "Reign of Menahem",
-      "startYear": -743,
-      "endYear": -738,
       "locationName": "Samaria",
       "sources": ["2 kings"]
    },
@@ -922,7 +892,7 @@ var otEvents = [{
       "subcategories": ["historical", "judah monarchy"],
       "name": "Reign of Joash of Judah",
       "startYear": -835,
-      "endYear": -876,
+      "endYear": -796,
       "pointform": ["repairs temple", "hazael captures gath"],
       "locationName": "Jerusalem",
       "sources": ["2 kings", "2 chronicles"]
@@ -989,7 +959,7 @@ var otEvents = [{
    },
    {
       "subcategories": ["historical", "judah monarchy"],
-      "name": "Reign of Josiah",
+      "name": "Jerusalem",
       "startYear": -640,
       "endYear": -609,
       "locationName": "Jerusalem",
@@ -1075,7 +1045,7 @@ var otEvents = [{
       "name": "Job's Activities",
       "startYear": -2100,
       "endYear": -2100,
-      "locationName": "TODO",
+      "locationName": "Uz",
       "sources": ["job"]
    },
    {
@@ -1083,7 +1053,7 @@ var otEvents = [{
       "name": "Esther's Activities",
       "startYear": -483,
       "endYear": -472,
-      "locationName": "TODO",
+      "locationName": "Susa",
       "pointform": ["queen vashti deposed", "esther becomes queen", "mordecai thwarts a conspiracy", "haman seeks revenge on the jews",
          "mordecai informs esther of haman's plot", "haman Is hanged", "xerxes' tribute to mordecai"
       ],
@@ -1094,7 +1064,6 @@ var otEvents = [{
       "name": "Activities of Ecclesiastes",
       "startYear": -937,
       "endYear": -937,
-      "locationName": "TODO",
       "sources": ["ecclesiastes"]
    },
    {
@@ -1125,7 +1094,7 @@ var otEvents = [{
       "name": "Ezekiel's Activities",
       "startYear": -593,
       "endYear": -573,
-      "locationName": "TODO",
+      "locationName": "Babylon",
       "pointform": ["prophesy at chebar", "eats the scroll", "foretells siege of jerusalem", "vision of the end", "temple vision",
          "judgement on tyre", "vengeance on ammon and edom", "watchman", "foresees resurrection of dry bones", "foresees god's judgement upon gog"
       ],
@@ -1137,7 +1106,7 @@ var otEvents = [{
       "name": "Daniel's Activities",
       "startYear": -605,
       "endYear": -539,
-      "locationName": "TODO",
+      "locationName": "Babylon",
       "pointform": ["refuses king's portion", "interprets nebuchadnezzar dream",
          "interprets handwriting on wall", "survives lions' den", "visions of four beasts and ram and goat",
          "gabriel answers daniel's prayer", "prophesies overthrow of persia"

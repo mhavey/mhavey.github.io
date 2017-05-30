@@ -385,7 +385,7 @@ var otBooks = [{
          "hebrew"
       ],
       "name": "Judith",
-      "startYear": 150,
+      "startYear": -150,
       "endYear": -100,
       "datingNotes": ["maccabean/hasmonean", "the book is fictional; the events did not occur; there is no place called bethulia and nebuchadnezzar was neo-bab, not assyrian like judith writes"],
       "pointform": ["parable", "historical novel", "klimt's painting judith and the head of holofernes",
@@ -475,6 +475,8 @@ var otBooks = [{
    {
       "subcategories": ["poetic", "sapiential", "wisdom", "hebrew"],
       "name": "Proverbs",
+      "startYear": -1000,
+      "endYear": -200,
       "datingNotes": ["compilation - impossible to date"],
       "pointform": ["collection of collections", "some attributed to solomon", "similarities to greek philosophy"]
    },

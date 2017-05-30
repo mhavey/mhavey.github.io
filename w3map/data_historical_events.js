@@ -98,15 +98,7 @@ var historicalEvents = [
       "locationName": "Canaan",
       "pointform": ["wisdom", "golden age", "construction projects", "forced labor", "allied with hiram of tyre", "twelve districts", "temple of solomon"]
    },
-   {
-      "subcategories": ["divided monarchy"],
-      "name": "Shalmaneser III Defeats Ben-Hadad of Syria and Ahab of Israel",
-      "startYear": -858,
-      "endYear": -824,
-      "locationName": "Canaan",
-      "pointform": ["wisdom", "golden age", "construction projects", "forced labor", "allied with hiram of tyre", "twelve districts", "temple of solomon"]
-   },
-   {
+      {
       "subcategories": ["divided monarchy"],
       "name": "Shalmaneser III Defeats Ben-Hadad of Syria and Ahab of Israel",
       "startYear": -858,
@@ -151,7 +143,7 @@ var historicalEvents = [
    },
    {
       "subcategories": ["judah"],
-      "name": "Reign of Josiah",
+      "name": "Reign of Josiah (event)",
       "startYear": -640,
       "endYear": -609,
       "locationName": "Canaan",
@@ -175,7 +167,7 @@ var historicalEvents = [
    },
    {
       "subcategories": ["judah", "exile"],
-      "name": "Judeans Rebel, Babylon Crushes Rebellion, Devastates Judah and Burns Temple in Jersusalem",
+      "name": "Judeans Rebel, Babylon Crushes Rebellion, Devastates Judah and Burns Temple in Jerusalem",
       "startYear": -589,
       "endYear": -586,
       "locationName": "Jerusalem",
@@ -203,20 +195,20 @@ var historicalEvents = [
       "name": "Alexander the Great Captures Jerusalem",
       "startYear": -332,
       "endYear": -332,
-      "locationName": "Jersusalem"
+      "locationName": "Jerusalem"
    },
    {
       "subcategories": ["maccabees"],
       "name": "Antiochus IV Forbids Circumcision and Turns Jersusalem Temple to Temple of Zeus",
       "startYear": -175,
       "endYear": -164,
-      "locationName": "Jersusalem"
+      "locationName": "Jerusalem"
    },
    {
       "subcategories": ["maccabees"],
       "name": "Maccabee Troops Capture Jerusalem Temple",
       "startYear": -164,
       "endYear": -164,
-      "locationName": "Jersusalem"
+      "locationName": "Jerusalem"
    }
 ];

@@ -201,7 +201,7 @@ var greekPhilosophers = [{
    },
    {
       "subcategories": ["hellenistic", "stoic"],
-      "name": "Zeno",
+      "name": "Zeno The Stoic",
       "startYear": -334,
       "endYear": -262,
       "locationName": "Citium",

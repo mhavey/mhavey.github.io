@@ -65,7 +65,7 @@ var eras = [{
    {
       "startYear": -722,
       "endYear": -586,
-      "name": "Judah",
+      "name": "Judah (era)",
       "pointform": ["assyria", "ashurbanipal", "neo-babylonians", "nineveh", "nebuchadnezzar", "ahaz remains loyal to assyria", "isaiah warns that ahaz loyalties are wrong",
          "hezekiah succeeds ahaz", "hezekiah aligns with egypt and babylon and tries to gain judean independence", "hezekiah's rebellion stopped", "hezekiah fortifies jersusalem",
          "hezekiah builds tunnel to bring water inside the city", "josiah's rebellion successful", "deuteronomy scroll found in temple", "josiah's religious reforms and purging of assyrian religious practices",

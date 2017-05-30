@@ -121,7 +121,7 @@ var ntEvents = [{
       "endYear": 37,
       "locationName": "Damascus",
       "pointform": ["king aretas", "stoning of stephen"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
 
    },
    {
@@ -131,7 +131,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Antioch",
       "pointform": ["paul barnabas mark", "beginning of journey"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -140,7 +140,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Seleucia",
       "pointform": ["paul barnabas mark"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -149,7 +149,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Cyprus",
       "pointform": ["paul barnabas mark"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -158,7 +158,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Salamis",
       "pointform": ["paul barnabas mark"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -167,7 +167,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Paphos",
       "pointform": ["paul barnabas mark", "meet bar-jesus the sorcerer"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -176,7 +176,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Perga Pamphylia",
       "pointform": ["paul barnabas mark", "mark returns to jerusalem"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -185,7 +185,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Antioch Pisidia",
       "pointform": ["paul barnabas mark"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -194,7 +194,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Iconium",
       "pointform": ["paul barnabas mark"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -203,7 +203,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Lystra",
       "pointform": ["paul barnabas mark", "paul is stoned by lives"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -212,7 +212,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Derbe",
       "pointform": ["paul barnabas mark"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's first journey"],
@@ -221,7 +221,7 @@ var ntEvents = [{
       "endYear": 47,
       "locationName": "Attalia",
       "pointform": ["paul barnabas mark"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul"],
@@ -230,7 +230,7 @@ var ntEvents = [{
       "endYear": 50,
       "locationName": "Jerusalem",
       "pointform": ["paul barnabas mark"],
-      "sources": ["Acts", "Galatians"]
+      "sources": ["Acts of the Apostles", "Galatians"]
    },
 
    {
@@ -240,7 +240,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Cilicia",
       "pointform": ["paul silas"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -249,7 +249,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Derbe",
       "pointform": ["paul silas"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -258,7 +258,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Lystra",
       "pointform": ["paul silas", "finds timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -267,7 +267,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Phrygia",
       "pointform": ["paul silas timothy", "forbidden by the spirit to go to asia or bithynia"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -276,7 +276,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Galatia",
       "pointform": ["paul silas timothy", "forbidden by the spirit to go to asia or bithynia"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -285,7 +285,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Troas",
       "pointform": ["paul silas timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -294,7 +294,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Samothracia",
       "pointform": ["paul silas timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -303,7 +303,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Neapolis Macedonia",
       "pointform": ["paul silas timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -312,7 +312,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Philippi",
       "pointform": ["paul silas timothy", "god opens heart of lydia and philippian jailer"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -321,7 +321,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Amphipolis",
       "pointform": ["paul silas timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -330,7 +330,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Appolonia",
       "pointform": ["paul silas timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -339,7 +339,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Thessalonica",
       "pointform": ["paul silas timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -348,7 +348,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Berea",
       "pointform": ["paul silas timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -356,7 +356,7 @@ var ntEvents = [{
       "startYear": 51,
       "endYear": 53,
       "locationName": "Achaia",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -364,7 +364,7 @@ var ntEvents = [{
       "startYear": 51,
       "endYear": 53,
       "locationName": "Athens",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -373,7 +373,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Corinth",
       "pointform": ["writes thessalonians", "meets acquila and priscilla"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -381,7 +381,7 @@ var ntEvents = [{
       "startYear": 51,
       "endYear": 53,
       "locationName": "Cenchrea",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -390,7 +390,7 @@ var ntEvents = [{
       "endYear": 53,
       "locationName": "Ephesus",
       "pointform": ["writes romans"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -398,7 +398,7 @@ var ntEvents = [{
       "startYear": 51,
       "endYear": 53,
       "locationName": "Caesarea",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's second journey"],
@@ -406,7 +406,7 @@ var ntEvents = [{
       "startYear": 51,
       "endYear": 53,
       "locationName": "Antioch",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
 
 
@@ -416,7 +416,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Galatia",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -424,7 +424,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Phrygia",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -433,7 +433,7 @@ var ntEvents = [{
       "endYear": 58,
       "locationName": "Ephesus",
       "pointform": ["galatians written here", "1 corinthians written here"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -442,7 +442,7 @@ var ntEvents = [{
       "endYear": 58,
       "locationName": "Philippi",
       "pointform": ["2 corinthians written here", "rejoined timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -450,7 +450,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Achaia",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -458,7 +458,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Corinth",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -467,7 +467,7 @@ var ntEvents = [{
       "endYear": 58,
       "locationName": "Troas",
       "pointform": ["man falls out of window - paul raises him from the dead"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -475,7 +475,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Assos",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -483,7 +483,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Samos",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -491,7 +491,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Miletus",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -499,7 +499,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Rhodes",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -507,7 +507,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Tyre",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -515,7 +515,7 @@ var ntEvents = [{
       "startYear": 54,
       "endYear": 58,
       "locationName": "Caesarea",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's third journey"],
@@ -524,7 +524,7 @@ var ntEvents = [{
       "endYear": 58,
       "locationName": "Jerusalem",
       "pointform": ["paul is beaten by jews", "paul is brought before the sandredrin", "jesus tells paul he will bear him witness in rome"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's imprisonment in judea"],
@@ -533,7 +533,7 @@ var ntEvents = [{
       "endYear": 60,
       "locationName": "Caesarea",
       "pointform": ["before festus and herod agrippa II", "permitted to travel too rome as prisoner"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's voyage to rome"],
@@ -542,7 +542,7 @@ var ntEvents = [{
       "endYear": 61,
       "locationName": "Sidon",
       "pointform": ["with luke and aristarchus"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's voyage to rome"],
@@ -550,7 +550,7 @@ var ntEvents = [{
       "startYear": 60,
       "endYear": 61,
       "locationName": "Myra",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's voyage to rome"],
@@ -558,7 +558,7 @@ var ntEvents = [{
       "startYear": 60,
       "endYear": 61,
       "locationName": "Lasea",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's voyage to rome"],
@@ -570,7 +570,7 @@ var ntEvents = [{
          "aka": ["malta"]
       },
       "pointform": ["shipwrecked here", "paul bitten by snake but lives", "paul heals father of publius"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's voyage to rome"],
@@ -578,7 +578,7 @@ var ntEvents = [{
       "startYear": 60,
       "endYear": 61,
       "locationName": "Syracuse",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's voyage to rome"],
@@ -586,7 +586,7 @@ var ntEvents = [{
       "startYear": 60,
       "endYear": 61,
       "locationName": "Rhegium",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's voyage to rome"],
@@ -594,7 +594,7 @@ var ntEvents = [{
       "startYear": 60,
       "endYear": 61,
       "locationName": "Rome",
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's imprisonment in rome"],
@@ -603,16 +603,16 @@ var ntEvents = [{
       "endYear": 63,
       "locationName": "Rome",
       "pointform": ["writes ephesians", "writes philippians", "writes colossians", "writes philemon"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's post-imprisonment journeys"],
       "name": "Paul's Post-Imprisonment Journeys Nicopolis",
       "startYear": 63,
       "endYear": 67,
-      "locationName": "Nicopolis in Achaia", //southern greece
+      "locationName": "Nicopolis", //southern greece
       "pointform": ["writes titus"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's post-imprisonment journeys"],
@@ -621,7 +621,7 @@ var ntEvents = [{
       "endYear": 67,
       "locationName": "Ephesus",
       "pointform": ["writes 1 timothy"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's post-imprisonment journeys"],
@@ -630,7 +630,7 @@ var ntEvents = [{
       "endYear": 67,
       "locationName": "Italy",
       "pointform": ["writes hebrews"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["paul", "paul's post-imprisonment journeys"],
@@ -639,7 +639,7 @@ var ntEvents = [{
       "endYear": 67,
       "locationName": "Rome",
       "pointform": ["writes 2 timothy", "imprisoned"],
-      "sources": ["Acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["life of jesus"],
@@ -689,7 +689,7 @@ var ntEvents = [{
       "name": "Temptation of Jesus",
       "startYear": 27,
       "endYear": 27,
-      "locationName": "Judaean Desert", //halfway between jerusalem and bethany across the jordan
+      "locationName": "Judean Desert", //halfway between jerusalem and bethany across the jordan
       "sources": ["matthew", "mark", "luke"]
    },
    {
@@ -763,8 +763,7 @@ var ntEvents = [{
       "endYear": 29,
       "locationName": "Nain",
       "locationNotes": {
-         "region": "galilee",
-         "info": ["north of Tyre"]
+         "info": ["galilee", "north of Tyre"]
       },
       "pointform": ["heals cripple at pool of bethesda"],
       "sources": ["matthew", "mark", "luke"]
@@ -911,7 +910,7 @@ var ntEvents = [{
          "info": ["mount of olives"]
       },
       "pointform": ["matthias chosen to replace judas"],
-      "sources": ["acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["after the death of jesus"],
@@ -920,7 +919,7 @@ var ntEvents = [{
       "endYear": 30,
       "locationName": "Jerusalem",
       "pointform": ["peter heals", "peter and john arrested and released"],
-      "sources": ["acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["after the death of jesus"],
@@ -929,7 +928,7 @@ var ntEvents = [{
       "endYear": 31,
       "locationName": "Jerusalem",
       "pointform": ["saul persecutes"],
-      "sources": ["acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["after the death of jesus"],
@@ -937,7 +936,7 @@ var ntEvents = [{
       "startYear": 31,
       "endYear": 31,
       "locationName": "Samaria",
-      "sources": ["acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["after the death of jesus"],
@@ -945,7 +944,7 @@ var ntEvents = [{
       "startYear": 31,
       "endYear": 31,
       "locationName": "Gaza",
-      "sources": ["acts"]
+      "sources": ["Acts of the Apostles"]
    },
    {
       "subcategories": ["after the death of jesus"],
@@ -953,6 +952,6 @@ var ntEvents = [{
       "startYear": 42,
       "endYear": 42,
       "locationName": "Jerusalem",
-      "sources": ["acts"]
+      "sources": ["Acts of the Apostles"]
    }
 ];
