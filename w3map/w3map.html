@@ -3,12 +3,23 @@
 <head>
 <title>Who Said What, Where, When: Map and Timeline of Bible and
 	Greek Philosophy</title>
+<style>
+#map {
+	height: 400px;
+	width: 100%;
+}
+</style>
 </head>
-<body onload="validateAllDatasets()">
+<body onload="initDisplay();">
 	<h1>Who Said What, Where, When: Map and Timeline of Bible and
 		Greek Philosophy</h1>
 
-	<script type="text/javascript" src="grbibdata.js"></script>
+	<div id="map">
+	</div>
+
+	<input type="button" name="clickme" value="clickme" onclick="redrawMap();"/>
+
+	<script type="text/javascript" src="controller.js"></script>
 	<script type="text/javascript" src="data_categories.js"></script>
 	<script type="text/javascript" src="data_locations.js"></script>
 	<script type="text/javascript" src="data_eras.js"></script>
@@ -18,5 +29,178 @@
 	<script type="text/javascript" src="data_ntevents.js"></script>
 	<script type="text/javascript" src="data_ot.js"></script>
 	<script type="text/javascript" src="data_otevents.js"></script>
+	<script type="text/javascript">
+
+
+function printYear(year) {
+	var syear = "" + year;
+	if (syear == "-Infinity" || syear == "Infinity") {
+		return syear;
+	}
+	if (year < 0) {
+		syear = (-1 * year) + "BC";
+	}
+	return syear;
+}
+
+function buildDesc(entry) {
+	var yearRange = printYear(entry.startYear)
+	if (entry.startYear != entry.endYear) {
+		yearRange += "-" + printYear(entry.endYear);
+	}
+	entry.shortDesc = "";
+	if (entry.name != null) {
+		entry.shortDesc += "\nName: " + entry.name;
+	}
+	if (entry.locationName != null) {
+		entry.shortDesc += "\nLocation: " + entry.locationName;
+	}
+	entry.shortDesc += "\nCategory: " + entry.category.name;
+	entry.shortDesc += "\nYears: " + yearRange;
+	var divStyle = "";
+	if (entry.brightness != null) {
+		divStyle = 'style="background-color:#' + entry.brightness.color + "; color:#" + entry.brightness.textcolor + '"';
+	}
+	entry.longDesc = '<div ' + divStyle + ">";
+	entry.longDesc+= "<p><b>Name:</b> " + entry.name + " <b>Location:</b> " + entry.locationName;
+	entry.longDesc+= "<p><b>Category:</b> " + entry.category.name + " <b>Years:</b> " + yearRange;
+	if (entry.subcategories != null)	entry.longDesc+= "<p><b>Subcategories:</b> " + entry.subcategories.join(",");
+	if (entry.sources != null) entry.longDesc+= "<p><b>Sources:</b> " + entry.sources.join(",");
+	if (entry.pointform != null) entry.longDesc+= "<p><b>Pointform:</b> " + entry.pointform.join(",");
+	if (entry.datingNotes != null) entry.longDesc+= "<p><b>Dating Notes:</b> " + entry.datingNotes.join(",");
+	if (entry.locationNotes != null) {
+		entry.longDesc+= "<p><b>Location Notes:</b> ";
+		if (entry.locationNotes.info != null) {
+			entry.longDesc += "<em>info:</em> " + entry.locationNotes.info.join(","); 
+		}
+		if (entry.locationNotes.alternatives != null) {
+			entry.longDesc += "<em>alternatives:</em> " + entry.locationNotes.alternatives.join(","); 
+
+		} 
+		if (entry.locationNotes.assumptions != null) {
+			entry.longDesc += "<em>assumptions:</em> " + entry.locationNotes.assumptions.join(","); 
+
+		} 
+		if (entry.locationNotes.aka != null) {
+			entry.longDesc += "<em>aka:</em> " + entry.locationNotes.aka.join(","); 
+
+		} 
+	}
+	if (entry.eras != null) {
+		entry.longDesc += "<p><b>Eras</b><ul>";
+		for (var i = 0; i < entry.eras.length; i++) {
+			var eyearRange = printYear(entry.eras[i].startYear)
+			if (entry.eras[i].startYear != entry.eras[i].endYear) {
+				eyearRange += "-" + printYear(entry.eras[i].endYear);
+			}
+
+			entry.longDesc += "<li><b>" + entry.eras[i].name + "</b> (" + eyearRange + ")<p>" + entry.eras[i].pointform.join(",") + "</li>"	;
+		}
+		entry.longDesc += "</ul>";
+	}
+	entry.longDesc += "</div>";
+}
+
+		/*
+		 * If two entries are in the same location, offset map marker of one from the other by a small random distance
+		 */
+		var posDB = [];
+		function resolvePos(pos) {
+			var gpos = {
+				lat: pos.lat, lng: pos.lng
+			};
+			for (var i = 0; i < posDB.length; i++) {
+				if (gpos.lat == posDB[i].lat && gpos.lng == posDB[i].lng) {
+					gpos.lat += Math.random() / 100;
+					gpos.lng +=Math.random() / 100;
+					break;
+				}
+			}
+			posDB.push(gpos);
+			return gpos;
+		}
+
+		function redrawMap() {
+			posDB = [];
+			var results = w_matchQuery(
+				[
+					{
+						"categories": ["Bible - Old Testament Books", "Bible - Old Testament Events"], 
+						"text" : ["prophe"]
+					}
+				]);
+
+			// hide all markers
+			for (var i = 0; i < allMarkers.length; i++) allMarkers[i].setVisible(false);
+
+			// plot each greek, biblical, and event marker that matches the query - just show and slightly repos
+			for (var i = 0; i < results.matches.length; i++) {
+				if (results.matches[i].location == null) continue;
+
+				var pos = resolvePos(results.matches[i].location);
+				results.matches[i].mapMarker.setPosition(pos);
+				results.matches[i].mapMarker.setVisible(true);
+			}
+		}
+
+
+	    /*
+		 * Init the map and timeline views. We only need to run this once.
+		 * The only changes to the map after this are: a) Repositioning (marker at same loc hack), b) marker visible/invisible
+		 */
+
+		var allMarkers = [];
+		function initDisplay() {
+			var infowindow = new google.maps.InfoWindow();
+			posDB = [];
+			var centerPos = resolvePos(w_getCenterLocation("Jerusalem"));
+			var results = w_matchQuery(null);
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom : 5,
+				center : centerPos
+			});
+
+			// draw each greek, biblical, and event marker
+			for (var i = 0; i < results.matches.length; i++) {
+				buildDesc(results.matches[i]);
+
+				if (results.matches[i].location == null) continue;
+
+				var title = results.matches[i].shortDesc;
+				var longDesc = results.matches[i].longDesc;
+				var pos = resolvePos(results.matches[i].location);
+				var innerPinImage = new google.maps.MarkerImage(
+						"http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_star|.|"
+								+ results.matches[i].brightness.color + "|000000|"
+								+ results.matches[i].category.color,
+						new google.maps.Size(21, 34), new google.maps.Point(0,
+								0), new google.maps.Point(10, 34));
+				var marker = new google.maps.Marker({
+					title : title,
+					icon : innerPinImage,
+					position : pos,
+					map : map
+				});
+				allMarkers.push(marker);
+				marker.html = longDesc;
+				results.matches[i].mapMarker = marker;
+				google.maps.event.addListener(marker, 'click', function() {
+   					infowindow.setContent(this.html);
+   					infowindow.open(map, this);
+				});
+			}
+			//initSelector();
+			//drawTimeline();
+		}
+
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD_6gUgxcdBn7Egs-tepQWXpNz6ggAmQ8&callback=initDisplay">
+		
+	</script>
+
 </body>
+
+
 </html>

@@ -28,15 +28,59 @@ Never got it clear conceptually. Lots of events are tied to these non-commital l
 //var allCategories = [];
 //var allNames = [];
 
-var val_categories;
-var val_eras;
-var val_locations;
-var val_greekPhilosophers;
-var val_ntBooks;
-var val_otBooks;
-var val_otEvents;
-var val_ntEvents;
-var val_historicalEvents;
+var val_categories = null;
+var val_eras = null;
+var val_locations = null;
+var val_greekPhilosophers = null;
+var val_ntBooks = null;
+var val_otBooks = null;
+var val_otEvents = null;
+var val_ntEvents = null;
+var val_historicalEvents = null;
+var centerLocationIdx = -1;
+var centerLocationName = "Jerusalem";
+
+// public function: finds books/events that match the query; 
+function w_matchQuery(clauses) {
+	if (val_categories == null) {
+		prepData();
+	}
+
+
+
+
+}
+
+function prepData() {
+	// distinct names here
+	allNames = [];
+	val_categories = validateDataset("categories", categories, ["name", "color", "textcolor"], [], null);
+	val_eras = validateDataset("eras", eras, ["name", "startYear", "endYear", "pointform"], [], null);
+	val_locations = validateDataset("locations", locations, ["name", "lat", "lng"], [], null);
+
+	// distinct names here
+	allNames = [];
+	val_greekPhilosophers = validateDataset("greekPhilosophers", greekPhilosophers, ["subcategories", "name", "startYear", "endYear", "locationName"], ["pointform"], "Greek Philosophers");
+	val_ntBooks = validateDataset("ntBooks", ntBooks, ["subcategories", "name", "startYear", "endYear", "pointform"], ["locationName", "datingNotes", "locationNotes"], "Bible - New Testament Books");
+	val_otBooks = validateDataset("otBooks", otBooks, ["subcategories", "name", "startYear", "endYear", "pointform"], ["locationName", "locationNotes", "datingNotes", "revisions"], "Bible - Old Testament Books");
+	val_ntEvents = validateDataset("ntEvents", ntEvents, ["subcategories", "name", "startYear", "endYear", "locationName"], ["locationNotes", "datingNotes", "sources", "pointform"], "Bible - New Testament Events");
+	val_otEvents = validateDataset("otEvents", otEvents, ["subcategories", "name", "startYear", "endYear"], ["locationName", "locationNotes", "datingNotes", "sources", "pointform"], "Bible - Old Testament Events");
+	val_historicalEvents = validateDataset("historicalEvents", historicalEvents, ["subcategories", "name", "startYear", "endYear", "locationName"], ["pointform", "sources"], "Historical Events");
+
+	//locationNames.sort();
+	//locationsNotFound.sort();
+	//console.log(locationNames.join('\n'));
+	//console.log(locationsNotFound.join('\n'));
+	//console.log("" + locationsNotFound.length + "/" + locationNames.length);
+
+    for (var i = 0; i < val_locations; i++) {
+    	if (val_locations[i].name == centerLocationName) {
+    		return i;
+    	}
+    }
+    throw "Center location not found *" + centerLocationName + "*");
+}
+
 
 var locationNames = [];
 //var locationsNotFound = [];
@@ -59,30 +103,6 @@ function checkString(val, throwString, field) {
 		throw throwString + " " + field + " bad string " + val + " " + typeof val;
 	}
 	return val.trim();
-}
-
-function validateAllDatasets() {
-	// distinct names here
-	allNames = [];
-	val_categories = validateDataset("categories", categories, ["name", "color", "textcolor"], [], null);
-	val_eras = validateDataset("eras", eras, ["name", "startYear", "endYear", "pointform"], [], null);
-	val_locations = validateDataset("locations", locations, ["name", "lat", "lng"], [], null);
-
-	// distinct names here
-	allNames = [];
-	val_greekPhilosophers = validateDataset("greekPhilosophers", greekPhilosophers, ["subcategories", "name", "startYear", "endYear", "locationName"], ["pointform"], "Greek Philosophers");
-	val_ntBooks = validateDataset("ntBooks", ntBooks, ["subcategories", "name", "startYear", "endYear", "pointform"], ["locationName", "datingNotes", "locationNotes"], "Bible - New Testament Books");
-	val_otBooks = validateDataset("otBooks", otBooks, ["subcategories", "name", "startYear", "endYear", "pointform"], ["locationName", "locationNotes", "datingNotes", "revisions"], "Bible - Old Testament Books");
-	val_ntEvents = validateDataset("ntEvents", ntEvents, ["subcategories", "name", "startYear", "endYear", "locationName"], ["locationNotes", "datingNotes", "sources", "pointform"], "Bible - New Testament Events");
-	val_otEvents = validateDataset("otEvents", otEvents, ["subcategories", "name", "startYear", "endYear"], ["locationName", "locationNotes", "datingNotes", "sources", "pointform"], "Bible - Old Testament Events");
-	val_historicalEvents = validateDataset("historicalEvents", historicalEvents, ["subcategories", "name", "startYear", "endYear", "locationName"], ["pointform", "sources"], "Historical Events");
-
-	//locationNames.sort();
-	//locationsNotFound.sort();
-	//console.log(locationNames.join('\n'));
-	//console.log(locationsNotFound.join('\n'));
-	//console.log("" + locationsNotFound.length + "/" + locationNames.length);
-
 }
 
 function validateDataset(name, s, requiredFields, optionalFields, category) {
