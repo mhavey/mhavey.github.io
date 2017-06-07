@@ -179,19 +179,19 @@ function setAllowableSearchButtons(results) {
 		console.log("buttons 1");
 		document.getElementById("union").disabled = true;
 		document.getElementById("intersect").disabled = false;
-		document.getElementById("substract").disabled = false;
+		document.getElementById("subtract").disabled = false;
 	}
 	else if (results.matches.length == 0) {
 		console.log("buttons 2");
 		document.getElementById("union").disabled = false;
 		document.getElementById("intersect").disabled = true;
-		document.getElementById("substract").disabled = true;
+		document.getElementById("subtract").disabled = true;
 	}
 	else {
 		console.log("buttons 3");
 		document.getElementById("union").disabled = false;
 		document.getElementById("intersect").disabled = false;
-		document.getElementById("substract").disabled = false;
+		document.getElementById("subtract").disabled = false;
 	}
 }
 
