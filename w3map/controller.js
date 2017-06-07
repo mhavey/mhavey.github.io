@@ -88,18 +88,14 @@ function w_matchQuery(query, previousResults) {
 		// what is my base set of matches and which entries are candidates for inclusion
 		var candidates = [];
 		var results = {matches : []};
-		var fresh = false;
-		if (previousResults == null || previousResults.matches == null || previousResults.matches.length == 0) {
-			console.log("fresh");
-			fresh = true;
+		if (query.operand == "union" || previousResults == null || previousResults.matches == null || previousResults.matches.length == 0) {
 			matchAll(candidates);
 		}
 		else {
-			console.log("prev results provided");
-			results.matches = previousResults.matches;
-			if (query.operand == "union") matchAll(candidates);
-			else candidates = results.matches;
+			candidates = prevResults.matches;
 		}
+
+		if (query.operand == "union") results.matches = prevResults.matches;
 
 		// consider each candidate
 		for (var ei = 0; ei < candidates.length; ei++) {
@@ -109,18 +105,21 @@ function w_matchQuery(query, previousResults) {
 			for (var qi = 0; qi < matchChecks.length; qi++) {
 				var matchSuccess = matchChecks[qi](candidates[ei], query);
 				if (matchSuccess == false) {
+					//console.log("No match " + candidates[ei].name + " on " + qi);
 					candidateMatched = false;
 					break;
 				}
 			}
 
 			// combine the entry
-			if (query.operand == "union" && candidateMatched == true && fresh == true) results.matches.push(candidates[ei]);
-			else if (query.operand == "union" && candidateMatched == true && fresh == false) matchAdd(results.matches, candidates[ei]);
-			else if (query.operand == "intersect" && candidateMatched == true && fresh == true) results.matches.push(candidates[ei]);
-			else if (query.operand == "intersect" && candidateMatched == false && fresh == false) matchRemove(results.matches, candidates[ei]);
-			else if (query.operand == "subtract" && candidateMatched == true && fresh == false) matchRemove(results.matches, candidates[ei]);
-			else if (query.operand == "subtract" && candidateMatched == false && fresh == true) results.matches.push(results.matches, candidates[ei]);
+			if ((query.operand == "union" || query.operand == "intersect") && candidateMatched == true) {
+				matchAdd(results.matches, candidates[ei]);
+				console.log(query.operand + " match " + candidates[ei].name + " sizes " + candidates.length + "," + results.matches.length);
+			}
+			else if (query.operand == "subtract" && candidateMatched == false) {
+				matchAdd(results.matches, candidates[ei]);
+				console.log(query.operand + " match " + candidates[ei].name + " sizes " + candidates.length + "," + results.matches.length);
+			}
 		}
 	}
 
@@ -140,15 +139,6 @@ function matchAdd(matches, candidate) {
 		}
 	}
 	matches.push(candidate);
-}
-
-function matchRemove(matches, candidate) {
-	for (var i = matches.length - 1; i >= 0; i--) {
-		if (matches[i].name == candidate.name) {
-			matches.splice(i);
-			return;
-		}
-	}
 }
 
 // test if entry matches ONE of the categories in query
