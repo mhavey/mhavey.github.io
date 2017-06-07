@@ -91,7 +91,7 @@ function w_matchQuery(query, previousResults) {
 		if (query.operand == "union" || previousResults == null || previousResults.matches.length == 0) {
 			matchAll(candidates);
 			if (previousResults == null) {
-				previousResults.matches = [];				
+				previousResults = {matches : []};				
 			}
 		}
 		else {
