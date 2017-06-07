@@ -176,16 +176,19 @@ function applyQuery(operand) {
 
 function setAllowableSearchButtons(results) {
 	if (results == null || results.matches.length == maxLen) {
+		console.log("buttons 1");
 		document.getElementById("union").disabled = true;
 		document.getElementById("intersect").disabled = false;
 		document.getElementById("substract").disabled = false;
 	}
 	else if (results.matches.length == 0) {
+		console.log("buttons 2");
 		document.getElementById("union").disabled = false;
 		document.getElementById("intersect").disabled = true;
 		document.getElementById("substract").disabled = true;
 	}
 	else {
+		console.log("buttons 3");
 		document.getElementById("union").disabled = false;
 		document.getElementById("intersect").disabled = false;
 		document.getElementById("substract").disabled = false;
