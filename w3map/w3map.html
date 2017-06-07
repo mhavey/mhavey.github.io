@@ -64,9 +64,9 @@
 		<p>Any of these names (enter list with comma separator)<textarea id="names" rows="2" cols="70"></textarea>
 		<p>Any of these texts (enter list with comma separator)<textarea id="texts" rows="2" cols="80"></textarea>
 
-		<p><input type="button" value="Add These" onclick="applyQuery('union')"/>
-		<input type="button" value="Filter Down To These" onclick="applyQuery('intersect')"/>
-		<input type="button" value="Remove These Entries" onclick="applyQuery('subtract')"/>
+		<p><input type="button" id="union" disabled="true" value="Add These" onclick="applyQuery('union')"/>
+		<input type="button" id="intersect" disabled="false" value="Filter Down To These" onclick="applyQuery('intersect')"/>
+		<input type="button" id="subtract" disabled="false" value="Remove These Entries" onclick="applyQuery('subtract')"/>
 		<input type="button" value="Reset/Show Everything" onclick="applyQuery(null)"/>
 
 		<p>Query Summary: <div id="querySummary"></div>
@@ -90,9 +90,11 @@
 
 // Called on load. Initialize the display
 
+var maxLen = -1;
 function initDisplay() {
 	flipView("map", "timeline");
 	var queryResults = w_matchQuery(null, null);
+	maxLen = queryResults.matches.length;
 	initMap(queryResults);
 	initTimeline(queryResults);
 	initSearch();
@@ -169,6 +171,25 @@ function applyQuery(operand) {
 	prevResults = results;
 	redrawMap(results);
 	redrawTimeline(results);
+	setAllowableSearchButtons(results);
+}
+
+var setAllowableSearchButtons(results) {
+	if (results == null || results.matches.length == maxLen) {
+		document.getElementById("union").disabled = true;
+		document.getElementById("intersect").disabled = false;
+		document.getElementById("substract").disabled = false;
+	}
+	else if (results.matches.length == 0) {
+		document.getElementById("union").disabled = false;
+		document.getElementById("intersect").disabled = true;
+		document.getElementById("substract").disabled = true;
+	}
+	else {
+		document.getElementById("union").disabled = false;
+		document.getElementById("intersect").disabled = false;
+		document.getElementById("substract").disabled = false;
+	}
 }
 
 var defaultQuerySummary = "<p>All entries</p>";

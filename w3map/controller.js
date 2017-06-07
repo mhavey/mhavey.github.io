@@ -88,8 +88,11 @@ function w_matchQuery(query, previousResults) {
 		// what is my base set of matches and which entries are candidates for inclusion
 		var candidates = [];
 		var results = {matches : []};
-		if (query.operand == "union" || previousResults == null || previousResults.matches == null || previousResults.matches.length == 0) {
+		if (query.operand == "union" || previousResults == null || previousResults.matches.length == 0) {
 			matchAll(candidates);
+			if (previousResults == null) {
+				previousResults.matches = [];				
+			}
 		}
 		else {
 			candidates = previousResults.matches;
