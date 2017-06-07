@@ -95,7 +95,7 @@ function w_matchQuery(query, previousResults) {
 			candidates = prevResults.matches;
 		}
 
-		if (query.operand == "union") results.matches = prevResults.matches;
+		if (query.operand == "union") results.matches = previousResults.matches;
 
 		// consider each candidate
 		for (var ei = 0; ei < candidates.length; ei++) {
