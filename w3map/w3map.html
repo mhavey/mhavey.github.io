@@ -174,7 +174,7 @@ function applyQuery(operand) {
 	setAllowableSearchButtons(results);
 }
 
-var setAllowableSearchButtons(results) {
+function setAllowableSearchButtons(results) {
 	if (results == null || results.matches.length == maxLen) {
 		document.getElementById("union").disabled = true;
 		document.getElementById("intersect").disabled = false;
