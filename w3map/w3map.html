@@ -65,8 +65,8 @@
 		<p>Any of these texts (enter list with comma separator)<textarea id="texts" rows="2" cols="80"></textarea>
 
 		<p><input type="button" id="union" disabled="true" value="Add These" onclick="applyQuery('union')"/>
-		<input type="button" id="intersect" disabled="false" value="Filter Down To These" onclick="applyQuery('intersect')"/>
-		<input type="button" id="subtract" disabled="false" value="Remove These Entries" onclick="applyQuery('subtract')"/>
+		<input type="button" id="intersect" value="Filter Down To These" onclick="applyQuery('intersect')"/>
+		<input type="button" id="subtract"  value="Remove These Entries" onclick="applyQuery('subtract')"/>
 		<input type="button" value="Reset/Show Everything" onclick="applyQuery(null)"/>
 
 		<p>Query Summary: <div id="querySummary"></div>
