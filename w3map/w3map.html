@@ -8,16 +8,69 @@
 	height: 400px;
 	width: 100%;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	overflow: auto;
+    visibility: hidden;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+	overflow: auto;
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 </style>
 </head>
 <body onload="initDisplay();">
 	<h1>Who Said What, Where, When: Map and Timeline of Bible and
 		Greek Philosophy</h1>
 
-	<div id="map">
+	<div id="selector">
+	<input type="button" value="Map" onclick="flipView('map','timeline');"/>
+	<input type="button" value="Timeline" onclick="flipView('timeline','map');"/>
 	</div>
 
-	<input type="button" name="clickme" value="clickme" onclick="redrawMap();"/>
+	<div id="map">
+	</div>
+	<div id="timeline">
+	</div>
+	<div id="search">
+		<h2>Filter What You See</h2> 
+
+		<p>Any of these categories:
+		<div id="catbox">
+		</div>
+
+		<p>Year range: <input type="number" id="startYear"/> - <input type="number" id="endYear"/>
+		<p>Any of these names (enter list with comma separator)<textarea id="names" rows="2" cols="70"></textarea>
+		<p>Any of these texts (enter list with comma separator)<textarea id="texts" rows="2" cols="80"></textarea>
+
+		<p><input type="button" value="Add These" onclick="applyQuery('union')"/>
+		<input type="button" value="Filter Down To These" onclick="applyQuery('intersect')"/>
+		<input type="button" value="Remove These Entries" onclick="applyQuery('subtract')"/>
+		<input type="button" value="Reset/Show Everything" onclick="applyQuery(null)"/>
+
+		<p>Query Summary: <div id="querySummary"></div>
+	</div>
 
 	<script type="text/javascript" src="controller.js"></script>
 	<script type="text/javascript" src="data_categories.js"></script>
@@ -31,7 +84,269 @@
 	<script type="text/javascript" src="data_otevents.js"></script>
 	<script type="text/javascript">
 
+/**
+ * View logic starts here
+ */
 
+// Called on load. Initialize the display
+
+function initDisplay() {
+	flipView("map", "timeline");
+	var queryResults = w_matchQuery(null, null);
+	initMap(queryResults);
+	initTimeline(queryResults);
+	initSearch();
+}
+
+// redraw display with latest search results
+var prevResults = null;
+function applyQuery(operand) {
+	var results = {};
+	if (operand == null) {
+		clearSearch();
+		results = w_matchQuery(null);
+	}
+	else {
+		// Build the query
+		var query = {};
+		query.operand = operand;
+
+		query.categories_in = [];		
+		for (var i = 0; i < val_categories.length; i++) {
+			if (document.getElementById("incCat_" + val_categories[i].name).checked) {
+				query.categories_in.push(val_categories[i].name);
+			}
+		}
+		if (query.categories_in.length == 0) {
+			query.categories_in = null;
+		}
+
+		query.yearRange = {};
+		var sy = document.getElementById("startYear").value.trim();
+		var ey = document.getElementById("endYear").value.trim();
+		var hasAYear = false;
+		if (sy != "") {
+			try {
+				var isy = parseInt(sy);
+				query.yearRange.startYear = isy;
+				hasAYear = true;
+			}
+			catch(e) {
+				alert("Invalid start year");
+				return;
+			}
+		}
+		if (ey != "") {
+			try {
+				var iey = parseInt(ey);
+				query.yearRange.endYear = iey;
+				hasAYear = true;
+			}
+			catch(e) {
+				alert("Invalid end year");
+				return;
+			}
+		}
+		if (hasAYear == false) {
+			query.yearRange = null;
+		}
+
+		var snames = document.getElementById("names").value.trim();
+		var stexts = document.getElementById("texts").value.trim();
+		if (snames=="")	query.name_in = null
+		else {
+			query.name_in = snames.split(",");
+		}
+		if (stexts=="")	query.text_in = null
+		else {
+			query.text_in = stexts.split(",");
+		}
+		results = w_matchQuery(query, prevResults);
+
+		renderSummary(query, results.matches.length);
+	}
+
+	prevResults = results;
+	redrawMap(results);
+	redrawTimeline(results);
+}
+
+var defaultQuerySummary = "<p>All entries</p>";
+function clearSearch() {
+	prevResults = null;
+	document.getElementById("querySummary").innerHTML = defaultQuerySummary;
+	for (var i = 0; i < val_categories.length; i++) {
+		document.getElementById("incCat_" + val_categories[i].name).checked = true;		
+	}
+	document.getElementById("startYear").value = null;
+	document.getElementById("endYear").value = null;
+	document.getElementById("names").value = "";
+	document.getElementById("texts").value = "";
+}
+
+function renderSummary(query, numMatches) {
+	var prevSummary = document.getElementById("querySummary").innerHTML;
+
+	var s = "";
+	if (prevSummary==defaultQuerySummary) {
+		prevSummary = "";
+		if (query.operand == "union" || query.operand == "intersect") {
+			s += "<p><b>add</b> ";
+		}
+		else {
+			s += "<p><b>subtract from all entries</b> ";
+		}
+	}
+	else {
+		s = prevSummary + "<p>";
+		if (query.operand == "union") {
+			s += "<b>add</b> ";
+		}
+		else if (query.operand == "intersect") {
+			s += "<b>filter</b> ";
+		}
+		else {
+			s += "<b>subtract</b> ";
+		}
+
+	}
+	if (query.categories_in != null) {
+		s += " <b>categories:</b> [" + query.categories_in.join(",") + "]";
+	}
+	if (query.yearRange != null) {
+		var sy = "";
+		var ey = "";
+		if (query.yearRange.startYear != null) sy = printYear(query.yearRange.startYear);
+		if (query.yearRange.endYear != null) ey = printYear(query.yearRange.endYear);
+		s += " <b>years: </b> (" + sy + "-" + ey + ")";
+	}
+	if (query.name_in != null) {
+		s += " <b>names</b>: [" + query.name_in.join(",") + "]";
+	}
+	if (query.text_in != null) {
+		s += " <b>text</b>: [" + query.text_in.join(",") + "]";
+	}
+	s += " <b># matches (total)</b>: " + numMatches;
+	document.getElementById("querySummary").innerHTML = s;
+}
+
+function initSearch() {
+	var cats = "";
+	for (var i = 0; i < val_categories.length; i++) {
+		cats += '<span style="font-size:6;color:' + val_categories[i].textcolor + ';background-color:#' + val_categories[i].color + '">'
+						+ val_categories[i].name
+						+ "<input type='checkbox' checked id='incCat_"
+						+ val_categories[i].name
+						+ "'"
+						+ '/></span>' ;
+	}
+	document.getElementById("catbox").innerHTML = cats;
+	clearSearch();
+}
+
+// draw initial map
+var allMarkers = [];
+function initMap(results) {
+	var infowindow = new google.maps.InfoWindow();
+	posDB = [];
+	var centerPos = resolvePos(w_getCenterLocation("Jerusalem"));
+
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom : 5,
+		center : centerPos
+	});
+
+	// draw each greek, biblical, and event marker
+	for (var i = 0; i < results.matches.length; i++) {
+		buildDesc(results.matches[i]);
+
+		if (results.matches[i].location == null) continue;
+
+		var title = results.matches[i].shortDesc;
+		var longDesc = results.matches[i].longDesc;
+		var pos = resolvePos(results.matches[i].location);
+		var innerPinImage = new google.maps.MarkerImage(
+				"http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_star|.|"
+						+ results.matches[i].brightness.color + "|000000|"
+						+ results.matches[i].category.color,
+				new google.maps.Size(21, 34), new google.maps.Point(0,
+						0), new google.maps.Point(10, 34));
+		var marker = new google.maps.Marker({
+			title : title,
+			icon : innerPinImage,
+			position : pos,
+			map : map
+		});
+		allMarkers.push(marker);
+		marker.html = longDesc;
+		results.matches[i].mapMarker = marker;
+		google.maps.event.addListener(marker, 'click', function() {
+				infowindow.setContent(this.html);
+				infowindow.open(map, this);
+		});
+	}
+}
+
+// redraw map with latest search results
+function redrawMap(queryResults) {
+	posDB = [];
+
+	// hide all markers
+	for (var i = 0; i < allMarkers.length; i++) allMarkers[i].setVisible(false);
+
+	// plot each greek, biblical, and event marker that matches the query - just show and slightly repos
+	for (var i = 0; i < queryResults.matches.length; i++) {
+		if (queryResults.matches[i].location == null) continue;
+
+		queryResults.matches[i].mapMarker.setVisible(true);
+		var pos = resolvePos(queryResults.matches[i].location);
+		queryResults.matches[i].mapMarker.setPosition(pos);
+	}
+}
+
+
+// Init the timeview view
+function initTimeline(queryResults) {
+	redrawTimeline(queryResults);
+}
+
+// Init the timeview view
+function redrawTimeline(queryResults) {
+	var html = "<table border='1'>";
+	for (var i = 0; i < brightnesses.length; i++) {
+		var col0 = printYear(brightnesses[i].startYear)
+				+ " - "
+				+ printYear(brightnesses[i].endYear);
+		var col1 = "";
+		for (var j = 0; j < queryResults.matches.length; j++) {
+			if (queryResults.matches[j].startYear > brightnesses[i].endYear ||
+				queryResults.matches[j].endYear < brightnesses[i].startYear) {
+				continue;
+			}
+			col1 += "<div class='tooltip'><span style='color:" + queryResults.matches[j].category.textcolor + ";background-color:#" 
+				+ queryResults.matches[j].category.color + "'>"
+					+ queryResults.matches[j].shortDesc + "</span><div class='tooltiptext'>" + 
+					queryResults.matches[j].longDesc + "</div></div><p>";
+		}
+		html += "<tr><td>" + col0 + "</td><td>" + col1 + "</td></tr>";
+	}
+	html += "</table>";
+	document.getElementById("timeline").innerHTML = html;
+}
+
+// 
+// Helpers...
+// 
+
+// Show the showDiv, hide the hideDiv
+function flipView(showDiv, hideDiv) {
+	document.getElementById(showDiv).style.visibility = 'visible'; 
+	document.getElementById(hideDiv).style.visibility = 'hidden'; 
+	document.getElementById(showDiv).style.display = 'block'; 
+	document.getElementById(hideDiv).style.display = 'none';
+}
+
+// Render a year nicely
 function printYear(year) {
 	var syear = "" + year;
 	if (syear == "-Infinity" || syear == "Infinity") {
@@ -43,6 +358,7 @@ function printYear(year) {
 	return syear;
 }
 
+// Build short and long descriptions for entries
 function buildDesc(entry) {
 	var yearRange = printYear(entry.startYear)
 	if (entry.startYear != entry.endYear) {
@@ -101,106 +417,27 @@ function buildDesc(entry) {
 	entry.longDesc += "</div>";
 }
 
-		/*
-		 * If two entries are in the same location, offset map marker of one from the other by a small random distance
-		 */
-		var posDB = [];
-		function resolvePos(pos) {
-			var gpos = {
-				lat: pos.lat, lng: pos.lng
-			};
-			for (var i = 0; i < posDB.length; i++) {
-				if (gpos.lat == posDB[i].lat && gpos.lng == posDB[i].lng) {
-					gpos.lat += Math.random() / 100;
-					gpos.lng +=Math.random() / 100;
-					break;
-				}
-			}
-			posDB.push(gpos);
-			return gpos;
+
+// If two entries are in the same location, offset map marker of one from the other by a small random distance
+var posDB = [];
+function resolvePos(pos) {
+	var gpos = {
+		lat: pos.lat, lng: pos.lng
+	};
+	for (var i = 0; i < posDB.length; i++) {
+		if (gpos.lat == posDB[i].lat && gpos.lng == posDB[i].lng) {
+			gpos.lat += Math.random() / 100;
+			gpos.lng +=Math.random() / 100;
+			break;
 		}
-
-		function redrawMap() {
-			posDB = [];
-			var results = w_matchQuery(
-				[
-					{
-						"categories": ["Bible - Old Testament Books", "Bible - Old Testament Events"], 
-						"text" : ["prophe"]
-					}
-				]);
-
-			// hide all markers
-			for (var i = 0; i < allMarkers.length; i++) allMarkers[i].setVisible(false);
-
-			// plot each greek, biblical, and event marker that matches the query - just show and slightly repos
-			for (var i = 0; i < results.matches.length; i++) {
-				if (results.matches[i].location == null) continue;
-
-				var pos = resolvePos(results.matches[i].location);
-				results.matches[i].mapMarker.setPosition(pos);
-				results.matches[i].mapMarker.setVisible(true);
-			}
-		}
-
-
-	    /*
-		 * Init the map and timeline views. We only need to run this once.
-		 * The only changes to the map after this are: a) Repositioning (marker at same loc hack), b) marker visible/invisible
-		 */
-
-		var allMarkers = [];
-		function initDisplay() {
-			var infowindow = new google.maps.InfoWindow();
-			posDB = [];
-			var centerPos = resolvePos(w_getCenterLocation("Jerusalem"));
-			var results = w_matchQuery(null);
-
-			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom : 5,
-				center : centerPos
-			});
-
-			// draw each greek, biblical, and event marker
-			for (var i = 0; i < results.matches.length; i++) {
-				buildDesc(results.matches[i]);
-
-				if (results.matches[i].location == null) continue;
-
-				var title = results.matches[i].shortDesc;
-				var longDesc = results.matches[i].longDesc;
-				var pos = resolvePos(results.matches[i].location);
-				var innerPinImage = new google.maps.MarkerImage(
-						"http://chart.apis.google.com/chart?chst=d_map_xpin_letter&chld=pin_star|.|"
-								+ results.matches[i].brightness.color + "|000000|"
-								+ results.matches[i].category.color,
-						new google.maps.Size(21, 34), new google.maps.Point(0,
-								0), new google.maps.Point(10, 34));
-				var marker = new google.maps.Marker({
-					title : title,
-					icon : innerPinImage,
-					position : pos,
-					map : map
-				});
-				allMarkers.push(marker);
-				marker.html = longDesc;
-				results.matches[i].mapMarker = marker;
-				google.maps.event.addListener(marker, 'click', function() {
-   					infowindow.setContent(this.html);
-   					infowindow.open(map, this);
-				});
-			}
-			//initSelector();
-			//drawTimeline();
-		}
+	}
+	posDB.push(gpos);
+	return gpos;
+}
 
 	</script>
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD_6gUgxcdBn7Egs-tepQWXpNz6ggAmQ8&callback=initDisplay">
-		
 	</script>
-
 </body>
-
-
 </html>
