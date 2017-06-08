@@ -153,8 +153,8 @@ var locations = [
 },
 {
    name: "Seleucia",
-   lat: 33.094444, 
-   lng: 44.522222
+   lat: 36.0,
+   lng: 36.0
 },
 {
    name: "Cyprus",
