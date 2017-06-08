@@ -160,7 +160,7 @@ function matchHasYearRange(entry, query) {
 	if (query.yearRange == null) return true;
 
 	if (query.yearRange.endYear != null && entry.startYear > query.yearRange.endYear) return false;
-	if (query.yearRange.startYear != null && entry.endYear < query.yearRange.endYear) return false;
+	if (query.yearRange.startYear != null && entry.endYear < query.yearRange.startYear) return false;
 
 	return true;
 }
