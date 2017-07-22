@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>"Havey Stock" Solitaire</title>
+</head>
+<body onload="setupGame();">
+	<h1>"Havey Stock" Solitaire</h1>
+
+	<table><tr>
+	<td>
+	<div id="suitPiles" style="border:1px solid black">
+				<h2>Suit Piles</h2>
+				<p>Build ace to king In each suit. Can also drag back to worker pile	   		
+			 	<table id="suitPilesTable">
+					<tr>
+	   					<td>&nbsp;</td>
+			   			<td>&nbsp;</td>
+			   			<td>&nbsp;</td>
+			   			<td>&nbsp;</td>
+	   				</tr>
+	   			</table>
+	</div>
+	<div id="freeCards" style="border:1px solid black">
+		<h2>Free Cards</h2>
+		<p>Drag to Worker or Suit Piles
+	   <table id="freeCardsTable">
+	   		<tr>
+	   			<td>&nbsp;</td>
+	   			<td>&nbsp;</td>
+	   			<td>&nbsp;</td>
+	   		</tr>
+	   	</table>
+	</div>
+	</td>
+	<td>
+	<div id="workerPiles" style="border:1px solid black">
+		<h2>Worker Piles</h2>
+		<p>You drag from here to suit pile. Can drag from suit pile or free cards to here
+		<table id="workerPilesTable">
+	   		<tr style="vertical-align:bottom">
+	   			<td></td>
+	   			<td></td>
+	   			<td></td>
+	   			<td></td>
+	   			<td></td>
+	   			<td></td>
+	   			<td></td>
+	   		</tr>
+	   	</table>
+	</div>
+	</td>
+	</tr></table>
+
+	<input type="button" value="Reset Game" onclick="setupGame();"/>
+
+	<script type="text/javascript" src="solitaire.js"></script>
+</body>
+</html>
