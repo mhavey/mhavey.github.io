@@ -252,7 +252,7 @@ function drawCard(card) {
 		var textColor = "white";
 	}
 	else if (card.faceUp == false) {
-		color="blue";
+		color="blue";	
 	}
 
 	var dragText = "";
@@ -358,7 +358,7 @@ function drawWorkerPile(pile) {
 
 // redraw free card as blank once it's been played from free pile
 function removeFreeCard(i) {
-	freeCardsCells[i].innerHTML = drawCard({
+	document.getElementById("freeCardsTable").rows[0].cells[i].innerHTML = drawCard({
 		color:"white",
 		card:"",
 		suit:"",
