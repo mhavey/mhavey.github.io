@@ -2,12 +2,6 @@
 Game variables 
 */
 
-// Test Cases TODO
-// 1. From start of game, card in top left of worker pile cannot be moved to a valid bottom card in another column
-// 2. I haven't tested the functionality of the worker pile "drop card"
-// 3. Ditto for suit pile "drop card"
-// 4. I haven't tested King on Ace.
-
 // THe state of the game in these arrays
 var deck = [];
 var freeCards = []; // 3 cards
@@ -190,7 +184,9 @@ function dropWorkerPile(destX,destY,isDropCard,sourceType,sourceX,sourceY) {
 	checkRule("if dest card is face down/drop card, source card must be king",
 		isDropCard == true || destCard.faceUp == true || sourceCard.kind == "K", [sourceCard,destCard]);
 	checkRule("if dest card is face up, source card must be one less in kind", 
-		isDropCard == true || destCard.faceUp==false|| sourceCard.kindIdx == ((destCard.kindIdx - 1) % 13), 
+		isDropCard == true || destCard.faceUp==false
+		|| (sourceCard.kind=='K' && destCard.kind=='A') 
+		|| sourceCard.kindIdx == destCard.kindIdx - 1, 
 		[sourceCard,destCard]);
 
 	// action
@@ -325,9 +321,9 @@ function drawWorkerPile(pile) {
 		var dropCard = '<div>' + drawCard({
 			dropCard: true, 
 			faceUp: false, // Drop card is considered face down
-			kind: "Drop King ",
+			kind: "Drop",
 			suit: "", 
-			color: "white", 
+			color: "black", 
 			kindIdx: -1, 
 			sourceType: "workerPiles", 
 			sourceX: pile, 
