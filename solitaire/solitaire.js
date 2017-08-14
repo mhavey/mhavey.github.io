@@ -148,7 +148,7 @@ function dropSuitPile(destX,destY,isDropCard, sourceType,sourceX,sourceY) {
 	}
 	else if (sourceType == "workerPiles") {
 		// remove the bottom
-		workerPiles[sourceX] = workerPiles[sourceX].splice(0, sourceY);
+		sourceCard = workerPiles[sourceX].pop();
 		drawWorkerPile(sourceX);
 	}
 	else ("illegal source type *" + sourceType + "*", true);
@@ -176,13 +176,14 @@ function dropWorkerPile(destX,destY,isDropCard,sourceType,sourceX,sourceY) {
 		checkRule("source worker card must be faceup", sourceCard.faceUp == true, [sourceCard]);
 	}
 	else if (sourceType == "suitPiles") {
-		sourceCard = suitPiles[sourceX][suitPiles[sourceX].length-1];
+		sourceCard = suitPiles[sourceX][(suitPiles[sourceX].length)-1];
 	}
 	else ("illegal source type *" + sourceType + "*", true);
 
-	checkRule("drop must be different color", isDropCard==true || (sourceCard.color != destCard.color), [sourceCard,destCard]);
 	checkRule("if dest card is face down/drop card, source card must be king",
 		isDropCard == true || destCard.faceUp == true || sourceCard.kind == "K", [sourceCard,destCard]);
+	checkRule("drop must be different color", isDropCard==true || destCard.faceUp == false || 
+		(sourceCard.color != destCard.color), [sourceCard,destCard]);
 	checkRule("if dest card is face up, source card must be one less in kind", 
 		isDropCard == true || destCard.faceUp==false
 		|| (sourceCard.kind=='K' && destCard.kind=='A') 
@@ -206,12 +207,7 @@ function dropWorkerPile(destX,destY,isDropCard,sourceType,sourceX,sourceY) {
 		drawWorkerPile(sourceX);
 	}
 	else if (sourceType == "suitPiles") {
-		if (sourceCard.kindIdx == 0) {
-			suitPiles[sourceX]=null;
-		}
-		else {
-			suitPiles[sourceX].pop();
-		}
+		suitPiles[sourceX].pop();
 		drawSuitPile(sourceX);
 	}
 	else ("illegal source type *" + sourceType + "*", true);
@@ -298,9 +294,11 @@ function drawSuitPile(i) {
 	}
 
 	// Top card is special
-	suitPiles[suitPiles[i].length - 1].flippable = false;
-	suitPiles[suitPiles[i].length - 1].droppable = true;
-	suitPiles[suitPiles[i].length - 1].draggle = true;
+	var lastCard = suitPiles[i].length - 1;
+	console.log("top suit card in pile "+ i + " is " + lastCard);
+	suitPiles[lastCard].flippable = false;
+	suitPiles[lastCard].droppable = true;
+	suitPiles[lastCard].draggle = true;
 
 	// reseq the deck; might not be needed
 	for (var j = 0; j< suitPiles[i].length; j++) {
@@ -308,7 +306,7 @@ function drawSuitPile(i) {
 		suitPiles[i][j].sourceX = i;
 		suitPiles[i][j].sourceY = j; 
 	}
-	suitPilesCells[i].innerHTML=drawCard(suitPiles[i][suitPiles[i].length - 1]);
+	suitPilesCells[i].innerHTML=drawCard(suitPiles[i][lastCard]);
 }
 
 // redraw worker pile given
@@ -404,3 +402,13 @@ function drop(event, destType, destX, destY, isDropCard) {
 		alert("YOU WON!!!");
 	}
 }	
+
+function printGame() {
+	console.log("DEBUG GAME");
+	console.log("SUITS");
+	console.log(suitPiles);
+	console.log("FREE");
+	console.log(freeCards);
+	console.log("WORKER");
+	console.log(workerPiles);
+}
