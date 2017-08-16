@@ -2,6 +2,17 @@
 Game variables 
 */
 
+// TODO
+// 1. I can move a non-king onto a face down card. 
+// workerPiles 0 10 workerPiles 1 0
+//solitaire.js:250 passed dest card is on bottom
+//solitaire.js:250 passed worker piles must be different
+//solitaire.js:250 passed source worker card must be faceup
+//solitaire.js:250 passed if dest card is face down/drop card, source card must be king
+//solitaire.js:250 passed drop must be different color
+//solitaire.js:250 passed if dest card is face up, source card must be one less in kind
+
+
 // THe state of the game in these arrays
 var deck = [];
 var freeCards = []; // 3 cards
@@ -32,6 +43,8 @@ function suitString(suit) {
  */
 
 function setupGame() {
+
+	document.getElementById("cheat").checked=false;
 
 	// build the deck
 	deck = [];
@@ -91,12 +104,6 @@ function setupGame() {
 
 // return true if game is won, false otherwise
 function gameIsWon() {
-	if (freeCards.length > 0) return false;
-
-	for (var i = 0; i < 7; i++) {
-		if (workerPiles[i].length != 0) return false;
-	}
-
 	for (var i = 0; i < 4; i++) {
 		if (suitPiles[i][suitPiles[i].length-1].kind != "K") return false;
 	}
@@ -158,6 +165,9 @@ function dropSuitPile(destX,destY,isDropCard, sourceType,sourceX,sourceY) {
 
 // handler to process the move from free/worker, suit/worker, worker/worker
 function dropWorkerPile(destX,destY,isDropCard,sourceType,sourceX,sourceY) {
+
+	var cheatAllowed = document.getElementById("cheat").checked;
+
 	// checks
 	checkRule("dest card is on bottom", isDropCard == true || destY == workerPiles[destX].length - 1);
 
@@ -180,15 +190,21 @@ function dropWorkerPile(destX,destY,isDropCard,sourceType,sourceX,sourceY) {
 	}
 	else ("illegal source type *" + sourceType + "*", true);
 
-	checkRule("if dest card is face down/drop card, source card must be king",
-		isDropCard == true || destCard.faceUp == true || sourceCard.kind == "K", [sourceCard,destCard]);
-	checkRule("drop must be different color", isDropCard==true || destCard.faceUp == false || 
-		(sourceCard.color != destCard.color), [sourceCard,destCard]);
-	checkRule("if dest card is face up, source card must be one less in kind", 
-		isDropCard == true || destCard.faceUp==false
+	var r1 = checkRule("if dest card is face down/drop card, source card must be king",
+		!(isDropCard == true || destCard.faceUp == false) || sourceCard.kind == "K", [sourceCard,destCard], cheatAllowed);
+	var r2 = checkRule("drop must be different color", isDropCard==true || destCard.faceUp == false || 
+		(sourceCard.color != destCard.color), [sourceCard,destCard], cheatAllowed);
+	var r3 = checkRule("if dest card is face up, source card must be one less in kind", 
+		!(isDropCard == false && destCard.faceUp==true)
 		|| (sourceCard.kind=='K' && destCard.kind=='A') 
 		|| sourceCard.kindIdx == destCard.kindIdx - 1, 
-		[sourceCard,destCard]);
+		[sourceCard,destCard], cheatAllowed);
+
+	if (r1 == "cheat" || r2 == "cheat" || r3 == "cheat") {
+		if (confirm("This is totally a cheat. You got this far because you checked the cheat box. Click OK to go ahead with this invalid move.")) {
+			console.log("allowed cheat");
+		}
+	}
 
 	// action
 	var cardsToAdd = [sourceCard];
@@ -220,13 +236,22 @@ function dropWorkerPile(destX,destY,isDropCard,sourceType,sourceX,sourceY) {
 
 
 // / do rule check for move/flip
-function checkRule(message, rule, cards) {
+function checkRule(message, rule, cards, cheatAllowed) {
 	var cardStr = "";
 	if (cards) {
 		cardStr = JSON.stringify(cards);
 	}
-	if (rule != true) throw "Failed rule: " + message + " cards " + cardStr;
-	else console.log("passed " + message);
+	if (rule != true) {
+		if (cheatAllowed && cheatAllowed == true) {
+			console.log("cheat " + message);
+			return "cheat";
+		}
+		throw "Failed rule: " + message + " cards " + cardStr;			
+	}
+	else {
+		console.log("passed " + message);
+		return "pass";
+	}
 }
 
 /*
@@ -266,7 +291,6 @@ function drawCard(card) {
 		+ ' style="width:35px;height:35px;border:1px solid black;color:' 
 		+ textColor + ';background-color:' + color + ';">'
 		+ text + '</div>';
-	console.log(dhtml);
 	return dhtml;
 }
 
@@ -295,10 +319,9 @@ function drawSuitPile(i) {
 
 	// Top card is special
 	var lastCard = suitPiles[i].length - 1;
-	console.log("top suit card in pile "+ i + " is " + lastCard);
-	suitPiles[lastCard].flippable = false;
-	suitPiles[lastCard].droppable = true;
-	suitPiles[lastCard].draggle = true;
+	suitPiles[i][lastCard].flippable = false;
+	suitPiles[i][lastCard].droppable = true;
+	suitPiles[i][lastCard].draggle = true;
 
 	// reseq the deck; might not be needed
 	for (var j = 0; j< suitPiles[i].length; j++) {
@@ -402,13 +425,3 @@ function drop(event, destType, destX, destY, isDropCard) {
 		alert("YOU WON!!!");
 	}
 }	
-
-function printGame() {
-	console.log("DEBUG GAME");
-	console.log("SUITS");
-	console.log(suitPiles);
-	console.log("FREE");
-	console.log(freeCards);
-	console.log("WORKER");
-	console.log(workerPiles);
-}

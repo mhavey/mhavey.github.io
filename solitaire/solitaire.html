@@ -10,7 +10,7 @@
 	<td>
 	<div id="suitPiles" style="border:1px solid black">
 				<h2>Suit Piles</h2>
-				<p>Build ace to king In each suit. Can also drag back to worker pile	   		
+				<p>Build ace to king in each suit. Can also drag back to worker pile. 	   		
 			 	<table id="suitPilesTable">
 					<tr>
 	   					<td>&nbsp;</td>
@@ -35,7 +35,7 @@
 	<td>
 	<div id="workerPiles" style="border:1px solid black">
 		<h2>Worker Piles</h2>
-		<p>You drag from here to suit pile. Can drag from suit pile or free cards to here
+		<p>You drag from here to suit pile. Can drag from suit pile or free cards to here. Or drag from one worker pile to another.
 		<table id="workerPilesTable">
 	   		<tr style="vertical-align:top">
 	   			<td></td>
@@ -52,6 +52,9 @@
 	</tr></table>
 
 	<input type="button" value="Reset Game" onclick="setupGame();"/>
+	<input type="checkbox" id="cheat"/>Cheat
+	<p>This game is hard to win, so we're going to let you cheat.</p>
+	<p>Cheating allows you to drop a free card or a card from a suit pile to the bottom of a worker pile with no requirement for "one less in kind" or "different color". Cheating also allows you to drag from one worker pile to the bottom of another worker pile with no kind/color requirement. Don't cheat! But if you decide to cheat, <b>you must check this box</b></p>  
 
 	<script type="text/javascript" src="solitaire.js"></script>
 </body>
