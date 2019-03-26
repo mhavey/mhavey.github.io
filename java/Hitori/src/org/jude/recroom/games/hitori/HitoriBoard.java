@@ -1,7 +1,9 @@
 package org.jude.recroom.games.hitori;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Represents Hitori board. Each square is a number. Board must be square
@@ -177,7 +179,7 @@ public class HitoriBoard {
 
 	/**
 	 * Flip the square at idx from o to u or d, and then flip all q's squares to
-	 * u Return false if not possible to do so.
+	 * u. Return false if not possible to do so.
 	 *
 	 * @param state
 	 * @param idx
@@ -306,81 +308,45 @@ public class HitoriBoard {
 
 	/**
 	 * Return true if the board in the specified state contains an "island"
-	 * Island: A path of deleted squares can be traced from an edge to an edge,
-	 * thereby creating an "island" of undeleted squares.
+	 * Island: A path of deleted squares that blocks open squares.
+	 * Keep it simple: just walk the open squares; if any opens unvisited, we have an island
 	 */
 	boolean hasIsland(StringBuffer state) {
-		// mark every square unvisited
-		boolean visited[] = new boolean[state.length()];
-		for (int i = 0; i < state.length(); i++) {
-			visited[i] = false;
-		}
+		
+		if (state.toString().indexOf('q') >= 0) throw new RuntimeException("THERE ARE Q in State " + state.toString());
 
-		// start walking from any UNVISITED, DELETED edge square; if we can walk
-		// to another deleted edge, we've found an island
-		for (int i = 0; i < state.length(); i++) {
-			if (!visited[i] && state.charAt(i) == 'd' && isEdgeSquare(i)) {
-				visited[i] = true;
-				if (islandWalk(state, visited, i)) {
-					return true;
-				}
-			}
-		}
-		return false;
+		Set<Integer> visited = new HashSet<Integer>();
+		Set<Integer> visitedDel = new HashSet<Integer>();
+		
+		// start pos is either 0 or 1
+		int startPos = 0;
+		if (state.charAt(0) == 'd') startPos = 1;
+		
+		islandWalk(state, startPos, visited, visitedDel);
+		return (visited.size() + visitedDel.size() != state.length());
 	}
-
-	/**
-	 * Try to traverse a zig-zag path of deleted squares on the board in the
-	 * given state from the specified square idx. Return true if a path can be
-	 * found (which creates an island). Use visited array to prevent iterating
-	 * twice over the same square. Walk recurisvely.
-	 */
-	boolean islandWalk(StringBuffer state, boolean visited[], int idx) {
-
-		int nw = idx - (this.dim + 1);
-		if (idx < this.dim || (idx % this.dim) == 0)
-			nw = -1;
-		int ne = idx - this.dim + 1;
-		if (idx < this.dim || (idx % this.dim) == this.dim - 1)
-			ne = -1;
-		int sw = idx + this.dim - 1;
-		if (idx >= this.dim * (this.dim - 1) || (idx % this.dim) == 0)
-			sw = -1;
-		int se = idx + this.dim + 1;
-		if (idx >= this.dim * (this.dim - 1)
-				|| (idx % this.dim) == this.dim - 1)
-			se = -1;
-		int neighbors[] = { nw, ne, sw, se };
-		// look in each neighbor direction
-		for (int i = 0; i < neighbors.length; i++) {
-			// skip if can't go that way or already visited or open square
-			if (neighbors[i] < 0 || visited[neighbors[i]]
-					|| state.charAt(neighbors[i]) != 'd') {
-				continue;
+	
+	void islandWalk(StringBuffer state, int idx, Set<Integer> visited, Set<Integer> visitedDel) {
+		
+		if (idx < 0) return;
+		if (state.charAt(idx) == 'd') {
+			if (!visitedDel.contains(idx)) {
+				visitedDel.add(idx);
 			}
-
-			// if the neighbor is an edge, we've traced the path! we have island
-			if (isEdgeSquare(neighbors[i])) {
-				return true;
-			}
-
-			// mark square visited and keep walking from neighbor onwards
-			visited[neighbors[i]] = true;
-			if (islandWalk(state, visited, neighbors[i])) {
-				return true;
-			}
+			return;
 		}
-		return false;
-	}
-
-	/**
-	 * Return true if square at pos i in the board is an edge square
-	 */
-	boolean isEdgeSquare(int i) {
-		return i >= 0
-				&& i < this.length
-				&& (i < this.dim || i >= this.dim * (this.dim - 1)
-						|| (i % this.dim) == 0 || (i % this.dim) == this.dim - 1);
+		
+		if (visited.contains(idx)) return;
+		visited.add(idx);
+		
+		int west = ((idx % this.dim) == 0) ? -1 : idx - 1;
+		int east = ((idx % this.dim) == this.dim -1) ? -1 : idx + 1;
+		int north = (idx < this.dim) ? -1 : idx - this.dim;
+		int south = (idx >= this.dim * (this.dim - 1)) ? -1 : idx + this.dim;
+		islandWalk(state, west, visited, visitedDel);
+		islandWalk(state, east, visited, visitedDel);
+		islandWalk(state, north, visited, visitedDel);
+		islandWalk(state, south, visited, visitedDel);
 	}
 
 	/**
@@ -405,5 +371,24 @@ public class HitoriBoard {
 			output += " ";
 		}
 		return output;
+	}
+
+	public static void main(String args[]) {
+		StringBuffer state = new StringBuffer("");
+		state.append("duudududu"); 
+		state.append("uududuuuu");
+		state.append("uduuuudud"); 
+		state.append("uuduuduuu"); 
+		state.append("uuuuduudu"); 
+		state.append("uduuuudud"); 
+		state.append("duduuuudu"); 
+		state.append("uduuuduuu"); 
+		state.append("uuuuuudud");
+		
+		HitoriBoard dummyBoard = new HitoriBoard();
+		dummyBoard.dim = 9;
+		dummyBoard.length = 81;
+		
+		System.out.println(dummyBoard.hasIsland(state));
 	}
 }
