@@ -1,0 +1,11 @@
+{
+  "database-name": "%%DATABASE%%",
+  "range-element-index":[
+  	{"collation":"http://marklogic.com/collation/en", "invalid-values":"reject", 
+  	"localname":"biblicalOrder", "namespace-uri":null, "range-value-positions":false, "scalar-type":"int"}, 
+  	{"collation":"http://marklogic.com/collation/en", "invalid-values":"reject", 
+  	"localname":"calendarDate", "namespace-uri":null, "range-value-positions":false, "scalar-type":"data"}
+  ],
+  	"triple-index" : true,
+	"collection-lexicon" : true	
+}

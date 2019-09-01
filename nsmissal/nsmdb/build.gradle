@@ -1,0 +1,46 @@
+/*
+This gradle script is for running CORB jobs on insight. 
+For this we need an XDBC app server. 
+XDBC server should be part of our ml-config. 
+*/
+
+buildscript {
+  repositories {
+    maven {url 'http://developer.marklogic.com/maven2/'}
+  }
+  dependencies {
+    //Needed for CorbTask to dynamicaly generate properties from CORB Options class
+    classpath 'com.marklogic:marklogic-corb:2.4.1'
+  }
+}
+
+
+plugins {
+    id 'java'
+    id "com.marklogic.ml-gradle" version "3.6.0"
+    id 'net.saliman.properties' version '1.4.6'
+}
+
+repositories {
+    jcenter()
+
+    // Needed for corb dependency: XCC
+    maven { url "http://developer.marklogic.com/maven2/" }
+}
+
+configurations {
+    corb
+}
+
+dependencies {
+    corb 'com.marklogic:marklogic-corb:2.4.1'
+    compile 'com.marklogic:marklogic-xcc:9.0.4'
+}
+
+task loadData() {
+
+}
+
+task runReports() {
+  
+}
