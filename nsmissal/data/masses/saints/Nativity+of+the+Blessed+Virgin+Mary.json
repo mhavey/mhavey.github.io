@@ -1,1 +1,44 @@
-{"proper":"saints", "title":"Nativity of the Blessed Virgin Mary", "uri":"saints/Nativity+of+the+Blessed+Virgin+Mary", "calendar":"fixed(Sep,8)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"noref", "uri":"saints/Nativity+of+the+Blessed+Virgin+Mary/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Mi 5:1-4a", "uri":"saints/Nativity+of+the+Blessed+Virgin+Mary/reading/1ST"}, {"readingType":"1ST", "citation":"Rom 8:28-30", "uri":"saints/Nativity+of+the+Blessed+Virgin+Mary/reading/1ST/2"}, {"readingType":"PS", "citation":"Ps 13:6ab, 6c", "uri":"saints/Nativity+of+the+Blessed+Virgin+Mary/reading/PS"}, {"readingType":"GA", "citation":"noref", "uri":"saints/Nativity+of+the+Blessed+Virgin+Mary/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mt 1:1-16, 18-23", "uri":"saints/Nativity+of+the+Blessed+Virgin+Mary/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Is 7:14; Mt 1:21", "uri":"saints/Nativity+of+the+Blessed+Virgin+Mary/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "Nativity of the Blessed Virgin Mary",
+	"uri": "saints/Nativity+of+the+Blessed+Virgin+Mary",
+	"calendar": "fixed(Sep,8)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "noref",
+			"uri": "saints/Nativity+of+the+Blessed+Virgin+Mary/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Mi 5:1-4a",
+			"uri": "saints/Nativity+of+the+Blessed+Virgin+Mary/reading/1ST"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Rom 8:28-30",
+			"uri": "saints/Nativity+of+the+Blessed+Virgin+Mary/reading/1ST/2"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 13:6ab, 6c",
+			"uri": "saints/Nativity+of+the+Blessed+Virgin+Mary/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "noref",
+			"uri": "saints/Nativity+of+the+Blessed+Virgin+Mary/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 1:1-16, 18-23",
+			"uri": "saints/Nativity+of+the+Blessed+Virgin+Mary/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Is 7:14; Mt 1:21",
+			"uri": "saints/Nativity+of+the+Blessed+Virgin+Mary/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

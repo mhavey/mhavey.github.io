@@ -1,1 +1,57 @@
-{"proper":"saints", "title":"Transfiguration of the Lord", "uri":"saints/Transfiguration+of+the+Lord", "calendar":"fixed(Aug,6)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Mt 17:5", "uri":"saints/Transfiguration+of+the+Lord/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Dn 7:9-10,13-14", "uri":"saints/Transfiguration+of+the+Lord/reading/1ST"}, {"readingType":"PS", "citation":"Ps 97:1-2, 5-6, 9 | resp 1a and 9a", "uri":"saints/Transfiguration+of+the+Lord/reading/PS"}, {"readingType":"2ND", "citation":"2 Pt 1:16-19", "uri":"saints/Transfiguration+of+the+Lord/reading/2ND"}, {"readingType":"GA", "citation":"Mt 17:5c", "uri":"saints/Transfiguration+of+the+Lord/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mt 17:1-9", "note":"Year A", "uri":"saints/Transfiguration+of+the+Lord/reading/GOSPEL"}, {"readingType":"GOSPEL", "citation":"Mk 9:2-10", "note":"Year B", "uri":"saints/Transfiguration+of+the+Lord/reading/GOSPEL/2"}, {"readingType":"GOSPEL", "citation":"Lk 9:28b-36", "note":"Year C", "uri":"saints/Transfiguration+of+the+Lord/reading/GOSPEL/3"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. 1 Jn 3:2", "uri":"saints/Transfiguration+of+the+Lord/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "Transfiguration of the Lord",
+	"uri": "saints/Transfiguration+of+the+Lord",
+	"calendar": "fixed(Aug,6)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Mt 17:5",
+			"uri": "saints/Transfiguration+of+the+Lord/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Dn 7:9-10,13-14",
+			"uri": "saints/Transfiguration+of+the+Lord/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 97:1-2, 5-6, 9 | resp 1a and 9a",
+			"uri": "saints/Transfiguration+of+the+Lord/reading/PS"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "2 Pt 1:16-19",
+			"uri": "saints/Transfiguration+of+the+Lord/reading/2ND"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Mt 17:5c",
+			"uri": "saints/Transfiguration+of+the+Lord/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 17:1-9",
+			"note": "Year A",
+			"uri": "saints/Transfiguration+of+the+Lord/reading/GOSPEL"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mk 9:2-10",
+			"note": "Year B",
+			"uri": "saints/Transfiguration+of+the+Lord/reading/GOSPEL/2"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 9:28b-36",
+			"note": "Year C",
+			"uri": "saints/Transfiguration+of+the+Lord/reading/GOSPEL/3"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. 1 Jn 3:2",
+			"uri": "saints/Transfiguration+of+the+Lord/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

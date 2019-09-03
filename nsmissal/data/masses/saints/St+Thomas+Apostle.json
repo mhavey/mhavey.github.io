@@ -1,1 +1,39 @@
-{"proper":"saints", "title":"St Thomas Apostle", "uri":"saints/St+Thomas+Apostle", "calendar":"fixed(Jul,3)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Ps 118(117):28, 21", "uri":"saints/St+Thomas+Apostle/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Eph 2:19-22", "uri":"saints/St+Thomas+Apostle/reading/1ST"}, {"readingType":"PS", "citation":"Ps 117:1bc, 2 | resp Mk 16:15", "uri":"saints/St+Thomas+Apostle/reading/PS"}, {"readingType":"GA", "citation":"Jn 20:29", "uri":"saints/St+Thomas+Apostle/reading/GA"}, {"readingType":"GOSPEL", "citation":"Jn 20:24-29", "uri":"saints/St+Thomas+Apostle/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Jn 20:27", "uri":"saints/St+Thomas+Apostle/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "St Thomas Apostle",
+	"uri": "saints/St+Thomas+Apostle",
+	"calendar": "fixed(Jul,3)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Ps 118(117):28, 21",
+			"uri": "saints/St+Thomas+Apostle/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Eph 2:19-22",
+			"uri": "saints/St+Thomas+Apostle/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 117:1bc, 2 | resp Mk 16:15",
+			"uri": "saints/St+Thomas+Apostle/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Jn 20:29",
+			"uri": "saints/St+Thomas+Apostle/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 20:24-29",
+			"uri": "saints/St+Thomas+Apostle/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Jn 20:27",
+			"uri": "saints/St+Thomas+Apostle/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

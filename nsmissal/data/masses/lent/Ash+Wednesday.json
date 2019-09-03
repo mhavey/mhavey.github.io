@@ -1,1 +1,58 @@
-{"proper":"time", "season":"lent", "title":"Ash Wednesday", "uri":"lent/Ash+Wednesday", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Wis 11:24, 25, 27", "uri":"lent/Ash+Wednesday/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Jl 2:12-18", "uri":"lent/Ash+Wednesday/reading/1ST"}, {"readingType":"PS", "citation":"Ps 51:3-4, 5-6ab, 12-13, 14 and 17 | resp Cf. 3a", "uri":"lent/Ash+Wednesday/reading/PS"}, {"readingType":"2ND", "citation":"2 Cor 5:20-6:2", "uri":"lent/Ash+Wednesday/reading/2ND"}, {"readingType":"GOSPELVERSE", "citation":"Cf. Ps 95:8", "uri":"lent/Ash+Wednesday/reading/GOSPELVERSE"}, {"readingType":"GOSPEL", "citation":"Mt 6:1-6, 16-18", "uri":"lent/Ash+Wednesday/reading/GOSPEL"}, {"readingType":"ANTIPHON 1", "citation":"Cf. Jl 2:17; Est 4:17", "uri":"lent/Ash+Wednesday/reading/ANTIPHON+1"}, {"readingType":"ANTIPHON 2", "citation":"Ps 51 (50): 3", "uri":"lent/Ash+Wednesday/reading/ANTIPHON+2"}, {"readingType":"RESPONSORY", "citation":"Cf. Bar 3:2; Ps 79(78): 9", "uri":"lent/Ash+Wednesday/reading/RESPONSORY"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Ps 1:2-3", "uri":"lent/Ash+Wednesday/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "time",
+	"season": "lent",
+	"title": "Ash Wednesday",
+	"uri": "lent/Ash+Wednesday",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Wis 11:24, 25, 27",
+			"uri": "lent/Ash+Wednesday/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Jl 2:12-18",
+			"uri": "lent/Ash+Wednesday/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 51:3-4, 5-6ab, 12-13, 14 and 17 | resp Cf. 3a",
+			"uri": "lent/Ash+Wednesday/reading/PS"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "2 Cor 5:20-6:2",
+			"uri": "lent/Ash+Wednesday/reading/2ND"
+		},
+		{
+			"readingType": "GOSPELVERSE",
+			"citation": "Cf. Ps 95:8",
+			"uri": "lent/Ash+Wednesday/reading/GOSPELVERSE"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 6:1-6, 16-18",
+			"uri": "lent/Ash+Wednesday/reading/GOSPEL"
+		},
+		{
+			"readingType": "ANTIPHON 1",
+			"citation": "Cf. Jl 2:17; Est 4:17",
+			"uri": "lent/Ash+Wednesday/reading/ANTIPHON+1"
+		},
+		{
+			"readingType": "ANTIPHON 2",
+			"citation": "Ps 51 (50): 3",
+			"uri": "lent/Ash+Wednesday/reading/ANTIPHON+2"
+		},
+		{
+			"readingType": "RESPONSORY",
+			"citation": "Cf. Bar 3:2; Ps 79(78): 9",
+			"uri": "lent/Ash+Wednesday/reading/RESPONSORY"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Ps 1:2-3",
+			"uri": "lent/Ash+Wednesday/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

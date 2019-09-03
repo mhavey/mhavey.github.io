@@ -1,1 +1,112 @@
-{"proper":"time", "season":"ordinary", "title":"Most Holy Body and Blood of Christ", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ", "note":"Sunday after Trinity", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Ps 81(80): 17", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/reading/ENTRANCE+ANTIPHON"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Jn 6:57", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/reading/COMMUNION+ANTIPHON"}, {"title":"A", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/A", "readings":[{"readingType":"1ST", "citation":"Dt 8:2-3, 14b-16a", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/1ST"}, {"readingType":"PS", "citation":"Ps 147:12-13, 14-15, 19-20 | resp 12", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/PS"}, {"readingType":"2ND", "citation":"1 Cor 10:16-17", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/2ND"}, {"readingType":"GA", "citation":"Jn 6:51", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/GA"}, {"readingType":"GOSPEL", "citation":"Jn 6:51-58", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/GOSPEL"}]}, {"title":"B", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/B", "readings":[{"readingType":"1ST", "citation":"Ex 24:3-8", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/1ST"}, {"readingType":"PS", "citation":"Ps 116:12-13, 15-16, 17-18 | resp 13", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/PS"}, {"readingType":"2ND", "citation":"Heb 9:11-15", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/2ND"}, {"readingType":"GA", "citation":"Jn 6:51", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mk 14:12-16, 22-26", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/GOSPEL"}]}, {"title":"C", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/C", "readings":[{"readingType":"1ST", "citation":"Gn 14:18-20", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/1ST"}, {"readingType":"PS", "citation":"Ps 110:1, 2, 3, 4 | resp 4b", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/PS"}, {"readingType":"2ND", "citation":"1 Cor 11:23-26", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/2ND"}, {"readingType":"GA", "citation":"Jn 6:51", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/GA"}, {"readingType":"GOSPEL", "citation":"Lk 9:11b-17", "uri":"ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/GOSPEL"}]}]}
+{
+	"proper": "time",
+	"season": "ordinary",
+	"title": "Most Holy Body and Blood of Christ",
+	"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ",
+	"note": "Sunday after Trinity",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Ps 81(80): 17",
+			"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 6:57",
+			"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"title": "A",
+			"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/A",
+			"readings": [
+				{
+					"readingType": "1ST",
+					"citation": "Dt 8:2-3, 14b-16a",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 147:12-13, 14-15, 19-20 | resp 12",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/PS"
+				},
+				{
+					"readingType": "2ND",
+					"citation": "1 Cor 10:16-17",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/2ND"
+				},
+				{
+					"readingType": "GA",
+					"citation": "Jn 6:51",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Jn 6:51-58",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/A/reading/GOSPEL"
+				}
+			]
+		},
+		{
+			"title": "B",
+			"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/B",
+			"readings": [
+				{
+					"readingType": "1ST",
+					"citation": "Ex 24:3-8",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 116:12-13, 15-16, 17-18 | resp 13",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/PS"
+				},
+				{
+					"readingType": "2ND",
+					"citation": "Heb 9:11-15",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/2ND"
+				},
+				{
+					"readingType": "GA",
+					"citation": "Jn 6:51",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mk 14:12-16, 22-26",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/B/reading/GOSPEL"
+				}
+			]
+		},
+		{
+			"title": "C",
+			"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/C",
+			"readings": [
+				{
+					"readingType": "1ST",
+					"citation": "Gn 14:18-20",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 110:1, 2, 3, 4 | resp 4b",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/PS"
+				},
+				{
+					"readingType": "2ND",
+					"citation": "1 Cor 11:23-26",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/2ND"
+				},
+				{
+					"readingType": "GA",
+					"citation": "Jn 6:51",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 9:11b-17",
+					"uri": "ordinary/Most+Holy+Body+and+Blood+of+Christ/C/reading/GOSPEL"
+				}
+			]
+		}
+	]
+}

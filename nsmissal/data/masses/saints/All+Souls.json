@@ -1,1 +1,410 @@
-{"proper":"saints", "title":"All Souls", "uri":"saints/All+Souls", "calendar":"fixed(Nov,2)", "rank":"Solemnity", "note":"readings from the masses for the dead", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. 1 Thes 4:14; 1 Cor 15:22", "uri":"saints/All+Souls/reading/ENTRANCE+ANTIPHON"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Jn 11:25-26", "uri":"saints/All+Souls/reading/COMMUNION+ANTIPHON"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. 4 Esdr 2:24-35", "uri":"saints/All+Souls/reading/ENTRANCE+ANTIPHON/2"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. 4 Esdr 2:35,34", "uri":"saints/All+Souls/reading/COMMUNION+ANTIPHON/2"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Rom 8:11", "uri":"saints/All+Souls/reading/ENTRANCE+ANTIPHON/3"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Phil 3:20-21", "uri":"saints/All+Souls/reading/COMMUNION+ANTIPHON/3"}, {"readingType":"1ST", "citation":"2 Mc 12:43-46", "uri":"saints/All+Souls/reading/1ST"}, {"readingType":"1ST", "citation":"Jb 19:1, 23-27a", "uri":"saints/All+Souls/reading/1ST/2"}, {"readingType":"1ST", "citation":"Wis 3:1-9", "uri":"saints/All+Souls/reading/1ST/3"}, {"readingType":"1ST", "citation":"Wis 3:1-6, 9", "uri":"saints/All+Souls/reading/1ST/4"}, {"readingType":"1ST", "citation":"Wis 4:7-15", "uri":"saints/All+Souls/reading/1ST/5"}, {"readingType":"1ST", "citation":"Is 25: 6a, 7-9", "uri":"saints/All+Souls/reading/1ST/6"}, {"readingType":"1ST", "citation":"Lam 3:17-26", "uri":"saints/All+Souls/reading/1ST/7"}, {"readingType":"1ST", "citation":"Dn 12:1-3", "uri":"saints/All+Souls/reading/1ST/8"}, {"readingType":"1ST", "citation":"Acts 10:34-43", "uri":"saints/All+Souls/reading/1ST/9"}, {"readingType":"1ST", "citation":"Acts 10:34-36, 42-43", "uri":"saints/All+Souls/reading/1ST/10"}, {"readingType":"1ST", "citation":"Rev 20:11-21:1", "uri":"saints/All+Souls/reading/1ST/11"}, {"readingType":"1ST", "citation":"Rev 21:1-5a,6b-7", "uri":"saints/All+Souls/reading/1ST/12"}, {"readingType":"PS", "citation":"Ps 23:1-3, 4, 5, 6 | resp 1 or 4ab", "uri":"saints/All+Souls/reading/PS"}, {"readingType":"PS", "citation":"Ps 25:6 and 7b, 17-18, 20-21  | resp 1 or 3a", "uri":"saints/All+Souls/reading/PS/2"}, {"readingType":"PS", "citation":"Ps 27:1, 4, 7 and 8b and 9a, 13-14 | resp 1a or 13", "uri":"saints/All+Souls/reading/PS/3"}, {"readingType":"PS", "citation":"Ps 42:2, 3, 5cdef; 43:3, 4, 5 | resp 42:3", "uri":"saints/All+Souls/reading/PS/4"}, {"readingType":"PS", "citation":"Ps 63:2, 3-4, 5-6, 8-9 | resp 2b", "uri":"saints/All+Souls/reading/PS/5"}, {"readingType":"PS", "citation":"Ps 103: 8 and 10, 13-14, 15-16, 17-18 | resp 8a or 37:39", "uri":"saints/All+Souls/reading/PS/6"}, {"readingType":"PS", "citation":"Ps 116:5, 6, 10-11, 15-16ac | resp 9", "uri":"saints/All+Souls/reading/PS/7"}, {"readingType":"PS", "citation":"Ps 122:1-2,4-5,6-7, 8-9 | resp 1 or Cf. 1", "uri":"saints/All+Souls/reading/PS/8"}, {"readingType":"PS", "citation":"Ps 130: 1-2, 3-4, 5-6ab, 6c-7, 8 | resp 1 or Cf. 50", "uri":"saints/All+Souls/reading/PS/9"}, {"readingType":"PS", "citation":"Ps 143: 1-2, 5-6, 7ab and 8ab, 10 | resp 1a", "uri":"saints/All+Souls/reading/PS/10"}, {"readingType":"2ND", "citation":"Rom 5:5-11", "uri":"saints/All+Souls/reading/2ND"}, {"readingType":"2ND", "citation":"Rom 5:17-21", "uri":"saints/All+Souls/reading/2ND/2"}, {"readingType":"2ND", "citation":"Rom 6:3-9", "uri":"saints/All+Souls/reading/2ND/3"}, {"readingType":"2ND", "citation":"Rom 6:3-4, 8-9", "uri":"saints/All+Souls/reading/2ND/4"}, {"readingType":"2ND", "citation":"Rom 8:14-23", "uri":"saints/All+Souls/reading/2ND/5"}, {"readingType":"2ND", "citation":"Rom 8:31b-35, 37-39", "uri":"saints/All+Souls/reading/2ND/6"}, {"readingType":"2ND", "citation":"Rom 14:7-9, 10c-12", "uri":"saints/All+Souls/reading/2ND/7"}, {"readingType":"2ND", "citation":"1 Cor 15:20-28", "uri":"saints/All+Souls/reading/2ND/8"}, {"readingType":"2ND", "citation":"1 Cor 15:20-23", "uri":"saints/All+Souls/reading/2ND/9"}, {"readingType":"2ND", "citation":"1 Cor 15:51-57", "uri":"saints/All+Souls/reading/2ND/10"}, {"readingType":"2ND", "citation":"2 Cor 4:14-5:1", "uri":"saints/All+Souls/reading/2ND/11"}, {"readingType":"2ND", "citation":"2 Cor 5:1, 6-10", "uri":"saints/All+Souls/reading/2ND/12"}, {"readingType":"2ND", "citation":"Phil 3:20-21", "uri":"saints/All+Souls/reading/2ND/13"}, {"readingType":"2ND", "citation":"1 Thes 4:13-18", "uri":"saints/All+Souls/reading/2ND/14"}, {"readingType":"2ND", "citation":"2 Tm 2:8-13", "uri":"saints/All+Souls/reading/2ND/15"}, {"readingType":"2ND", "citation":"1 Jn 3:1-2", "uri":"saints/All+Souls/reading/2ND/16"}, {"readingType":"2ND", "citation":"1 Jn 3:14-16", "uri":"saints/All+Souls/reading/2ND/17"}, {"readingType":"GA", "citation":"Cf. Mt 11:25", "uri":"saints/All+Souls/reading/GA"}, {"readingType":"GA", "citation":"Mt 25:34", "uri":"saints/All+Souls/reading/GA/2"}, {"readingType":"GA", "citation":"Jn 3:16", "uri":"saints/All+Souls/reading/GA/3"}, {"readingType":"GA", "citation":"Jn 6:39", "uri":"saints/All+Souls/reading/GA/4"}, {"readingType":"GA", "citation":"Jn 6:40", "uri":"saints/All+Souls/reading/GA/5"}, {"readingType":"GA", "citation":"Jn 6:51", "uri":"saints/All+Souls/reading/GA/6"}, {"readingType":"GA", "citation":"Jn 11:25a, 26", "uri":"saints/All+Souls/reading/GA/7"}, {"readingType":"GA", "citation":"Cf. Phil 3:20", "uri":"saints/All+Souls/reading/GA/8"}, {"readingType":"GA", "citation":"2 Tm 2:11-12a", "uri":"saints/All+Souls/reading/GA/9"}, {"readingType":"GA", "citation":"Rev 1:5a, 6b", "uri":"saints/All+Souls/reading/GA/10"}, {"readingType":"GA", "citation":"Rev 14:13", "uri":"saints/All+Souls/reading/GA/11"}, {"readingType":"GOSPEL", "citation":"Mt 5:1-12a", "uri":"saints/All+Souls/reading/GOSPEL"}, {"readingType":"GOSPEL", "citation":"Mt 11:25-30", "uri":"saints/All+Souls/reading/GOSPEL/2"}, {"readingType":"GOSPEL", "citation":"Mt 25:1-13", "uri":"saints/All+Souls/reading/GOSPEL/3"}, {"readingType":"GOSPEL", "citation":"Mt 25:31-46", "uri":"saints/All+Souls/reading/GOSPEL/4"}, {"readingType":"GOSPEL", "citation":"Mk 15:33-39; 16:1-6", "uri":"saints/All+Souls/reading/GOSPEL/5"}, {"readingType":"GOSPEL", "citation":"Mk 15:33-39", "uri":"saints/All+Souls/reading/GOSPEL/6"}, {"readingType":"GOSPEL", "citation":"Lk 7:11-17", "uri":"saints/All+Souls/reading/GOSPEL/7"}, {"readingType":"GOSPEL", "citation":"Lk 12:35-40", "uri":"saints/All+Souls/reading/GOSPEL/8"}, {"readingType":"GOSPEL", "citation":"Lk 23:33, 39-43", "uri":"saints/All+Souls/reading/GOSPEL/9"}, {"readingType":"GOSPEL", "citation":"Lk 23:44-46, 50, 52-53; 24:1-6a", "uri":"saints/All+Souls/reading/GOSPEL/10"}, {"readingType":"GOSPEL", "citation":"Lk 23:44-46, 50, 52-53", "uri":"saints/All+Souls/reading/GOSPEL/11"}, {"readingType":"GOSPEL", "citation":"Lk 24:13-35", "uri":"saints/All+Souls/reading/GOSPEL/12"}, {"readingType":"GOSPEL", "citation":"Lk 24:13-16, 28-35", "uri":"saints/All+Souls/reading/GOSPEL/13"}, {"readingType":"GOSPEL", "citation":"Jn 5:24-29", "uri":"saints/All+Souls/reading/GOSPEL/14"}, {"readingType":"GOSPEL", "citation":"Jn 6:37-40", "uri":"saints/All+Souls/reading/GOSPEL/15"}, {"readingType":"GOSPEL", "citation":"Jn 6:51-58", "uri":"saints/All+Souls/reading/GOSPEL/16"}, {"readingType":"GOSPEL", "citation":"Jn 11:17-27", "uri":"saints/All+Souls/reading/GOSPEL/17"}, {"readingType":"GOSPEL", "citation":"Jn 11:21-27", "uri":"saints/All+Souls/reading/GOSPEL/18"}, {"readingType":"GOSPEL", "citation":"Jn 11:32-45", "uri":"saints/All+Souls/reading/GOSPEL/19"}, {"readingType":"GOSPEL", "citation":"Jn 12:23-28", "uri":"saints/All+Souls/reading/GOSPEL/20"}, {"readingType":"GOSPEL", "citation":"Jn 12:23-36", "uri":"saints/All+Souls/reading/GOSPEL/21"}, {"readingType":"GOSPEL", "citation":"Jn 14:1-6", "uri":"saints/All+Souls/reading/GOSPEL/22"}, {"readingType":"GOSPEL", "citation":"Jn 17:24-26", "uri":"saints/All+Souls/reading/GOSPEL/23"}, {"readingType":"GOSPEL", "citation":"Jn 19:17-18, 25-39", "uri":"saints/All+Souls/reading/GOSPEL/24"}]}
+{
+	"proper": "saints",
+	"title": "All Souls",
+	"uri": "saints/All+Souls",
+	"calendar": "fixed(Nov,2)",
+	"rank": "Solemnity",
+	"note": "readings from the masses for the dead",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. 1 Thes 4:14; 1 Cor 15:22",
+			"uri": "saints/All+Souls/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Jn 11:25-26",
+			"uri": "saints/All+Souls/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. 4 Esdr 2:24-35",
+			"uri": "saints/All+Souls/reading/ENTRANCE+ANTIPHON/2"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. 4 Esdr 2:35,34",
+			"uri": "saints/All+Souls/reading/COMMUNION+ANTIPHON/2"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Rom 8:11",
+			"uri": "saints/All+Souls/reading/ENTRANCE+ANTIPHON/3"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Phil 3:20-21",
+			"uri": "saints/All+Souls/reading/COMMUNION+ANTIPHON/3"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "2 Mc 12:43-46",
+			"uri": "saints/All+Souls/reading/1ST"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Jb 19:1, 23-27a",
+			"uri": "saints/All+Souls/reading/1ST/2"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Wis 3:1-9",
+			"uri": "saints/All+Souls/reading/1ST/3"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Wis 3:1-6, 9",
+			"uri": "saints/All+Souls/reading/1ST/4"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Wis 4:7-15",
+			"uri": "saints/All+Souls/reading/1ST/5"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Is 25: 6a, 7-9",
+			"uri": "saints/All+Souls/reading/1ST/6"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Lam 3:17-26",
+			"uri": "saints/All+Souls/reading/1ST/7"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Dn 12:1-3",
+			"uri": "saints/All+Souls/reading/1ST/8"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Acts 10:34-43",
+			"uri": "saints/All+Souls/reading/1ST/9"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Acts 10:34-36, 42-43",
+			"uri": "saints/All+Souls/reading/1ST/10"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Rev 20:11-21:1",
+			"uri": "saints/All+Souls/reading/1ST/11"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Rev 21:1-5a,6b-7",
+			"uri": "saints/All+Souls/reading/1ST/12"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 23:1-3, 4, 5, 6 | resp 1 or 4ab",
+			"uri": "saints/All+Souls/reading/PS"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 25:6 and 7b, 17-18, 20-21  | resp 1 or 3a",
+			"uri": "saints/All+Souls/reading/PS/2"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 27:1, 4, 7 and 8b and 9a, 13-14 | resp 1a or 13",
+			"uri": "saints/All+Souls/reading/PS/3"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 42:2, 3, 5cdef; 43:3, 4, 5 | resp 42:3",
+			"uri": "saints/All+Souls/reading/PS/4"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 63:2, 3-4, 5-6, 8-9 | resp 2b",
+			"uri": "saints/All+Souls/reading/PS/5"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 103: 8 and 10, 13-14, 15-16, 17-18 | resp 8a or 37:39",
+			"uri": "saints/All+Souls/reading/PS/6"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 116:5, 6, 10-11, 15-16ac | resp 9",
+			"uri": "saints/All+Souls/reading/PS/7"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 122:1-2,4-5,6-7, 8-9 | resp 1 or Cf. 1",
+			"uri": "saints/All+Souls/reading/PS/8"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 130: 1-2, 3-4, 5-6ab, 6c-7, 8 | resp 1 or Cf. 50",
+			"uri": "saints/All+Souls/reading/PS/9"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 143: 1-2, 5-6, 7ab and 8ab, 10 | resp 1a",
+			"uri": "saints/All+Souls/reading/PS/10"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Rom 5:5-11",
+			"uri": "saints/All+Souls/reading/2ND"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Rom 5:17-21",
+			"uri": "saints/All+Souls/reading/2ND/2"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Rom 6:3-9",
+			"uri": "saints/All+Souls/reading/2ND/3"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Rom 6:3-4, 8-9",
+			"uri": "saints/All+Souls/reading/2ND/4"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Rom 8:14-23",
+			"uri": "saints/All+Souls/reading/2ND/5"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Rom 8:31b-35, 37-39",
+			"uri": "saints/All+Souls/reading/2ND/6"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Rom 14:7-9, 10c-12",
+			"uri": "saints/All+Souls/reading/2ND/7"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "1 Cor 15:20-28",
+			"uri": "saints/All+Souls/reading/2ND/8"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "1 Cor 15:20-23",
+			"uri": "saints/All+Souls/reading/2ND/9"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "1 Cor 15:51-57",
+			"uri": "saints/All+Souls/reading/2ND/10"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "2 Cor 4:14-5:1",
+			"uri": "saints/All+Souls/reading/2ND/11"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "2 Cor 5:1, 6-10",
+			"uri": "saints/All+Souls/reading/2ND/12"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Phil 3:20-21",
+			"uri": "saints/All+Souls/reading/2ND/13"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "1 Thes 4:13-18",
+			"uri": "saints/All+Souls/reading/2ND/14"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "2 Tm 2:8-13",
+			"uri": "saints/All+Souls/reading/2ND/15"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "1 Jn 3:1-2",
+			"uri": "saints/All+Souls/reading/2ND/16"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "1 Jn 3:14-16",
+			"uri": "saints/All+Souls/reading/2ND/17"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Cf. Mt 11:25",
+			"uri": "saints/All+Souls/reading/GA"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Mt 25:34",
+			"uri": "saints/All+Souls/reading/GA/2"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Jn 3:16",
+			"uri": "saints/All+Souls/reading/GA/3"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Jn 6:39",
+			"uri": "saints/All+Souls/reading/GA/4"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Jn 6:40",
+			"uri": "saints/All+Souls/reading/GA/5"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Jn 6:51",
+			"uri": "saints/All+Souls/reading/GA/6"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Jn 11:25a, 26",
+			"uri": "saints/All+Souls/reading/GA/7"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Cf. Phil 3:20",
+			"uri": "saints/All+Souls/reading/GA/8"
+		},
+		{
+			"readingType": "GA",
+			"citation": "2 Tm 2:11-12a",
+			"uri": "saints/All+Souls/reading/GA/9"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Rev 1:5a, 6b",
+			"uri": "saints/All+Souls/reading/GA/10"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Rev 14:13",
+			"uri": "saints/All+Souls/reading/GA/11"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 5:1-12a",
+			"uri": "saints/All+Souls/reading/GOSPEL"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 11:25-30",
+			"uri": "saints/All+Souls/reading/GOSPEL/2"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 25:1-13",
+			"uri": "saints/All+Souls/reading/GOSPEL/3"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 25:31-46",
+			"uri": "saints/All+Souls/reading/GOSPEL/4"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mk 15:33-39; 16:1-6",
+			"uri": "saints/All+Souls/reading/GOSPEL/5"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mk 15:33-39",
+			"uri": "saints/All+Souls/reading/GOSPEL/6"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 7:11-17",
+			"uri": "saints/All+Souls/reading/GOSPEL/7"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 12:35-40",
+			"uri": "saints/All+Souls/reading/GOSPEL/8"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 23:33, 39-43",
+			"uri": "saints/All+Souls/reading/GOSPEL/9"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 23:44-46, 50, 52-53; 24:1-6a",
+			"uri": "saints/All+Souls/reading/GOSPEL/10"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 23:44-46, 50, 52-53",
+			"uri": "saints/All+Souls/reading/GOSPEL/11"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 24:13-35",
+			"uri": "saints/All+Souls/reading/GOSPEL/12"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 24:13-16, 28-35",
+			"uri": "saints/All+Souls/reading/GOSPEL/13"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 5:24-29",
+			"uri": "saints/All+Souls/reading/GOSPEL/14"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 6:37-40",
+			"uri": "saints/All+Souls/reading/GOSPEL/15"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 6:51-58",
+			"uri": "saints/All+Souls/reading/GOSPEL/16"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 11:17-27",
+			"uri": "saints/All+Souls/reading/GOSPEL/17"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 11:21-27",
+			"uri": "saints/All+Souls/reading/GOSPEL/18"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 11:32-45",
+			"uri": "saints/All+Souls/reading/GOSPEL/19"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 12:23-28",
+			"uri": "saints/All+Souls/reading/GOSPEL/20"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 12:23-36",
+			"uri": "saints/All+Souls/reading/GOSPEL/21"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 14:1-6",
+			"uri": "saints/All+Souls/reading/GOSPEL/22"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 17:24-26",
+			"uri": "saints/All+Souls/reading/GOSPEL/23"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 19:17-18, 25-39",
+			"uri": "saints/All+Souls/reading/GOSPEL/24"
+		}
+	]
+}

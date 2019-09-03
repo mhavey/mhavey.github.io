@@ -1,1 +1,131 @@
-{"proper":"time", "season":"lent", "title":"Palm Sunday", "uri":"lent/Palm+Sunday", "readings":[{"title":"Procession", "uri":"lent/Palm+Sunday/Procession", "readings":[{"readingType":"ANTIPHON", "citation":"Mt 21:9", "uri":"lent/Palm+Sunday/Procession/reading/ANTIPHON"}, {"readingType":"ANTIPHON 1", "citation":"Ps 24(23)", "uri":"lent/Palm+Sunday/Procession/reading/ANTIPHON+1"}, {"readingType":"ANTIPHON 2", "citation":"Ps 47(46)", "uri":"lent/Palm+Sunday/Procession/reading/ANTIPHON+2"}, {"title":"A", "uri":"lent/Palm+Sunday/Procession/A", "readings":[{"readingType":"GOSPEL", "citation":"Mt 21:1-11", "uri":"lent/Palm+Sunday/Procession/A/reading/GOSPEL"}]}, {"title":"B", "uri":"lent/Palm+Sunday/Procession/B", "readings":[{"readingType":"GOSPEL", "citation":"Mk 11:1-10", "uri":"lent/Palm+Sunday/Procession/B/reading/GOSPEL"}]}, {"title":"C", "uri":"lent/Palm+Sunday/Procession/C", "readings":[{"readingType":"GOSPEL", "citation":"Lk 19:28-40", "uri":"lent/Palm+Sunday/Procession/C/reading/GOSPEL"}]}]}, {"title":"Mass", "uri":"lent/Palm+Sunday/Mass", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Jn 12:1, 12-13; Ps 24(23): 9-10", "uri":"lent/Palm+Sunday/Mass/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Is 50:4-7", "uri":"lent/Palm+Sunday/Mass/reading/1ST"}, {"readingType":"PS", "citation":"Ps 22:8-9, 17-18, 19-20, 23-24 | resp 2a", "uri":"lent/Palm+Sunday/Mass/reading/PS"}, {"readingType":"2ND", "citation":"Phil 2:6-11", "uri":"lent/Palm+Sunday/Mass/reading/2ND"}, {"readingType":"GOSPELVERSE", "citation":"Phil 2:8-9", "uri":"lent/Palm+Sunday/Mass/reading/GOSPELVERSE"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Mt 26:42", "uri":"lent/Palm+Sunday/Mass/reading/COMMUNION+ANTIPHON"}, {"title":"A", "uri":"lent/Palm+Sunday/Mass/A", "readings":[{"readingType":"GOSPEL", "citation":"Mt 26:14-27:66", "uri":"lent/Palm+Sunday/Mass/A/reading/GOSPEL"}]}, {"title":"B", "uri":"lent/Palm+Sunday/Mass/B", "readings":[{"readingType":"GOSPEL", "citation":"Mk 14:1-15:47", "uri":"lent/Palm+Sunday/Mass/B/reading/GOSPEL"}]}, {"title":"C", "uri":"lent/Palm+Sunday/Mass/C", "readings":[{"readingType":"GOSPEL", "citation":"Lk 22:14-23:56", "uri":"lent/Palm+Sunday/Mass/C/reading/GOSPEL"}]}]}]}
+{
+	"proper": "time",
+	"season": "lent",
+	"title": "Palm Sunday",
+	"uri": "lent/Palm+Sunday",
+	"readings": [
+		{
+			"title": "Procession",
+			"uri": "lent/Palm+Sunday/Procession",
+			"readings": [
+				{
+					"readingType": "ANTIPHON",
+					"citation": "Mt 21:9",
+					"uri": "lent/Palm+Sunday/Procession/reading/ANTIPHON"
+				},
+				{
+					"readingType": "ANTIPHON 1",
+					"citation": "Ps 24(23)",
+					"uri": "lent/Palm+Sunday/Procession/reading/ANTIPHON+1"
+				},
+				{
+					"readingType": "ANTIPHON 2",
+					"citation": "Ps 47(46)",
+					"uri": "lent/Palm+Sunday/Procession/reading/ANTIPHON+2"
+				},
+				{
+					"title": "A",
+					"uri": "lent/Palm+Sunday/Procession/A",
+					"readings": [
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mt 21:1-11",
+							"uri": "lent/Palm+Sunday/Procession/A/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "B",
+					"uri": "lent/Palm+Sunday/Procession/B",
+					"readings": [
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mk 11:1-10",
+							"uri": "lent/Palm+Sunday/Procession/B/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "C",
+					"uri": "lent/Palm+Sunday/Procession/C",
+					"readings": [
+						{
+							"readingType": "GOSPEL",
+							"citation": "Lk 19:28-40",
+							"uri": "lent/Palm+Sunday/Procession/C/reading/GOSPEL"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Mass",
+			"uri": "lent/Palm+Sunday/Mass",
+			"readings": [
+				{
+					"readingType": "ENTRANCE ANTIPHON",
+					"citation": "Cf. Jn 12:1, 12-13; Ps 24(23): 9-10",
+					"uri": "lent/Palm+Sunday/Mass/reading/ENTRANCE+ANTIPHON"
+				},
+				{
+					"readingType": "1ST",
+					"citation": "Is 50:4-7",
+					"uri": "lent/Palm+Sunday/Mass/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 22:8-9, 17-18, 19-20, 23-24 | resp 2a",
+					"uri": "lent/Palm+Sunday/Mass/reading/PS"
+				},
+				{
+					"readingType": "2ND",
+					"citation": "Phil 2:6-11",
+					"uri": "lent/Palm+Sunday/Mass/reading/2ND"
+				},
+				{
+					"readingType": "GOSPELVERSE",
+					"citation": "Phil 2:8-9",
+					"uri": "lent/Palm+Sunday/Mass/reading/GOSPELVERSE"
+				},
+				{
+					"readingType": "COMMUNION ANTIPHON",
+					"citation": "Mt 26:42",
+					"uri": "lent/Palm+Sunday/Mass/reading/COMMUNION+ANTIPHON"
+				},
+				{
+					"title": "A",
+					"uri": "lent/Palm+Sunday/Mass/A",
+					"readings": [
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mt 26:14-27:66",
+							"uri": "lent/Palm+Sunday/Mass/A/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "B",
+					"uri": "lent/Palm+Sunday/Mass/B",
+					"readings": [
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mk 14:1-15:47",
+							"uri": "lent/Palm+Sunday/Mass/B/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "C",
+					"uri": "lent/Palm+Sunday/Mass/C",
+					"readings": [
+						{
+							"readingType": "GOSPEL",
+							"citation": "Lk 22:14-23:56",
+							"uri": "lent/Palm+Sunday/Mass/C/reading/GOSPEL"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,1 +1,111 @@
-{"proper":"time", "season":"christmas", "title":"Baptism of the Lord", "uri":"christmas/Baptism+of+the+Lord", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Mt 3:16-17", "uri":"christmas/Baptism+of+the+Lord/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Is 42:1-4,6-7", "uri":"christmas/Baptism+of+the+Lord/reading/1ST"}, {"readingType":"PS", "citation":"Ps 29:1-2, 3-4, 3, 9-10 | resp 11b", "uri":"christmas/Baptism+of+the+Lord/reading/PS"}, {"readingType":"2ND", "citation":"Acts 10:34-38", "uri":"christmas/Baptism+of+the+Lord/reading/2ND"}, {"readingType":"GA", "citation":"Cf. Mk 9:7", "uri":"christmas/Baptism+of+the+Lord/reading/GA"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Jn 1:32, 34", "uri":"christmas/Baptism+of+the+Lord/reading/COMMUNION+ANTIPHON"}, {"title":"A", "uri":"christmas/Baptism+of+the+Lord/A", "readings":[{"readingType":"GOSPEL", "citation":"Mt 3:13-17", "uri":"christmas/Baptism+of+the+Lord/A/reading/GOSPEL"}]}, {"title":"B", "uri":"christmas/Baptism+of+the+Lord/B", "readings":[{"readingType":"1ST", "citation":"Is 55:1-11", "uri":"christmas/Baptism+of+the+Lord/B/reading/1ST"}, {"readingType":"PS", "citation":"Is 12:2-3, 4bcd, 5-6 | response 3", "uri":"christmas/Baptism+of+the+Lord/B/reading/PS"}, {"readingType":"2ND", "citation":"1 Jn 5:1-9", "uri":"christmas/Baptism+of+the+Lord/B/reading/2ND"}, {"readingType":"GA", "citation":"Cf. Jn 1:29", "uri":"christmas/Baptism+of+the+Lord/B/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mk 1:7-11", "uri":"christmas/Baptism+of+the+Lord/B/reading/GOSPEL"}]}, {"title":"C", "uri":"christmas/Baptism+of+the+Lord/C", "readings":[{"readingType":"1ST", "citation":"Is 40:1-5,9-11", "uri":"christmas/Baptism+of+the+Lord/C/reading/1ST"}, {"readingType":"PS", "citation":"Ps 104:1b-2, 3-4, 24-25, 27-28, 29-30 | resp 1", "uri":"christmas/Baptism+of+the+Lord/C/reading/PS"}, {"readingType":"2ND", "citation":"Ti 2:11-14; 3:4-7", "uri":"christmas/Baptism+of+the+Lord/C/reading/2ND"}, {"readingType":"GA", "citation":"Cf. Lk 3:16", "uri":"christmas/Baptism+of+the+Lord/C/reading/GA"}, {"readingType":"GOSPEL", "citation":"Lk 3:15-16, 21-22", "uri":"christmas/Baptism+of+the+Lord/C/reading/GOSPEL"}]}]}
+{
+	"proper": "time",
+	"season": "christmas",
+	"title": "Baptism of the Lord",
+	"uri": "christmas/Baptism+of+the+Lord",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Mt 3:16-17",
+			"uri": "christmas/Baptism+of+the+Lord/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Is 42:1-4,6-7",
+			"uri": "christmas/Baptism+of+the+Lord/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 29:1-2, 3-4, 3, 9-10 | resp 11b",
+			"uri": "christmas/Baptism+of+the+Lord/reading/PS"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Acts 10:34-38",
+			"uri": "christmas/Baptism+of+the+Lord/reading/2ND"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Cf. Mk 9:7",
+			"uri": "christmas/Baptism+of+the+Lord/reading/GA"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 1:32, 34",
+			"uri": "christmas/Baptism+of+the+Lord/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"title": "A",
+			"uri": "christmas/Baptism+of+the+Lord/A",
+			"readings": [
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 3:13-17",
+					"uri": "christmas/Baptism+of+the+Lord/A/reading/GOSPEL"
+				}
+			]
+		},
+		{
+			"title": "B",
+			"uri": "christmas/Baptism+of+the+Lord/B",
+			"readings": [
+				{
+					"readingType": "1ST",
+					"citation": "Is 55:1-11",
+					"uri": "christmas/Baptism+of+the+Lord/B/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Is 12:2-3, 4bcd, 5-6 | response 3",
+					"uri": "christmas/Baptism+of+the+Lord/B/reading/PS"
+				},
+				{
+					"readingType": "2ND",
+					"citation": "1 Jn 5:1-9",
+					"uri": "christmas/Baptism+of+the+Lord/B/reading/2ND"
+				},
+				{
+					"readingType": "GA",
+					"citation": "Cf. Jn 1:29",
+					"uri": "christmas/Baptism+of+the+Lord/B/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mk 1:7-11",
+					"uri": "christmas/Baptism+of+the+Lord/B/reading/GOSPEL"
+				}
+			]
+		},
+		{
+			"title": "C",
+			"uri": "christmas/Baptism+of+the+Lord/C",
+			"readings": [
+				{
+					"readingType": "1ST",
+					"citation": "Is 40:1-5,9-11",
+					"uri": "christmas/Baptism+of+the+Lord/C/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 104:1b-2, 3-4, 24-25, 27-28, 29-30 | resp 1",
+					"uri": "christmas/Baptism+of+the+Lord/C/reading/PS"
+				},
+				{
+					"readingType": "2ND",
+					"citation": "Ti 2:11-14; 3:4-7",
+					"uri": "christmas/Baptism+of+the+Lord/C/reading/2ND"
+				},
+				{
+					"readingType": "GA",
+					"citation": "Cf. Lk 3:16",
+					"uri": "christmas/Baptism+of+the+Lord/C/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 3:15-16, 21-22",
+					"uri": "christmas/Baptism+of+the+Lord/C/reading/GOSPEL"
+				}
+			]
+		}
+	]
+}

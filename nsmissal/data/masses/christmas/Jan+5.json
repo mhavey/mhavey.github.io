@@ -1,1 +1,100 @@
-{"proper":"time", "season":"christmas", "title":"Jan 5", "uri":"christmas/Jan+5", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"noref", "note":"Monday", "uri":"christmas/Jan+5/reading/ENTRANCE+ANTIPHON"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Jn 1:14", "note":"Monday", "uri":"christmas/Jan+5/reading/COMMUNION+ANTIPHON"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Ps 118(117): 26-27", "note":"Tuesday", "uri":"christmas/Jan+5/reading/ENTRANCE+ANTIPHON/2"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Eph 2:4; Rom 8:3", "note":"Tuesday", "uri":"christmas/Jan+5/reading/COMMUNION+ANTIPHON/2"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Is 9:1", "note":"Wednesday", "uri":"christmas/Jan+5/reading/ENTRANCE+ANTIPHON/3"}, {"readingType":"COMMUNION ANTIPHON", "citation":"1 Jn 1:2", "note":"Wednesday", "uri":"christmas/Jan+5/reading/COMMUNION+ANTIPHON/3"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Jn 1:1", "note":"Thursday", "uri":"christmas/Jan+5/reading/ENTRANCE+ANTIPHON/4"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Jn 3:16", "note":"Thursday", "uri":"christmas/Jan+5/reading/COMMUNION+ANTIPHON/4"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Ps 112(111): 4", "note":"Friday", "uri":"christmas/Jan+5/reading/ENTRANCE+ANTIPHON/5"}, {"readingType":"COMMUNION ANTIPHON", "citation":"1 Jn 4:9", "note":"Friday", "uri":"christmas/Jan+5/reading/COMMUNION+ANTIPHON/5"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Gal 4:4-5", "note":"Saturday", "uri":"christmas/Jan+5/reading/ENTRANCE+ANTIPHON/6"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Jn 1:16", "note":"Saturday", "uri":"christmas/Jan+5/reading/COMMUNION+ANTIPHON/6"}, {"readingType":"1ST", "citation":"1 Jn 3:11-21", "uri":"christmas/Jan+5/reading/1ST"}, {"readingType":"PS", "citation":"Ps 100:1b-2, 3, 4 ,5 | resp 2a", "uri":"christmas/Jan+5/reading/PS"}, {"readingType":"GA", "citation":"noref", "uri":"christmas/Jan+5/reading/GA"}, {"readingType":"GOSPEL", "citation":"Jn 1:43-51", "uri":"christmas/Jan+5/reading/GOSPEL"}]}
+{
+	"proper": "time",
+	"season": "christmas",
+	"title": "Jan 5",
+	"uri": "christmas/Jan+5",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "noref",
+			"note": "Monday",
+			"uri": "christmas/Jan+5/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 1:14",
+			"note": "Monday",
+			"uri": "christmas/Jan+5/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Ps 118(117): 26-27",
+			"note": "Tuesday",
+			"uri": "christmas/Jan+5/reading/ENTRANCE+ANTIPHON/2"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Eph 2:4; Rom 8:3",
+			"note": "Tuesday",
+			"uri": "christmas/Jan+5/reading/COMMUNION+ANTIPHON/2"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Is 9:1",
+			"note": "Wednesday",
+			"uri": "christmas/Jan+5/reading/ENTRANCE+ANTIPHON/3"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "1 Jn 1:2",
+			"note": "Wednesday",
+			"uri": "christmas/Jan+5/reading/COMMUNION+ANTIPHON/3"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Jn 1:1",
+			"note": "Thursday",
+			"uri": "christmas/Jan+5/reading/ENTRANCE+ANTIPHON/4"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 3:16",
+			"note": "Thursday",
+			"uri": "christmas/Jan+5/reading/COMMUNION+ANTIPHON/4"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Ps 112(111): 4",
+			"note": "Friday",
+			"uri": "christmas/Jan+5/reading/ENTRANCE+ANTIPHON/5"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "1 Jn 4:9",
+			"note": "Friday",
+			"uri": "christmas/Jan+5/reading/COMMUNION+ANTIPHON/5"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Gal 4:4-5",
+			"note": "Saturday",
+			"uri": "christmas/Jan+5/reading/ENTRANCE+ANTIPHON/6"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 1:16",
+			"note": "Saturday",
+			"uri": "christmas/Jan+5/reading/COMMUNION+ANTIPHON/6"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "1 Jn 3:11-21",
+			"uri": "christmas/Jan+5/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 100:1b-2, 3, 4 ,5 | resp 2a",
+			"uri": "christmas/Jan+5/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "noref",
+			"uri": "christmas/Jan+5/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 1:43-51",
+			"uri": "christmas/Jan+5/reading/GOSPEL"
+		}
+	]
+}

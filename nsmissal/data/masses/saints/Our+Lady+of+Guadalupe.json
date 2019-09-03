@@ -1,1 +1,54 @@
-{"proper":"saints", "title":"Our Lady of Guadalupe", "uri":"saints/Our+Lady+of+Guadalupe", "calendar":"fixed(Dec,12)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Rev 12:1", "uri":"saints/Our+Lady+of+Guadalupe/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Zec 2:14-17", "uri":"saints/Our+Lady+of+Guadalupe/reading/1ST"}, {"readingType":"1ST", "citation":"Rev 11:19a; 12:1-6a, 10ab", "uri":"saints/Our+Lady+of+Guadalupe/reading/1ST/2"}, {"readingType":"PS", "citation":"Jdt 13:18bcde, 19 | resp 15:9d", "uri":"saints/Our+Lady+of+Guadalupe/reading/PS"}, {"readingType":"GA", "citation":"noref", "uri":"saints/Our+Lady+of+Guadalupe/reading/GA"}, {"readingType":"GOSPEL", "citation":"Lk 1:26-38", "uri":"saints/Our+Lady+of+Guadalupe/reading/GOSPEL"}, {"readingType":"GOSPEL", "citation":"Lk 1:39-47", "uri":"saints/Our+Lady+of+Guadalupe/reading/GOSPEL/2"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Lk 1:52", "uri":"saints/Our+Lady+of+Guadalupe/reading/COMMUNION+ANTIPHON"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Ps 147(146):20", "uri":"saints/Our+Lady+of+Guadalupe/reading/COMMUNION+ANTIPHON/2"}]}
+{
+	"proper": "saints",
+	"title": "Our Lady of Guadalupe",
+	"uri": "saints/Our+Lady+of+Guadalupe",
+	"calendar": "fixed(Dec,12)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Rev 12:1",
+			"uri": "saints/Our+Lady+of+Guadalupe/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Zec 2:14-17",
+			"uri": "saints/Our+Lady+of+Guadalupe/reading/1ST"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Rev 11:19a; 12:1-6a, 10ab",
+			"uri": "saints/Our+Lady+of+Guadalupe/reading/1ST/2"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Jdt 13:18bcde, 19 | resp 15:9d",
+			"uri": "saints/Our+Lady+of+Guadalupe/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "noref",
+			"uri": "saints/Our+Lady+of+Guadalupe/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 1:26-38",
+			"uri": "saints/Our+Lady+of+Guadalupe/reading/GOSPEL"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 1:39-47",
+			"uri": "saints/Our+Lady+of+Guadalupe/reading/GOSPEL/2"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Lk 1:52",
+			"uri": "saints/Our+Lady+of+Guadalupe/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Ps 147(146):20",
+			"uri": "saints/Our+Lady+of+Guadalupe/reading/COMMUNION+ANTIPHON/2"
+		}
+	]
+}

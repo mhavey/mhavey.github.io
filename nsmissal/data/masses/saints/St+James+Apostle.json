@@ -1,1 +1,39 @@
-{"proper":"saints", "title":"St James Apostle", "uri":"saints/St+James+Apostle", "calendar":"fixed(Jul,25)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Mt 4:18, 21", "uri":"saints/St+James+Apostle/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"2 Cor 4:7-15", "uri":"saints/St+James+Apostle/reading/1ST"}, {"readingType":"PS", "citation":"Ps 126:1bc-2ab, 2cd-3, 4-5, 6 | resp 5", "uri":"saints/St+James+Apostle/reading/PS"}, {"readingType":"GA", "citation":"Cf. Jn 15:16", "uri":"saints/St+James+Apostle/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mt 20:20-28", "uri":"saints/St+James+Apostle/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"noref", "uri":"saints/St+James+Apostle/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "St James Apostle",
+	"uri": "saints/St+James+Apostle",
+	"calendar": "fixed(Jul,25)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Mt 4:18, 21",
+			"uri": "saints/St+James+Apostle/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "2 Cor 4:7-15",
+			"uri": "saints/St+James+Apostle/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 126:1bc-2ab, 2cd-3, 4-5, 6 | resp 5",
+			"uri": "saints/St+James+Apostle/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Cf. Jn 15:16",
+			"uri": "saints/St+James+Apostle/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 20:20-28",
+			"uri": "saints/St+James+Apostle/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "noref",
+			"uri": "saints/St+James+Apostle/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

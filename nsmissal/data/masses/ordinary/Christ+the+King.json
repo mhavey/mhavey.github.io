@@ -1,1 +1,112 @@
-{"proper":"time", "season":"ordinary", "title":"Christ the King", "uri":"ordinary/Christ+the+King", "note":"Last Sunday of Ordinary Time", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Rev 5:12; 1:6", "uri":"ordinary/Christ+the+King/reading/ENTRANCE+ANTIPHON"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Ps 29(28):10-11", "uri":"ordinary/Christ+the+King/reading/COMMUNION+ANTIPHON"}, {"title":"A", "uri":"ordinary/Christ+the+King/A", "readings":[{"readingType":"1ST", "citation":"Ez 34:11-12, 15-17", "uri":"ordinary/Christ+the+King/A/reading/1ST"}, {"readingType":"PS", "citation":"Ps 23:1-2, 2-3, 5-6 | resp 1", "uri":"ordinary/Christ+the+King/A/reading/PS"}, {"readingType":"2ND", "citation":"1 Cor 15:20-26, 28", "uri":"ordinary/Christ+the+King/A/reading/2ND"}, {"readingType":"GA", "citation":"Mk 11:9, 10", "uri":"ordinary/Christ+the+King/A/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mt 25:31-46", "uri":"ordinary/Christ+the+King/A/reading/GOSPEL"}]}, {"title":"B", "uri":"ordinary/Christ+the+King/B", "readings":[{"readingType":"1ST", "citation":"Dn 7:13-14", "uri":"ordinary/Christ+the+King/B/reading/1ST"}, {"readingType":"PS", "citation":"Ps 93:1, 1-2, 5 | resp 1a", "uri":"ordinary/Christ+the+King/B/reading/PS"}, {"readingType":"2ND", "citation":"Rev 1:5-8", "uri":"ordinary/Christ+the+King/B/reading/2ND"}, {"readingType":"GA", "citation":"Mk 11:9, 10", "uri":"ordinary/Christ+the+King/B/reading/GA"}, {"readingType":"GOSPEL", "citation":"Jn 18:33b-37", "uri":"ordinary/Christ+the+King/B/reading/GOSPEL"}]}, {"title":"C", "uri":"ordinary/Christ+the+King/C", "readings":[{"readingType":"1ST", "citation":"2 Sm 5:1-3", "uri":"ordinary/Christ+the+King/C/reading/1ST"}, {"readingType":"PS", "citation":"Ps 122:1-2, 3-4, 4-5 | resp Cf. 1", "uri":"ordinary/Christ+the+King/C/reading/PS"}, {"readingType":"2ND", "citation":"Col 1:12-20", "uri":"ordinary/Christ+the+King/C/reading/2ND"}, {"readingType":"GA", "citation":"Mk 11:9, 10", "uri":"ordinary/Christ+the+King/C/reading/GA"}, {"readingType":"GOSPEL", "citation":"Lk 25:35-43", "uri":"ordinary/Christ+the+King/C/reading/GOSPEL"}]}]}
+{
+	"proper": "time",
+	"season": "ordinary",
+	"title": "Christ the King",
+	"uri": "ordinary/Christ+the+King",
+	"note": "Last Sunday of Ordinary Time",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Rev 5:12; 1:6",
+			"uri": "ordinary/Christ+the+King/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Ps 29(28):10-11",
+			"uri": "ordinary/Christ+the+King/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"title": "A",
+			"uri": "ordinary/Christ+the+King/A",
+			"readings": [
+				{
+					"readingType": "1ST",
+					"citation": "Ez 34:11-12, 15-17",
+					"uri": "ordinary/Christ+the+King/A/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 23:1-2, 2-3, 5-6 | resp 1",
+					"uri": "ordinary/Christ+the+King/A/reading/PS"
+				},
+				{
+					"readingType": "2ND",
+					"citation": "1 Cor 15:20-26, 28",
+					"uri": "ordinary/Christ+the+King/A/reading/2ND"
+				},
+				{
+					"readingType": "GA",
+					"citation": "Mk 11:9, 10",
+					"uri": "ordinary/Christ+the+King/A/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 25:31-46",
+					"uri": "ordinary/Christ+the+King/A/reading/GOSPEL"
+				}
+			]
+		},
+		{
+			"title": "B",
+			"uri": "ordinary/Christ+the+King/B",
+			"readings": [
+				{
+					"readingType": "1ST",
+					"citation": "Dn 7:13-14",
+					"uri": "ordinary/Christ+the+King/B/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 93:1, 1-2, 5 | resp 1a",
+					"uri": "ordinary/Christ+the+King/B/reading/PS"
+				},
+				{
+					"readingType": "2ND",
+					"citation": "Rev 1:5-8",
+					"uri": "ordinary/Christ+the+King/B/reading/2ND"
+				},
+				{
+					"readingType": "GA",
+					"citation": "Mk 11:9, 10",
+					"uri": "ordinary/Christ+the+King/B/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Jn 18:33b-37",
+					"uri": "ordinary/Christ+the+King/B/reading/GOSPEL"
+				}
+			]
+		},
+		{
+			"title": "C",
+			"uri": "ordinary/Christ+the+King/C",
+			"readings": [
+				{
+					"readingType": "1ST",
+					"citation": "2 Sm 5:1-3",
+					"uri": "ordinary/Christ+the+King/C/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 122:1-2, 3-4, 4-5 | resp Cf. 1",
+					"uri": "ordinary/Christ+the+King/C/reading/PS"
+				},
+				{
+					"readingType": "2ND",
+					"citation": "Col 1:12-20",
+					"uri": "ordinary/Christ+the+King/C/reading/2ND"
+				},
+				{
+					"readingType": "GA",
+					"citation": "Mk 11:9, 10",
+					"uri": "ordinary/Christ+the+King/C/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 25:35-43",
+					"uri": "ordinary/Christ+the+King/C/reading/GOSPEL"
+				}
+			]
+		}
+	]
+}

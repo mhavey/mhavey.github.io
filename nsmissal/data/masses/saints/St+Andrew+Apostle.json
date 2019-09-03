@@ -1,1 +1,39 @@
-{"proper":"saints", "title":"St Andrew Apostle", "uri":"saints/St+Andrew+Apostle", "calendar":"fixed(Nov,30)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Mt 4:18-19", "uri":"saints/St+Andrew+Apostle/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Rom 10:9-18", "uri":"saints/St+Andrew+Apostle/reading/1ST"}, {"readingType":"PS", "citation":"Ps 19:8, 9, 10, 11 | resp Jn 6:68c", "uri":"saints/St+Andrew+Apostle/reading/PS"}, {"readingType":"GA", "citation":"Mt 4:19", "uri":"saints/St+Andrew+Apostle/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mt 4:18-22", "uri":"saints/St+Andrew+Apostle/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Jn 1:41-42", "uri":"saints/St+Andrew+Apostle/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "St Andrew Apostle",
+	"uri": "saints/St+Andrew+Apostle",
+	"calendar": "fixed(Nov,30)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Mt 4:18-19",
+			"uri": "saints/St+Andrew+Apostle/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Rom 10:9-18",
+			"uri": "saints/St+Andrew+Apostle/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 19:8, 9, 10, 11 | resp Jn 6:68c",
+			"uri": "saints/St+Andrew+Apostle/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Mt 4:19",
+			"uri": "saints/St+Andrew+Apostle/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 4:18-22",
+			"uri": "saints/St+Andrew+Apostle/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Jn 1:41-42",
+			"uri": "saints/St+Andrew+Apostle/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

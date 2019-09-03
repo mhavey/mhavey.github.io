@@ -1,1 +1,100 @@
-{"proper":"time", "season":"christmas", "title":"Tuesday After Epiphany or Jan 8", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"noref", "note":"Monday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Jn 1:14", "note":"Monday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Ps 118(117): 26-27", "note":"Tuesday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/2"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Eph 2:4; Rom 8:3", "note":"Tuesday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/2"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Is 9:1", "note":"Wednesday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/3"}, {"readingType":"COMMUNION ANTIPHON", "citation":"1 Jn 1:2", "note":"Wednesday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/3"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Jn 1:1", "note":"Thursday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/4"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Jn 3:16", "note":"Thursday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/4"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Ps 112(111): 4", "note":"Friday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/5"}, {"readingType":"COMMUNION ANTIPHON", "citation":"1 Jn 4:9", "note":"Friday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/5"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Gal 4:4-5", "note":"Saturday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/6"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Jn 1:16", "note":"Saturday", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/6"}, {"readingType":"1ST", "citation":"1 Jn 4:7-10", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/1ST"}, {"readingType":"PS", "citation":"Ps 72:1-2, 3-4, 7-8 | resp Cf. 11", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/PS"}, {"readingType":"GA", "citation":"Lk 4:18", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mk 6:34-44", "uri":"christmas/Tuesday+After+Epiphany+or+Jan+8/reading/GOSPEL"}]}
+{
+	"proper": "time",
+	"season": "christmas",
+	"title": "Tuesday After Epiphany or Jan 8",
+	"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "noref",
+			"note": "Monday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 1:14",
+			"note": "Monday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Ps 118(117): 26-27",
+			"note": "Tuesday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/2"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Eph 2:4; Rom 8:3",
+			"note": "Tuesday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/2"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Is 9:1",
+			"note": "Wednesday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/3"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "1 Jn 1:2",
+			"note": "Wednesday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/3"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Jn 1:1",
+			"note": "Thursday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/4"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 3:16",
+			"note": "Thursday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/4"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Ps 112(111): 4",
+			"note": "Friday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/5"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "1 Jn 4:9",
+			"note": "Friday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/5"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Gal 4:4-5",
+			"note": "Saturday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/ENTRANCE+ANTIPHON/6"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 1:16",
+			"note": "Saturday",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/COMMUNION+ANTIPHON/6"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "1 Jn 4:7-10",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 72:1-2, 3-4, 7-8 | resp Cf. 11",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Lk 4:18",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mk 6:34-44",
+			"uri": "christmas/Tuesday+After+Epiphany+or+Jan+8/reading/GOSPEL"
+		}
+	]
+}

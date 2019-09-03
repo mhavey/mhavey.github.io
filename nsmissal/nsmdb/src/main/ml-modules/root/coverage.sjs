@@ -1,7 +1,11 @@
 const sem = require("/MarkLogic/semantics.xqy");
 
+const BIBLE_TOC_URI = "/bible.json";
 const NSM = "http://jude.org/ns-missal/";
 const NSM_VERSE = NSM + "verse";
+const NSM_HAS_COVER = NSM + "hasCover";
+
+function verseIRI(book, chapter, verse) {return sem.iri(NSM + book + "/" + chapter + "/" + verse);}
 
 function organizeBible() {
 	var bible = {};
@@ -31,7 +35,7 @@ function organizeBible() {
 		bible[doc.abbrev].verses.push(doc.verses);
 	}
 
-	xdmp.documentInsert("/bible.json", bible, {collections: ["bible"], permissions: savedPerms});
+	xdmp.documentInsert(BIBLE_TOC_URI, bible, {collections: ["nsm", "bible"], permissions: savedPerms});
 }
 
 function initCoverage(content, context) {
@@ -39,7 +43,7 @@ function initCoverage(content, context) {
 	newDoc.triples = [];
 	for (var i = 1; i <= newDoc.verses; i++) {
 		newDoc.triples.push(sem.triple(
-			sem.iri(NSM + newDoc.book + "/" + newDoc.chapter + "/" + i), 
+			verseIRI(newDoc.book, newDoc.chapter, i), 
 			sem.curieExpand("rdfs:type"), 
 			sem.iri(NSM_VERSE)));
 	}
@@ -47,7 +51,91 @@ function initCoverage(content, context) {
 	return content;
 };
 
+function cover() {
+	var context = {
+		bibleToc: cts.doc(BIBLE_TOC_URI).toObject(), 
+		props: null,
+		mods: {}
+	};
+	var docs = cts.search(cts.collectionQuery("masses"));
+	for (var odoc of docs) {
+		var uri = fn.documentUri(odoc);
+		var doc = odoc.toObject();
+		coverWalk(doc, context);
+	}
+
+	for (var mod in context.mods) {
+		var modRecord = context.mods[mod];
+		xdmp.documentInsert(modRecord.uri, modRecord.doc, context.props); 
+	}
+}
+
+function addCover(readingIRI, book, chapter, verse, context) {
+
+	var thisMod = context.mods[book + "/" + chapter];
+	if (!thisMod) {
+		var odoc = fn.head(cts.search(cts.andQuery([
+			cts.collectionQuery("bibleChapter"),
+			cts.jsonPropertyValueQuery("book", book),
+			cts.jsonPropertyValueQuery("chapter", chapter)
+		])));
+		if (!odoc || odoc == null) {
+			throw "Data sin: for reading " + readingIRI + " failed to find *" + book + "*" + chapter + "*";
+		}
+		var uri = fn.documentUri(odoc);
+		if (context.props == null) {
+			context.props = {
+				collections: xdmp.documentGetCollections(uri), 
+				permissions: xdmp.dls.documentGetPermissions(uri)
+			};
+		}
+		context.mods[book + "/" + chapter] = {
+			uri: uri, 
+			doc: odoc.toObject()
+		};
+	}
+
+	thisMod.doc.triples.push(sem.triple(verseIRI(book, chapter, verse), sem.iri(NSM_HAS_COVER), sem.iri(readingIRI)));
+}
+
+function coverWalk(doc, context) {
+	if (!doc.readings) return;
+	doc.readings.forEach(function (f) {
+		if (f.readingType) linkCitationToVerses(f, context);
+		else if (f.readings) coverWalk(f, context);    
+  	});
+}
+
+function linkCitationToVerses(reading, context) {
+  
+  // ignore noref
+  if (reading.citation.toUpperCase() == "NOREF") return;
+  
+  // strip out the noisy Cf. 
+  var cleanCit = fn.replace(reading.citation, "Cf.", "");
+  xdmp.log("Linking " + reading.uri + " " + cleanCit);
+
+  // start left; the part before the first colon is the book and chapter; extract it 
+  var firstColonIdx = reading.citation.indexOf(":");
+  
+  xdmp.log("Got " + reading.uri + " *" + cleanCit.substring(0, firstColonIdx).trim() + "*");
+  
+  if (firstColonIdx < 0) throw "Unable to find book 1 " + reading.uri + " *" + cleanCit + "*";
+  var bookChap1 = reading.citation.substring(0, firstColonIdx).trim();
+  
+  // If this has A(B), ingore the (B)
+  // Also handle the case where there is no chapter; this is valid for the books that have just one chapter
+  
+  // next extract the chapter  
+  //var chapter
+
+  // add the cover
+
+
+}
+
 module.exports = {
   organizeBible : organizeBible,
-  initCoverage: initCoverage
+  initCoverage: initCoverage,
+  cover: cover
 };

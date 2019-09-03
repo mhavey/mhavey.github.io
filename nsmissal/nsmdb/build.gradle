@@ -43,11 +43,9 @@ dependencies {
   mlcp files("lib")
 }
 
-task ingestBible(type: com.marklogic.gradle.task.MlcpTask) {
+task _ingestBible(type: com.marklogic.gradle.task.MlcpTask) {
   def projectDir = new File("${projectDir}")
   def gitDir = projectDir.getParentFile().getAbsolutePath()
-
-println gitDir
 
   def dataDir = gitDir + "/data"
   def regex = '"' + dataDir + ",''"
@@ -74,7 +72,7 @@ println gitDir
   transform_param="dummy"
 }
 
-task organizeBible(type: com.marklogic.gradle.task.ServerEvalTask) {
+task _organizeBible(type: com.marklogic.gradle.task.ServerEvalTask) {
 
 def js = "'use strict';\n"
 js += 'declareUpdate();'
@@ -83,7 +81,7 @@ js += 'lib.organizeBible();\n'
   javascript = js;
 }
 
-task ingestMasses(type: com.marklogic.gradle.task.MlcpTask) {
+task _ingestMasses(type: com.marklogic.gradle.task.MlcpTask) {
   def projectDir = new File("${projectDir}")
   def gitDir = projectDir.getParentFile().getAbsolutePath()
   def dataDir = gitDir + "/data"
@@ -104,13 +102,22 @@ task ingestMasses(type: com.marklogic.gradle.task.MlcpTask) {
 
 }
 
+task _cover(type: com.marklogic.gradle.task.ServerEvalTask) {
+
+def js = "'use strict';\n"
+js += 'declareUpdate();'
+js += 'const lib = require("/coverage.sjs");\n'
+js += 'lib.cover();\n'
+  javascript = js;
+}
+
 task loadData() {
-  dependsOn "ingestMasses"
-  dependsOn "ingestBible"
-  dependsOn "organizeBible"
-  tasks.findByName('organizeBible').mustRunAfter 'ingestBible'
+  dependsOn "_ingestMasses"
+  dependsOn "_ingestBible"
+  dependsOn "_organizeBible"
+  tasks.findByName('_organizeBible').mustRunAfter '_ingestBible'
 }
 
 task runReports() {
-  
+  dependsOn "_cover"
 }

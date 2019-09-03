@@ -1,1 +1,49 @@
-{"proper":"saints", "title":"Presentation of the Lord", "uri":"saints/Presentation+of+the+Lord", "calendar":"fixed(Feb,2)", "rank":"Feast", "readings":[{"readingType":"ANTIPHON", "citation":"Lk 2:29-32", "uri":"saints/Presentation+of+the+Lord/reading/ANTIPHON"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Ps 48(47):10-11", "uri":"saints/Presentation+of+the+Lord/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Mal 3:1-4", "uri":"saints/Presentation+of+the+Lord/reading/1ST"}, {"readingType":"PS", "citation":"Ps 24:7, 8, 9, 10 | resp 8", "uri":"saints/Presentation+of+the+Lord/reading/PS"}, {"readingType":"2ND", "citation":"Heb 2:14-18", "uri":"saints/Presentation+of+the+Lord/reading/2ND"}, {"readingType":"GA", "citation":"Lk 2:32", "uri":"saints/Presentation+of+the+Lord/reading/GA"}, {"readingType":"GOSPEL", "citation":"Lk 2:22-40", "uri":"saints/Presentation+of+the+Lord/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Lk 2:30-31", "uri":"saints/Presentation+of+the+Lord/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "Presentation of the Lord",
+	"uri": "saints/Presentation+of+the+Lord",
+	"calendar": "fixed(Feb,2)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ANTIPHON",
+			"citation": "Lk 2:29-32",
+			"uri": "saints/Presentation+of+the+Lord/reading/ANTIPHON"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Ps 48(47):10-11",
+			"uri": "saints/Presentation+of+the+Lord/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Mal 3:1-4",
+			"uri": "saints/Presentation+of+the+Lord/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 24:7, 8, 9, 10 | resp 8",
+			"uri": "saints/Presentation+of+the+Lord/reading/PS"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Heb 2:14-18",
+			"uri": "saints/Presentation+of+the+Lord/reading/2ND"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Lk 2:32",
+			"uri": "saints/Presentation+of+the+Lord/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 2:22-40",
+			"uri": "saints/Presentation+of+the+Lord/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Lk 2:30-31",
+			"uri": "saints/Presentation+of+the+Lord/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

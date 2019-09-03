@@ -1,1 +1,49 @@
-{"proper":"saints", "title":"Dedication of Lateran Basilica", "uri":"saints/Dedication+of+Lateran+Basilica", "calendar":"fixed(Nov,9)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Rev 21:2", "uri":"saints/Dedication+of+Lateran+Basilica/reading/ENTRANCE+ANTIPHON"}, {"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Rev 21:3", "uri":"saints/Dedication+of+Lateran+Basilica/reading/ENTRANCE+ANTIPHON/2"}, {"readingType":"1ST", "citation":"Ez 47:1-2, 8-9, 12", "uri":"saints/Dedication+of+Lateran+Basilica/reading/1ST"}, {"readingType":"PS", "citation":"Ps 46:2-3,5-6,8-9 | resp 5", "uri":"saints/Dedication+of+Lateran+Basilica/reading/PS"}, {"readingType":"2ND", "citation":"1 Cor 3:9c-11, 16-17", "uri":"saints/Dedication+of+Lateran+Basilica/reading/2ND"}, {"readingType":"GA", "citation":"2 Chr 7:16", "uri":"saints/Dedication+of+Lateran+Basilica/reading/GA"}, {"readingType":"GOSPEL", "citation":"Jn 2:13-22", "uri":"saints/Dedication+of+Lateran+Basilica/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. 1 Pt 2:5", "uri":"saints/Dedication+of+Lateran+Basilica/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "Dedication of Lateran Basilica",
+	"uri": "saints/Dedication+of+Lateran+Basilica",
+	"calendar": "fixed(Nov,9)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Rev 21:2",
+			"uri": "saints/Dedication+of+Lateran+Basilica/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Rev 21:3",
+			"uri": "saints/Dedication+of+Lateran+Basilica/reading/ENTRANCE+ANTIPHON/2"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Ez 47:1-2, 8-9, 12",
+			"uri": "saints/Dedication+of+Lateran+Basilica/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 46:2-3,5-6,8-9 | resp 5",
+			"uri": "saints/Dedication+of+Lateran+Basilica/reading/PS"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "1 Cor 3:9c-11, 16-17",
+			"uri": "saints/Dedication+of+Lateran+Basilica/reading/2ND"
+		},
+		{
+			"readingType": "GA",
+			"citation": "2 Chr 7:16",
+			"uri": "saints/Dedication+of+Lateran+Basilica/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 2:13-22",
+			"uri": "saints/Dedication+of+Lateran+Basilica/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. 1 Pt 2:5",
+			"uri": "saints/Dedication+of+Lateran+Basilica/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

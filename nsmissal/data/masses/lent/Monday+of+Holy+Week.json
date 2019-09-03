@@ -1,1 +1,38 @@
-{"proper":"time", "season":"lent", "title":"Monday of Holy Week", "uri":"lent/Monday+of+Holy+Week", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Ps 35(34):1-2; 140(139):8", "uri":"lent/Monday+of+Holy+Week/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Is 42:1-7", "uri":"lent/Monday+of+Holy+Week/reading/1ST"}, {"readingType":"PS", "citation":"Ps 27:1, 2, 3, 13-14 | resp 1a", "uri":"lent/Monday+of+Holy+Week/reading/PS"}, {"readingType":"GOSPELVERSE", "citation":"noref", "uri":"lent/Monday+of+Holy+Week/reading/GOSPELVERSE"}, {"readingType":"GOSPEL", "citation":"Jn 12:1-11", "uri":"lent/Monday+of+Holy+Week/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Ps 102(101):3", "uri":"lent/Monday+of+Holy+Week/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "time",
+	"season": "lent",
+	"title": "Monday of Holy Week",
+	"uri": "lent/Monday+of+Holy+Week",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Ps 35(34):1-2; 140(139):8",
+			"uri": "lent/Monday+of+Holy+Week/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Is 42:1-7",
+			"uri": "lent/Monday+of+Holy+Week/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 27:1, 2, 3, 13-14 | resp 1a",
+			"uri": "lent/Monday+of+Holy+Week/reading/PS"
+		},
+		{
+			"readingType": "GOSPELVERSE",
+			"citation": "noref",
+			"uri": "lent/Monday+of+Holy+Week/reading/GOSPELVERSE"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Jn 12:1-11",
+			"uri": "lent/Monday+of+Holy+Week/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Ps 102(101):3",
+			"uri": "lent/Monday+of+Holy+Week/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

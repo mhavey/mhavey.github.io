@@ -1,1 +1,39 @@
-{"proper":"saints", "title":"St. Matthew Apostle and Evagelist", "uri":"saints/St.+Matthew+Apostle+and+Evagelist", "calendar":"fixed(Sep,21)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Cf. Mt 28:19-20", "uri":"saints/St.+Matthew+Apostle+and+Evagelist/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Eph 4:1-7, 11-13", "uri":"saints/St.+Matthew+Apostle+and+Evagelist/reading/1ST"}, {"readingType":"PS", "citation":"Ps 19:2-3, 4-5 | resp 5", "uri":"saints/St.+Matthew+Apostle+and+Evagelist/reading/PS"}, {"readingType":"GA", "citation":"noref", "uri":"saints/St.+Matthew+Apostle+and+Evagelist/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mt 9:9-13", "uri":"saints/St.+Matthew+Apostle+and+Evagelist/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Mt 9:13", "uri":"saints/St.+Matthew+Apostle+and+Evagelist/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "St. Matthew Apostle and Evagelist",
+	"uri": "saints/St.+Matthew+Apostle+and+Evagelist",
+	"calendar": "fixed(Sep,21)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Mt 28:19-20",
+			"uri": "saints/St.+Matthew+Apostle+and+Evagelist/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Eph 4:1-7, 11-13",
+			"uri": "saints/St.+Matthew+Apostle+and+Evagelist/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 19:2-3, 4-5 | resp 5",
+			"uri": "saints/St.+Matthew+Apostle+and+Evagelist/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "noref",
+			"uri": "saints/St.+Matthew+Apostle+and+Evagelist/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 9:9-13",
+			"uri": "saints/St.+Matthew+Apostle+and+Evagelist/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Mt 9:13",
+			"uri": "saints/St.+Matthew+Apostle+and+Evagelist/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

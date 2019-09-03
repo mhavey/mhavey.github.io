@@ -1,1 +1,39 @@
-{"proper":"saints", "title":"St Luke Evangelist", "uri":"saints/St+Luke+Evangelist", "calendar":"fixed(Oct,18)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"Is 52:7", "uri":"saints/St+Luke+Evangelist/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"2 Tm 4:10-17b", "uri":"saints/St+Luke+Evangelist/reading/1ST"}, {"readingType":"PS", "citation":"Ps 145:10-11, 12-13, 17-18 | resp 12", "uri":"saints/St+Luke+Evangelist/reading/PS"}, {"readingType":"GA", "citation":"Cf. Jn 15:16", "uri":"saints/St+Luke+Evangelist/reading/GA"}, {"readingType":"GOSPEL", "citation":"Lk 10:1-9", "uri":"saints/St+Luke+Evangelist/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Lk 10:1, 9", "uri":"saints/St+Luke+Evangelist/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "St Luke Evangelist",
+	"uri": "saints/St+Luke+Evangelist",
+	"calendar": "fixed(Oct,18)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Is 52:7",
+			"uri": "saints/St+Luke+Evangelist/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "2 Tm 4:10-17b",
+			"uri": "saints/St+Luke+Evangelist/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 145:10-11, 12-13, 17-18 | resp 12",
+			"uri": "saints/St+Luke+Evangelist/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Cf. Jn 15:16",
+			"uri": "saints/St+Luke+Evangelist/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 10:1-9",
+			"uri": "saints/St+Luke+Evangelist/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Lk 10:1, 9",
+			"uri": "saints/St+Luke+Evangelist/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

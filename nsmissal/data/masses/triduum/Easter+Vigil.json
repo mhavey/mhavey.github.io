@@ -1,1 +1,141 @@
-{"proper":"time", "season":"triduum", "title":"Easter Vigil", "uri":"triduum/Easter+Vigil", "readings":[{"readingType":"1ST", "citation":"Gn 1:1-2:2", "uri":"triduum/Easter+Vigil/reading/1ST"}, {"readingType":"PS 1", "citation":"Ps 104:1-2, 5-6, 10, 12, 13-14, 24, 35 | resp 30", "uri":"triduum/Easter+Vigil/reading/PS+1"}, {"readingType":"PS 1", "citation":"Ps 33: 4-5, 6-7, 12-13, 20-22 | resp 5b", "uri":"triduum/Easter+Vigil/reading/PS+1/2"}, {"readingType":"2ND", "citation":"Gn 22:1-18", "uri":"triduum/Easter+Vigil/reading/2ND"}, {"readingType":"PS 2", "citation":"Ps 16:5, 8, 9-10, 11 | resp 1", "uri":"triduum/Easter+Vigil/reading/PS+2"}, {"readingType":"3RD", "citation":"Ex 14:15-15:1", "uri":"triduum/Easter+Vigil/reading/3RD"}, {"readingType":"PS 3", "citation":"Ex 15:1-2, 3-4, 5-6, 17-18 | resp 1b", "uri":"triduum/Easter+Vigil/reading/PS+3"}, {"readingType":"4TH", "citation":"Is 54:5-14", "uri":"triduum/Easter+Vigil/reading/4TH"}, {"readingType":"PS 4", "citation":"Ps 30: 2, 4, 5-6, 11-12, 13 | resp 2a", "uri":"triduum/Easter+Vigil/reading/PS+4"}, {"readingType":"5TH", "citation":"Is 55:1-11", "uri":"triduum/Easter+Vigil/reading/5TH"}, {"readingType":"PS 5", "citation":"Is 12:2-3, 4, 5-6 | resp 3", "uri":"triduum/Easter+Vigil/reading/PS+5"}, {"readingType":"6TH", "citation":"Bar 3:9-15, 32-4:4", "uri":"triduum/Easter+Vigil/reading/6TH"}, {"readingType":"PS", "citation":"Ps 19:8, 9, 10, 11 | resp Jn 6:68c", "uri":"triduum/Easter+Vigil/reading/PS"}, {"readingType":"7TH", "citation":"Ez 36:16-17a, 18-28", "uri":"triduum/Easter+Vigil/reading/7TH"}, {"readingType":"PS A", "citation":"Ps 42:3, 5; 43:3, 4 | resp 42:2", "uri":"triduum/Easter+Vigil/reading/PS+A"}, {"readingType":"PS B", "citation":"Is 12:2-3, 4bcd, 5-6 | resp 3", "uri":"triduum/Easter+Vigil/reading/PS+B"}, {"readingType":"PS C", "citation":"Ps 51: 12-13, 14-15, 18-19 | resp 12a", "uri":"triduum/Easter+Vigil/reading/PS+C"}, {"readingType":"EPISTLE", "citation":"Rom 6:3-11", "uri":"triduum/Easter+Vigil/reading/EPISTLE"}, {"readingType":"PS", "citation":"Ps 118:1-2, 16-17, 22-23", "uri":"triduum/Easter+Vigil/reading/PS/2"}, {"readingType":"COMMUNION ANTIPHON", "citation":"1 Cor 5:7-8", "uri":"triduum/Easter+Vigil/reading/COMMUNION+ANTIPHON"}, {"title":"A", "uri":"triduum/Easter+Vigil/A", "readings":[{"readingType":"GOSPEL", "citation":"Mt 28:1-10", "uri":"triduum/Easter+Vigil/A/reading/GOSPEL"}]}, {"title":"B", "uri":"triduum/Easter+Vigil/B", "readings":[{"readingType":"GOSPEL", "citation":"Mk 16:1-7", "uri":"triduum/Easter+Vigil/B/reading/GOSPEL"}]}, {"title":"C", "uri":"triduum/Easter+Vigil/C", "readings":[{"readingType":"GOSPEL", "citation":"Lk 24:1-12", "uri":"triduum/Easter+Vigil/C/reading/GOSPEL"}]}]}
+{
+	"proper": "time",
+	"season": "triduum",
+	"title": "Easter Vigil",
+	"uri": "triduum/Easter+Vigil",
+	"readings": [
+		{
+			"readingType": "1ST",
+			"citation": "Gn 1:1-2:2",
+			"uri": "triduum/Easter+Vigil/reading/1ST"
+		},
+		{
+			"readingType": "PS 1",
+			"citation": "Ps 104:1-2, 5-6, 10, 12, 13-14, 24, 35 | resp 30",
+			"uri": "triduum/Easter+Vigil/reading/PS+1"
+		},
+		{
+			"readingType": "PS 1",
+			"citation": "Ps 33: 4-5, 6-7, 12-13, 20-22 | resp 5b",
+			"uri": "triduum/Easter+Vigil/reading/PS+1/2"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Gn 22:1-18",
+			"uri": "triduum/Easter+Vigil/reading/2ND"
+		},
+		{
+			"readingType": "PS 2",
+			"citation": "Ps 16:5, 8, 9-10, 11 | resp 1",
+			"uri": "triduum/Easter+Vigil/reading/PS+2"
+		},
+		{
+			"readingType": "3RD",
+			"citation": "Ex 14:15-15:1",
+			"uri": "triduum/Easter+Vigil/reading/3RD"
+		},
+		{
+			"readingType": "PS 3",
+			"citation": "Ex 15:1-2, 3-4, 5-6, 17-18 | resp 1b",
+			"uri": "triduum/Easter+Vigil/reading/PS+3"
+		},
+		{
+			"readingType": "4TH",
+			"citation": "Is 54:5-14",
+			"uri": "triduum/Easter+Vigil/reading/4TH"
+		},
+		{
+			"readingType": "PS 4",
+			"citation": "Ps 30: 2, 4, 5-6, 11-12, 13 | resp 2a",
+			"uri": "triduum/Easter+Vigil/reading/PS+4"
+		},
+		{
+			"readingType": "5TH",
+			"citation": "Is 55:1-11",
+			"uri": "triduum/Easter+Vigil/reading/5TH"
+		},
+		{
+			"readingType": "PS 5",
+			"citation": "Is 12:2-3, 4, 5-6 | resp 3",
+			"uri": "triduum/Easter+Vigil/reading/PS+5"
+		},
+		{
+			"readingType": "6TH",
+			"citation": "Bar 3:9-15, 32-4:4",
+			"uri": "triduum/Easter+Vigil/reading/6TH"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 19:8, 9, 10, 11 | resp Jn 6:68c",
+			"uri": "triduum/Easter+Vigil/reading/PS"
+		},
+		{
+			"readingType": "7TH",
+			"citation": "Ez 36:16-17a, 18-28",
+			"uri": "triduum/Easter+Vigil/reading/7TH"
+		},
+		{
+			"readingType": "PS A",
+			"citation": "Ps 42:3, 5; 43:3, 4 | resp 42:2",
+			"uri": "triduum/Easter+Vigil/reading/PS+A"
+		},
+		{
+			"readingType": "PS B",
+			"citation": "Is 12:2-3, 4bcd, 5-6 | resp 3",
+			"uri": "triduum/Easter+Vigil/reading/PS+B"
+		},
+		{
+			"readingType": "PS C",
+			"citation": "Ps 51: 12-13, 14-15, 18-19 | resp 12a",
+			"uri": "triduum/Easter+Vigil/reading/PS+C"
+		},
+		{
+			"readingType": "EPISTLE",
+			"citation": "Rom 6:3-11",
+			"uri": "triduum/Easter+Vigil/reading/EPISTLE"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 118:1-2, 16-17, 22-23",
+			"uri": "triduum/Easter+Vigil/reading/PS/2"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "1 Cor 5:7-8",
+			"uri": "triduum/Easter+Vigil/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"title": "A",
+			"uri": "triduum/Easter+Vigil/A",
+			"readings": [
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 28:1-10",
+					"uri": "triduum/Easter+Vigil/A/reading/GOSPEL"
+				}
+			]
+		},
+		{
+			"title": "B",
+			"uri": "triduum/Easter+Vigil/B",
+			"readings": [
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mk 16:1-7",
+					"uri": "triduum/Easter+Vigil/B/reading/GOSPEL"
+				}
+			]
+		},
+		{
+			"title": "C",
+			"uri": "triduum/Easter+Vigil/C",
+			"readings": [
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 24:1-12",
+					"uri": "triduum/Easter+Vigil/C/reading/GOSPEL"
+				}
+			]
+		}
+	]
+}

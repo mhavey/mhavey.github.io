@@ -1,1 +1,44 @@
-{"proper":"saints", "title":"Conversion of St Paul the Apostle", "uri":"saints/Conversion+of+St+Paul+the+Apostle", "calendar":"fixed(Jan,25)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"2 Tm 1:12; 4:8", "uri":"saints/Conversion+of+St+Paul+the+Apostle/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Acts 22:3-16", "uri":"saints/Conversion+of+St+Paul+the+Apostle/reading/1ST"}, {"readingType":"1ST", "citation":"Acts 9:1-22", "uri":"saints/Conversion+of+St+Paul+the+Apostle/reading/1ST/2"}, {"readingType":"PS", "citation":"Ps 117: 1bc, 2 | resp Mk 16:15", "uri":"saints/Conversion+of+St+Paul+the+Apostle/reading/PS"}, {"readingType":"GA", "citation":"Cf. Jn 15:16", "uri":"saints/Conversion+of+St+Paul+the+Apostle/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mk 16:15-18", "uri":"saints/Conversion+of+St+Paul+the+Apostle/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Cf. Gal 2:20", "uri":"saints/Conversion+of+St+Paul+the+Apostle/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "Conversion of St Paul the Apostle",
+	"uri": "saints/Conversion+of+St+Paul+the+Apostle",
+	"calendar": "fixed(Jan,25)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "2 Tm 1:12; 4:8",
+			"uri": "saints/Conversion+of+St+Paul+the+Apostle/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Acts 22:3-16",
+			"uri": "saints/Conversion+of+St+Paul+the+Apostle/reading/1ST"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Acts 9:1-22",
+			"uri": "saints/Conversion+of+St+Paul+the+Apostle/reading/1ST/2"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 117: 1bc, 2 | resp Mk 16:15",
+			"uri": "saints/Conversion+of+St+Paul+the+Apostle/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Cf. Jn 15:16",
+			"uri": "saints/Conversion+of+St+Paul+the+Apostle/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mk 16:15-18",
+			"uri": "saints/Conversion+of+St+Paul+the+Apostle/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Gal 2:20",
+			"uri": "saints/Conversion+of+St+Paul+the+Apostle/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

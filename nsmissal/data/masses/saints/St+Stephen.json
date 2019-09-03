@@ -1,1 +1,39 @@
-{"proper":"saints", "title":"St Stephen", "uri":"saints/St+Stephen", "calendar":"fixed(Dec,26)", "rank":"Feast", "readings":[{"readingType":"ENTRANCE ANTIPHON", "citation":"noref", "uri":"saints/St+Stephen/reading/ENTRANCE+ANTIPHON"}, {"readingType":"1ST", "citation":"Acts 6:8-10; 7:54-59", "uri":"saints/St+Stephen/reading/1ST"}, {"readingType":"PS", "citation":"Ps 31:3cd-4, 6 and 8ab, 16bc and 17 | resp 6", "uri":"saints/St+Stephen/reading/PS"}, {"readingType":"GA", "citation":"Ps 118:26a, 27a", "uri":"saints/St+Stephen/reading/GA"}, {"readingType":"GOSPEL", "citation":"Mt 10:17-22", "uri":"saints/St+Stephen/reading/GOSPEL"}, {"readingType":"COMMUNION ANTIPHON", "citation":"Acts 7:58", "uri":"saints/St+Stephen/reading/COMMUNION+ANTIPHON"}]}
+{
+	"proper": "saints",
+	"title": "St Stephen",
+	"uri": "saints/St+Stephen",
+	"calendar": "fixed(Dec,26)",
+	"rank": "Feast",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "noref",
+			"uri": "saints/St+Stephen/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Acts 6:8-10; 7:54-59",
+			"uri": "saints/St+Stephen/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 31:3cd-4, 6 and 8ab, 16bc and 17 | resp 6",
+			"uri": "saints/St+Stephen/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Ps 118:26a, 27a",
+			"uri": "saints/St+Stephen/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 10:17-22",
+			"uri": "saints/St+Stephen/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Acts 7:58",
+			"uri": "saints/St+Stephen/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}
