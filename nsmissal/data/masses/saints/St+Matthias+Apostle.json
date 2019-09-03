@@ -1,39 +1,39 @@
 {
 	"proper": "saints",
 	"title": "St Matthias Apostle",
-	"uri": "saints/St+Matthias+Apostle",
+	"uri": "http://jude.org/ns-missal/saints/St+Matthias+Apostle",
 	"calendar": "fixed(May,14)",
 	"rank": "Feast",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Jn 15:16",
-			"uri": "saints/St+Matthias+Apostle/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/St+Matthias+Apostle/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "Acts 1:15-17, 20-26",
-			"uri": "saints/St+Matthias+Apostle/reading/1ST"
+			"uri": "http://jude.org/ns-missal/saints/St+Matthias+Apostle/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 113:1-2, 3-4, 5-6, 7-8 | resp 8",
-			"uri": "saints/St+Matthias+Apostle/reading/PS"
+			"uri": "http://jude.org/ns-missal/saints/St+Matthias+Apostle/reading/PS"
 		},
 		{
 			"readingType": "GA",
 			"citation": "Cf. Jn 15:16",
-			"uri": "saints/St+Matthias+Apostle/reading/GA"
+			"uri": "http://jude.org/ns-missal/saints/St+Matthias+Apostle/reading/GA"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Jn 15:9-17",
-			"uri": "saints/St+Matthias+Apostle/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/saints/St+Matthias+Apostle/reading/GOSPEL"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 15:12",
-			"uri": "saints/St+Matthias+Apostle/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/St+Matthias+Apostle/reading/COMMUNION+ANTIPHON"
 		}
 	]
 }

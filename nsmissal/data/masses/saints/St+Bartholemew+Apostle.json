@@ -1,39 +1,39 @@
 {
 	"proper": "saints",
 	"title": "St Bartholemew Apostle",
-	"uri": "saints/St+Bartholemew+Apostle",
+	"uri": "http://jude.org/ns-missal/saints/St+Bartholemew+Apostle",
 	"calendar": "fixed(Aug,24)",
 	"rank": "Feast",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Cf. Ps 96(95):2-3",
-			"uri": "saints/St+Bartholemew+Apostle/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/St+Bartholemew+Apostle/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "Rev 21:9b-14",
-			"uri": "saints/St+Bartholemew+Apostle/reading/1ST"
+			"uri": "http://jude.org/ns-missal/saints/St+Bartholemew+Apostle/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 145:10-11, 12-13, 17-18 | resp 12",
-			"uri": "saints/St+Bartholemew+Apostle/reading/PS"
+			"uri": "http://jude.org/ns-missal/saints/St+Bartholemew+Apostle/reading/PS"
 		},
 		{
 			"readingType": "GA",
 			"citation": "Jn 1:49b",
-			"uri": "saints/St+Bartholemew+Apostle/reading/GA"
+			"uri": "http://jude.org/ns-missal/saints/St+Bartholemew+Apostle/reading/GA"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Jn 1:45-51",
-			"uri": "saints/St+Bartholemew+Apostle/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/saints/St+Bartholemew+Apostle/reading/GOSPEL"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Lk 22:29-30",
-			"uri": "saints/St+Bartholemew+Apostle/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/St+Bartholemew+Apostle/reading/COMMUNION+ANTIPHON"
 		}
 	]
 }

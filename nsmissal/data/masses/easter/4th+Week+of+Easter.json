@@ -2,112 +2,112 @@
 	"proper": "time",
 	"season": "easter",
 	"title": "4th Week of Easter",
-	"uri": "easter/4th+Week+of+Easter",
+	"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter",
 	"readings": [
 		{
 			"title": "Sunday",
-			"uri": "easter/4th+Week+of+Easter/Sunday",
+			"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Ps 33(32): 5-6",
-					"uri": "easter/4th+Week+of+Easter/Sunday/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "noref",
-					"uri": "easter/4th+Week+of+Easter/Sunday/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/reading/COMMUNION+ANTIPHON"
 				},
 				{
 					"title": "A",
-					"uri": "easter/4th+Week+of+Easter/Sunday/A",
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/A",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Acts 2:14a, 36-41",
-							"uri": "easter/4th+Week+of+Easter/Sunday/A/reading/1ST"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/A/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 23:1-3a, 3b=4, 5, 6 | resp 1",
-							"uri": "easter/4th+Week+of+Easter/Sunday/A/reading/PS"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/A/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "1 Pt 2:20b-25",
-							"uri": "easter/4th+Week+of+Easter/Sunday/A/reading/2ND"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/A/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Jn 10:14",
-							"uri": "easter/4th+Week+of+Easter/Sunday/A/reading/GA"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/A/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Jn 10:1-10",
-							"uri": "easter/4th+Week+of+Easter/Sunday/A/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/A/reading/GOSPEL"
 						}
 					]
 				},
 				{
 					"title": "B",
-					"uri": "easter/4th+Week+of+Easter/Sunday/B",
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/B",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Acts 4:8-12",
-							"uri": "easter/4th+Week+of+Easter/Sunday/B/reading/1ST"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/B/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 118:1, 8-9, 21-23, 26, 28, 29 | resp 22",
-							"uri": "easter/4th+Week+of+Easter/Sunday/B/reading/PS"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/B/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "1 Jn 3:1-2",
-							"uri": "easter/4th+Week+of+Easter/Sunday/B/reading/2ND"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/B/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Jn 10:14",
-							"uri": "easter/4th+Week+of+Easter/Sunday/B/reading/GA"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/B/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Jn 10:11-18",
-							"uri": "easter/4th+Week+of+Easter/Sunday/B/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/B/reading/GOSPEL"
 						}
 					]
 				},
 				{
 					"title": "C",
-					"uri": "easter/4th+Week+of+Easter/Sunday/C",
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/C",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Acts 13: 14, 43-52",
-							"uri": "easter/4th+Week+of+Easter/Sunday/C/reading/1ST"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/C/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 100: 1-2, 3, 5 | resp 3c",
-							"uri": "easter/4th+Week+of+Easter/Sunday/C/reading/PS"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/C/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "Rev 7:9, 14b-17",
-							"uri": "easter/4th+Week+of+Easter/Sunday/C/reading/2ND"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/C/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Jn 10:14",
-							"uri": "easter/4th+Week+of+Easter/Sunday/C/reading/GA"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/C/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Jn 10:27-30",
-							"uri": "easter/4th+Week+of+Easter/Sunday/C/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Sunday/C/reading/GOSPEL"
 						}
 					]
 				}
@@ -115,222 +115,222 @@
 		},
 		{
 			"title": "Monday",
-			"uri": "easter/4th+Week+of+Easter/Monday",
+			"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Monday",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Rom 6:9",
-					"uri": "easter/4th+Week+of+Easter/Monday/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Monday/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Acts 11:1-18",
-					"uri": "easter/4th+Week+of+Easter/Monday/reading/1ST"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Monday/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 42:2-3; 43:3, 4 | resp Cf. 3a",
-					"uri": "easter/4th+Week+of+Easter/Monday/reading/PS"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Monday/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Jn 10:14",
-					"uri": "easter/4th+Week+of+Easter/Monday/reading/GA"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Monday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Jn 10:1-10",
-					"uri": "easter/4th+Week+of+Easter/Monday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Monday/reading/GOSPEL"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Jn 10:11-18",
-					"uri": "easter/4th+Week+of+Easter/Monday/reading/GOSPEL/2"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Monday/reading/GOSPEL/2"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Jn 20:19",
-					"uri": "easter/4th+Week+of+Easter/Monday/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Monday/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Tuesday",
-			"uri": "easter/4th+Week+of+Easter/Tuesday",
+			"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Tuesday",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Rev 19:7, 6",
-					"uri": "easter/4th+Week+of+Easter/Tuesday/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Tuesday/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Acts 11:19-26",
-					"uri": "easter/4th+Week+of+Easter/Tuesday/reading/1ST"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Tuesday/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 87: 1b-3, 4-5, 6-7 | resp 117:1a",
-					"uri": "easter/4th+Week+of+Easter/Tuesday/reading/PS"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Tuesday/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Jn 10:27",
-					"uri": "easter/4th+Week+of+Easter/Tuesday/reading/GA"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Tuesday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Jn 10:22-30",
-					"uri": "easter/4th+Week+of+Easter/Tuesday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Tuesday/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Cf. Lk 24:46, 26",
-					"uri": "easter/4th+Week+of+Easter/Tuesday/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Tuesday/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Wednesday",
-			"uri": "easter/4th+Week+of+Easter/Wednesday",
+			"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Wednesday",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Ps 18(17):50; 22(21):23",
-					"uri": "easter/4th+Week+of+Easter/Wednesday/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Wednesday/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Acts 12:24-13:5a",
-					"uri": "easter/4th+Week+of+Easter/Wednesday/reading/1ST"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Wednesday/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 67:2-3, 5, 6 and 8 | resp 4",
-					"uri": "easter/4th+Week+of+Easter/Wednesday/reading/PS"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Wednesday/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Jn 8:12",
-					"uri": "easter/4th+Week+of+Easter/Wednesday/reading/GA"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Wednesday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Jn 12:44-50",
-					"uri": "easter/4th+Week+of+Easter/Wednesday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Wednesday/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Cf. Jn 15:16, 19",
-					"uri": "easter/4th+Week+of+Easter/Wednesday/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Wednesday/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Thursday",
-			"uri": "easter/4th+Week+of+Easter/Thursday",
+			"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Thursday",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Ps 68(67): 8-9, 20",
-					"uri": "easter/4th+Week+of+Easter/Thursday/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Thursday/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Acts 13: 13-25",
-					"uri": "easter/4th+Week+of+Easter/Thursday/reading/1ST"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Thursday/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 89: 2-3, 21-22, 25 and 27 | resp 2",
-					"uri": "easter/4th+Week+of+Easter/Thursday/reading/PS"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Thursday/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Cf. Rev 1:5ab",
-					"uri": "easter/4th+Week+of+Easter/Thursday/reading/GA"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Thursday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Jn 13:16-20",
-					"uri": "easter/4th+Week+of+Easter/Thursday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Thursday/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Mt 28:20",
-					"uri": "easter/4th+Week+of+Easter/Thursday/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Thursday/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Friday",
-			"uri": "easter/4th+Week+of+Easter/Friday",
+			"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Friday",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Rev 5:9-10",
-					"uri": "easter/4th+Week+of+Easter/Friday/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Friday/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Acts 13:26-33",
-					"uri": "easter/4th+Week+of+Easter/Friday/reading/1ST"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Friday/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 2:6-7, 8-9, 10-11ab | resp 7bc",
-					"uri": "easter/4th+Week+of+Easter/Friday/reading/PS"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Friday/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Jn 14:6",
-					"uri": "easter/4th+Week+of+Easter/Friday/reading/GA"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Friday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Jn 14:1-6",
-					"uri": "easter/4th+Week+of+Easter/Friday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Friday/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Rom 4:25",
-					"uri": "easter/4th+Week+of+Easter/Friday/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Friday/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Saturday",
-			"uri": "easter/4th+Week+of+Easter/Saturday",
+			"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Saturday",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. 1 Pt 2:9",
-					"uri": "easter/4th+Week+of+Easter/Saturday/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Saturday/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Acts 13:44-52",
-					"uri": "easter/4th+Week+of+Easter/Saturday/reading/1ST"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Saturday/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 98:1, 2-3ab, 3cd-4 | resp 3cd",
-					"uri": "easter/4th+Week+of+Easter/Saturday/reading/PS"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Saturday/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Jn 8:31b-32",
-					"uri": "easter/4th+Week+of+Easter/Saturday/reading/GA"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Saturday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Jn 14:7-14",
-					"uri": "easter/4th+Week+of+Easter/Saturday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Saturday/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Jn 17:24",
-					"uri": "easter/4th+Week+of+Easter/Saturday/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/easter/4th+Week+of+Easter/Saturday/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		}

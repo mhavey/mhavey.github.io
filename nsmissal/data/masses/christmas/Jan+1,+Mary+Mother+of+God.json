@@ -1,0 +1,48 @@
+{
+	"proper": "time",
+	"season": "christmas",
+	"title": "Jan 1, Mary Mother of God",
+	"uri": "http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "noref",
+			"uri": "http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Is 9:1, 5; Lk 1:33",
+			"uri": "http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God/reading/ENTRANCE+ANTIPHON/2"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "Nm 6:22-27",
+			"uri": "http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 67:2-3, 5, 6, 8 | resp 2a",
+			"uri": "http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God/reading/PS"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Gal 4:4-7",
+			"uri": "http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God/reading/2ND"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Heb 1:1-2",
+			"uri": "http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 2:16-21",
+			"uri": "http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Heb 13:8",
+			"uri": "http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

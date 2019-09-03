@@ -1,89 +1,89 @@
 {
 	"proper": "saints",
 	"title": "Nativity of St John the Baptist",
-	"uri": "saints/Nativity+of+St+John+the+Baptist",
+	"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist",
 	"calendar": "fixed(Jun,24)",
 	"rank": "Solemnity",
 	"readings": [
 		{
 			"title": "Vigil",
-			"uri": "saints/Nativity+of+St+John+the+Baptist/Vigil",
+			"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Vigil",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Lk 1:15, 14",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Vigil/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Vigil/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Jer 1:4-10",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Vigil/reading/1ST"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Vigil/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 71:1-2, 3-4a, 5-6ab, 15ab and 17 | resp 6",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Vigil/reading/PS"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Vigil/reading/PS"
 				},
 				{
 					"readingType": "2ND",
 					"citation": "1 Pt 1:8-12",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Vigil/reading/2ND"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Vigil/reading/2ND"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Cf. Jn 1:7; Lk 1:17",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Vigil/reading/GA"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Vigil/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 1:5-17",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Vigil/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Vigil/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Lk 1:68",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Vigil/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Vigil/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Day",
-			"uri": "saints/Nativity+of+St+John+the+Baptist/Day",
+			"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Day",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Jn 1:6-7; Lk 1:17",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Day/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Day/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Is 49:1-6",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Day/reading/1ST"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Day/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 139:1b-3, 13-14ab, 14c-15 | resp 14",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Day/reading/PS"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Day/reading/PS"
 				},
 				{
 					"readingType": "2ND",
 					"citation": "Acts 13:22-26",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Day/reading/2ND"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Day/reading/2ND"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Cf. Lk 1:76",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Day/reading/GA"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Day/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 1:57-66, 80",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Day/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Day/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Cf. Lk 1:78",
-					"uri": "saints/Nativity+of+St+John+the+Baptist/Day/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/saints/Nativity+of+St+John+the+Baptist/Day/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		}

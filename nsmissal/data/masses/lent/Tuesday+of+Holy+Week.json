@@ -2,37 +2,37 @@
 	"proper": "time",
 	"season": "lent",
 	"title": "Tuesday of Holy Week",
-	"uri": "lent/Tuesday+of+Holy+Week",
+	"uri": "http://jude.org/ns-missal/lent/Tuesday+of+Holy+Week",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Cf. Ps 27(26):12",
-			"uri": "lent/Tuesday+of+Holy+Week/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/lent/Tuesday+of+Holy+Week/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "Is 49:1-6",
-			"uri": "lent/Tuesday+of+Holy+Week/reading/1ST"
+			"uri": "http://jude.org/ns-missal/lent/Tuesday+of+Holy+Week/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 71:1-2,3-4a,5ab-6ab,15 and 17 | resp Cf. 15ab",
-			"uri": "lent/Tuesday+of+Holy+Week/reading/PS"
+			"uri": "http://jude.org/ns-missal/lent/Tuesday+of+Holy+Week/reading/PS"
 		},
 		{
 			"readingType": "GOSPELVERSE",
 			"citation": "noref",
-			"uri": "lent/Tuesday+of+Holy+Week/reading/GOSPELVERSE"
+			"uri": "http://jude.org/ns-missal/lent/Tuesday+of+Holy+Week/reading/GOSPELVERSE"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Jn 13:21-33, 36-38",
-			"uri": "lent/Tuesday+of+Holy+Week/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/lent/Tuesday+of+Holy+Week/reading/GOSPEL"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Rom 8:32",
-			"uri": "lent/Tuesday+of+Holy+Week/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/lent/Tuesday+of+Holy+Week/reading/COMMUNION+ANTIPHON"
 		}
 	]
 }

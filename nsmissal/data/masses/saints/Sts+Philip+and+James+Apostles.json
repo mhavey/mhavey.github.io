@@ -1,39 +1,39 @@
 {
 	"proper": "saints",
 	"title": "Sts Philip and James Apostles",
-	"uri": "saints/Sts+Philip+and+James+Apostles",
+	"uri": "http://jude.org/ns-missal/saints/Sts+Philip+and+James+Apostles",
 	"calendar": "fixed(May,3)",
 	"rank": "Feast",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "noref",
-			"uri": "saints/Sts+Philip+and+James+Apostles/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/Sts+Philip+and+James+Apostles/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "1 Cor 15:1-8",
-			"uri": "saints/Sts+Philip+and+James+Apostles/reading/1ST"
+			"uri": "http://jude.org/ns-missal/saints/Sts+Philip+and+James+Apostles/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 19:2-3, 4-5 | resp 5",
-			"uri": "saints/Sts+Philip+and+James+Apostles/reading/PS"
+			"uri": "http://jude.org/ns-missal/saints/Sts+Philip+and+James+Apostles/reading/PS"
 		},
 		{
 			"readingType": "GA",
 			"citation": "Jn 14:6b, 9c",
-			"uri": "saints/Sts+Philip+and+James+Apostles/reading/GA"
+			"uri": "http://jude.org/ns-missal/saints/Sts+Philip+and+James+Apostles/reading/GA"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Jn 14:6-14",
-			"uri": "saints/Sts+Philip+and+James+Apostles/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/saints/Sts+Philip+and+James+Apostles/reading/GOSPEL"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Cf. Jn 14:8-9",
-			"uri": "saints/Sts+Philip+and+James+Apostles/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/Sts+Philip+and+James+Apostles/reading/COMMUNION+ANTIPHON"
 		}
 	]
 }

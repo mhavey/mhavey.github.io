@@ -2,37 +2,37 @@
 	"proper": "time",
 	"season": "christmas",
 	"title": "Dec 30, 6th Day Octave",
-	"uri": "christmas/Dec+30,+6th+Day+Octave",
+	"uri": "http://jude.org/ns-missal/christmas/Dec+30,+6th+Day+Octave",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Wis 18:14-15",
-			"uri": "christmas/Dec+30,+6th+Day+Octave/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/christmas/Dec+30,+6th+Day+Octave/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "1 Jn 2:12-17",
-			"uri": "christmas/Dec+30,+6th+Day+Octave/reading/1ST"
+			"uri": "http://jude.org/ns-missal/christmas/Dec+30,+6th+Day+Octave/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 96:7-8a, 8b-9, 10 | resp 11a",
-			"uri": "christmas/Dec+30,+6th+Day+Octave/reading/PS"
+			"uri": "http://jude.org/ns-missal/christmas/Dec+30,+6th+Day+Octave/reading/PS"
 		},
 		{
 			"readingType": "GA",
 			"citation": "noref",
-			"uri": "christmas/Dec+30,+6th+Day+Octave/reading/GA"
+			"uri": "http://jude.org/ns-missal/christmas/Dec+30,+6th+Day+Octave/reading/GA"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Lk 2:36-40",
-			"uri": "christmas/Dec+30,+6th+Day+Octave/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/christmas/Dec+30,+6th+Day+Octave/reading/GOSPEL"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 1:16",
-			"uri": "christmas/Dec+30,+6th+Day+Octave/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/christmas/Dec+30,+6th+Day+Octave/reading/COMMUNION+ANTIPHON"
 		}
 	]
 }

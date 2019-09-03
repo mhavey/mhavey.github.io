@@ -1,39 +1,39 @@
 {
 	"proper": "saints",
 	"title": "Chair of St Peter the Apostle",
-	"uri": "saints/Chair+of+St+Peter+the+Apostle",
+	"uri": "http://jude.org/ns-missal/saints/Chair+of+St+Peter+the+Apostle",
 	"calendar": "fixed(Feb,22)",
 	"rank": "Feast",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Lk 22:32",
-			"uri": "saints/Chair+of+St+Peter+the+Apostle/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/Chair+of+St+Peter+the+Apostle/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "1 Pt 5:1-4",
-			"uri": "saints/Chair+of+St+Peter+the+Apostle/reading/1ST"
+			"uri": "http://jude.org/ns-missal/saints/Chair+of+St+Peter+the+Apostle/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 23:1-3a, 4, 5, 6 | resp 1",
-			"uri": "saints/Chair+of+St+Peter+the+Apostle/reading/PS"
+			"uri": "http://jude.org/ns-missal/saints/Chair+of+St+Peter+the+Apostle/reading/PS"
 		},
 		{
 			"readingType": "GA",
 			"citation": "Mt 16:18",
-			"uri": "saints/Chair+of+St+Peter+the+Apostle/reading/GA"
+			"uri": "http://jude.org/ns-missal/saints/Chair+of+St+Peter+the+Apostle/reading/GA"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Mt 16:13-19",
-			"uri": "saints/Chair+of+St+Peter+the+Apostle/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/saints/Chair+of+St+Peter+the+Apostle/reading/GOSPEL"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Cf. Mt 16:16, 18",
-			"uri": "saints/Chair+of+St+Peter+the+Apostle/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/Chair+of+St+Peter+the+Apostle/reading/COMMUNION+ANTIPHON"
 		}
 	]
 }

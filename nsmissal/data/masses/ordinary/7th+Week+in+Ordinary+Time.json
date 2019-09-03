@@ -2,117 +2,117 @@
 	"proper": "time",
 	"season": "ordinary",
 	"title": "7th Week in Ordinary Time",
-	"uri": "ordinary/7th+Week+in+Ordinary+Time",
+	"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Ps 13(12):6",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Ps 9:2-3",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 11:27",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON/2"
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON/2"
 		},
 		{
 			"title": "Sunday",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday",
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday",
 			"readings": [
 				{
 					"title": "A",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/A",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/A",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Lv 19:1-2, 17-18",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 103:1-2, 3-4, 8, 10, 12-13 | resp 8a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "1 Cor 3:16-23",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/2ND"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "1 Jn 2:5",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/GA"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Mt 5:38-48",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/A/reading/GOSPEL"
 						}
 					]
 				},
 				{
 					"title": "B",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/B",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/B",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Is 43:18-19, 21-22, 24b-25",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 41:2-3, 4-5, 13-14 | resp 5b",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "2 Cor 1:18-22",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/2ND"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Cf. Lk 4:18",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/GA"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Mk 2:1-12",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/B/reading/GOSPEL"
 						}
 					]
 				},
 				{
 					"title": "C",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/C",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/C",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "1 Sm 26:2, 7-9, 12-13, 22-23",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 103:1-2, 3-4, 8, 10, 12-13 | resp 8a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "1 Cor 15:45-49",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/2ND"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Jn 13:34",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/GA"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Lk 6:27-38",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Sunday/C/reading/GOSPEL"
 						}
 					]
 				}
@@ -120,47 +120,47 @@
 		},
 		{
 			"title": "Monday",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/Monday",
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Monday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Cf. 2 Tm 1:10",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Monday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Monday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Mk 9:14-29",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Monday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Monday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Monday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Monday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Sir 1:1-10",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Monday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Monday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 93:1ab, 1cd-2, 5 | resp 1a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Monday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Monday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Monday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Monday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Jas 3:13-18",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Monday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Monday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 19:8, 9, 10, 15 | resp 9a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Monday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Monday/II/reading/PS"
 						}
 					]
 				}
@@ -168,47 +168,47 @@
 		},
 		{
 			"title": "Tuesday",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/Tuesday",
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Tuesday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Gal 6:14",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Tuesday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Tuesday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Mk 9:30-37",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Tuesday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Tuesday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Tuesday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Tuesday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Sir 2:1-11",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Tuesday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Tuesday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 37:3-4, 18-19, 27-28, 39-40 | resp Cf. 5",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Tuesday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Tuesday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Tuesday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Tuesday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Jas 4:1-10",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Tuesday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Tuesday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 55:7-8, 9-10a, 10b-11a, 23 | resp 23a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Tuesday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Tuesday/II/reading/PS"
 						}
 					]
 				}
@@ -216,47 +216,47 @@
 		},
 		{
 			"title": "Wednesday",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/Wednesday",
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Wednesday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Jn 14:6",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Wednesday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Wednesday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Mk 9:38-40",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Wednesday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Wednesday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Wednesday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Wednesday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Sir 4:11-19",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Wednesday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Wednesday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 119:165, 168, 171, 172, 174, 175 | resp 165a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Wednesday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Wednesday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Wednesday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Wednesday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Jas 4:13-17",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Wednesday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Wednesday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 49:2-3, 6-7, 8-10, 11 | resp Mt 5:3",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Wednesday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Wednesday/II/reading/PS"
 						}
 					]
 				}
@@ -264,47 +264,47 @@
 		},
 		{
 			"title": "Thursday",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/Thursday",
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Thursday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Cf. 1 Thes 2:13",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Thursday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Thursday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Mk 9:41-50",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Thursday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Thursday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Thursday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Thursday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Sir 5:1-8",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Thursday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Thursday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 1:1-2, 3, 4 and 6 | resp 40:5a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Thursday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Thursday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Thursday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Thursday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Jas 5:1-6",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Thursday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Thursday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 49:14-15ab, 15cd-16, 17-18, 19-20 | resp Mt 5:3",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Thursday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Thursday/II/reading/PS"
 						}
 					]
 				}
@@ -312,47 +312,47 @@
 		},
 		{
 			"title": "Friday",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/Friday",
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Friday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Cf. Jn 17:17b, 17a",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Friday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Friday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Mk 10:1-12",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Friday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Friday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Friday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Friday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Sir 6:5-17",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Friday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Friday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 119:12, 16, 18, 27, 34, 35 | resp 35a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Friday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Friday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Friday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Friday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Jas 5:9-12",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Friday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Friday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 103:1-2, 3-4, 8-9, 11-12 | resp 8a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Friday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Friday/II/reading/PS"
 						}
 					]
 				}
@@ -360,47 +360,47 @@
 		},
 		{
 			"title": "Saturday",
-			"uri": "ordinary/7th+Week+in+Ordinary+Time/Saturday",
+			"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Saturday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Cf. Mt 11:25",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Saturday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Saturday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Mk 10:13-16",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Saturday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Saturday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Saturday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Saturday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Sir 17:1-5",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Saturday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Saturday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 103:13-14, 15-16, 17-18 | resp Cf. 17",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Saturday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Saturday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/7th+Week+in+Ordinary+Time/Saturday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Saturday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Jas 5:13-20",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Saturday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Saturday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 141:1-2, 3 and 8 | resp 2a",
-							"uri": "ordinary/7th+Week+in+Ordinary+Time/Saturday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/7th+Week+in+Ordinary+Time/Saturday/II/reading/PS"
 						}
 					]
 				}

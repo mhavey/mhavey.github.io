@@ -1,0 +1,338 @@
+{
+	"proper": "time",
+	"season": "lent",
+	"title": "1st Week of Lent",
+	"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent",
+	"readings": [
+		{
+			"title": "Sunday",
+			"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday",
+			"readings": [
+				{
+					"readingType": "ENTRANCE ANTIPHON",
+					"citation": "Cf. Ps 91(90): 15-16",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/reading/ENTRANCE+ANTIPHON"
+				},
+				{
+					"readingType": "COMMUNION ANTIPHON",
+					"citation": "Mt 4:4",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/reading/COMMUNION+ANTIPHON"
+				},
+				{
+					"readingType": "COMMUNION ANTIPHON",
+					"citation": "Cf. Ps 91(90): 4",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/reading/COMMUNION+ANTIPHON/2"
+				},
+				{
+					"title": "A",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/A",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Gn 2:7-9; 3:1-7",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/A/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 51:3-4,5-6,12-13,17 | resp Cf. 3a",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/A/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Rom 5: 12-19",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/A/reading/2ND"
+						},
+						{
+							"readingType": "GOSPELVERSE",
+							"citation": "Mt 4:4b",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/A/reading/GOSPELVERSE"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mt 4:1-11",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/A/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "B",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/B",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Gn 9:8-15",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/B/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 25:4-5, 6-7, 8-9 | resp Cf. 10",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/B/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "1 Pt 3:18-22",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/B/reading/2ND"
+						},
+						{
+							"readingType": "GOSPELVERSE",
+							"citation": "Mt 4:4b",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/B/reading/GOSPELVERSE"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mk 1:12-15",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/B/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "C",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/C",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Dt 26:4-10",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/C/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 91:1-2, 10-11, 12-13, 14-15 | resp Cf. 15b",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/C/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Rom 10:8-13",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/C/reading/2ND"
+						},
+						{
+							"readingType": "GOSPELVERSE",
+							"citation": "Mt 4:4b",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/C/reading/GOSPELVERSE"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Lk 4:1-13",
+							"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Sunday/C/reading/GOSPEL"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Monday",
+			"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Monday",
+			"readings": [
+				{
+					"readingType": "ENTRANCE ANTIPHON",
+					"citation": "Cf. Ps 123(122): 2-3",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Monday/reading/ENTRANCE+ANTIPHON"
+				},
+				{
+					"readingType": "1ST",
+					"citation": "Lv 19:1-2, 11-18",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Monday/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 19:8, 9, 10, 15 | resp Jn 6:63b",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Monday/reading/PS"
+				},
+				{
+					"readingType": "GOSPELVERSE",
+					"citation": "2 Cor 6:2b",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Monday/reading/GOSPELVERSE"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 25:31-46",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Monday/reading/GOSPEL"
+				},
+				{
+					"readingType": "COMMUNION ANTIPHON",
+					"citation": "Mt 25:40, 34",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Monday/reading/COMMUNION+ANTIPHON"
+				}
+			]
+		},
+		{
+			"title": "Tuesday",
+			"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Tuesday",
+			"readings": [
+				{
+					"readingType": "ENTRANCE ANTIPHON",
+					"citation": "Cf. Ps 90(89):1-2",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Tuesday/reading/ENTRANCE+ANTIPHON"
+				},
+				{
+					"readingType": "1ST",
+					"citation": "Is 55:10-11",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Tuesday/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 34:4-5,6-7,16-17, 18-19 | resp 18b",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Tuesday/reading/PS"
+				},
+				{
+					"readingType": "GOSPELVERSE",
+					"citation": "Mt 4:4b",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Tuesday/reading/GOSPELVERSE"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 6:7-15",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Tuesday/reading/GOSPEL"
+				},
+				{
+					"readingType": "COMMUNION ANTIPHON",
+					"citation": "Cf. Ps 4:2",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Tuesday/reading/COMMUNION+ANTIPHON"
+				}
+			]
+		},
+		{
+			"title": "Wednesday",
+			"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Wednesday",
+			"readings": [
+				{
+					"readingType": "ENTRANCE ANTIPHON",
+					"citation": "Cf. Ps 25(24):6, 2, 22",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Wednesday/reading/ENTRANCE+ANTIPHON"
+				},
+				{
+					"readingType": "1ST",
+					"citation": "Jon 3:1-10",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Wednesday/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 51:3-4,12-13,18-19 | resp 19b",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Wednesday/reading/PS"
+				},
+				{
+					"readingType": "GOSPELVERSE",
+					"citation": "Jl 2:12-13",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Wednesday/reading/GOSPELVERSE"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 11:29-32",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Wednesday/reading/GOSPEL"
+				},
+				{
+					"readingType": "COMMUNION ANTIPHON",
+					"citation": "Cf. Ps 5:12",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Wednesday/reading/COMMUNION+ANTIPHON"
+				}
+			]
+		},
+		{
+			"title": "Thursday",
+			"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Thursday",
+			"readings": [
+				{
+					"readingType": "ENTRANCE ANTIPHON",
+					"citation": "Cf. Ps 5:2-3",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Thursday/reading/ENTRANCE+ANTIPHON"
+				},
+				{
+					"readingType": "1ST",
+					"citation": "Est C: 12 , 14-16, 23-25",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Thursday/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 138:1-2ab,2cde-3,7c-8 | resp 3a",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Thursday/reading/PS"
+				},
+				{
+					"readingType": "GOSPELVERSE",
+					"citation": "Ps 51:12a, 14a",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Thursday/reading/GOSPELVERSE"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 7:7-12",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Thursday/reading/GOSPEL"
+				},
+				{
+					"readingType": "COMMUNION ANTIPHON",
+					"citation": "Mt 7:8",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Thursday/reading/COMMUNION+ANTIPHON"
+				}
+			]
+		},
+		{
+			"title": "Friday",
+			"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Friday",
+			"readings": [
+				{
+					"readingType": "ENTRANCE ANTIPHON",
+					"citation": "Cf. Ps 25(24): 17-18",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Friday/reading/ENTRANCE+ANTIPHON"
+				},
+				{
+					"readingType": "1ST",
+					"citation": "Ez 18:21-28",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Friday/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 130:1-2,3-4,5-7a,7bc-8 | resp 3",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Friday/reading/PS"
+				},
+				{
+					"readingType": "GOSPELVERSE",
+					"citation": "Ez 18:31",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Friday/reading/GOSPELVERSE"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 5:20-26",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Friday/reading/GOSPEL"
+				},
+				{
+					"readingType": "COMMUNION ANTIPHON",
+					"citation": "Ez 33:11",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Friday/reading/COMMUNION+ANTIPHON"
+				}
+			]
+		},
+		{
+			"title": "Saturday",
+			"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Saturday",
+			"readings": [
+				{
+					"readingType": "ENTRANCE ANTIPHON",
+					"citation": "Cf. Ps 19(18): 8",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Saturday/reading/ENTRANCE+ANTIPHON"
+				},
+				{
+					"readingType": "1ST",
+					"citation": "Dt 26:16-19",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Saturday/reading/1ST"
+				},
+				{
+					"readingType": "PS",
+					"citation": "Ps 119:1-2,4-5,7-8 | resp 1b",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Saturday/reading/PS"
+				},
+				{
+					"readingType": "GOSPELVERSE",
+					"citation": "2 Cor 6:2b",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Saturday/reading/GOSPELVERSE"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 5:43-48",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Saturday/reading/GOSPEL"
+				},
+				{
+					"readingType": "COMMUNION ANTIPHON",
+					"citation": "Mt 5:48",
+					"uri": "http://jude.org/ns-missal/lent/1st+Week+of+Lent/Saturday/reading/COMMUNION+ANTIPHON"
+				}
+			]
+		}
+	]
+}

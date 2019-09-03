@@ -1,44 +1,44 @@
 {
 	"proper": "saints",
 	"title": "Exaltation of the Holy Cross",
-	"uri": "saints/Exaltation+of+the+Holy+Cross",
+	"uri": "http://jude.org/ns-missal/saints/Exaltation+of+the+Holy+Cross",
 	"calendar": "fixed(Sep,14)",
 	"rank": "Feast",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Cf. Gal 6:14",
-			"uri": "saints/Exaltation+of+the+Holy+Cross/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/Exaltation+of+the+Holy+Cross/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "Nm 21:4b-9",
-			"uri": "saints/Exaltation+of+the+Holy+Cross/reading/1ST"
+			"uri": "http://jude.org/ns-missal/saints/Exaltation+of+the+Holy+Cross/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 78:1bc-2, 34-35, 36-37, 38 | resp Cf. 7b",
-			"uri": "saints/Exaltation+of+the+Holy+Cross/reading/PS"
+			"uri": "http://jude.org/ns-missal/saints/Exaltation+of+the+Holy+Cross/reading/PS"
 		},
 		{
 			"readingType": "2ND",
 			"citation": "Phil 2:6-11",
-			"uri": "saints/Exaltation+of+the+Holy+Cross/reading/2ND"
+			"uri": "http://jude.org/ns-missal/saints/Exaltation+of+the+Holy+Cross/reading/2ND"
 		},
 		{
 			"readingType": "GA",
 			"citation": "noref",
-			"uri": "saints/Exaltation+of+the+Holy+Cross/reading/GA"
+			"uri": "http://jude.org/ns-missal/saints/Exaltation+of+the+Holy+Cross/reading/GA"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Jn 3:13-17",
-			"uri": "saints/Exaltation+of+the+Holy+Cross/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/saints/Exaltation+of+the+Holy+Cross/reading/GOSPEL"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 12:32",
-			"uri": "saints/Exaltation+of+the+Holy+Cross/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/Exaltation+of+the+Holy+Cross/reading/COMMUNION+ANTIPHON"
 		}
 	]
 }

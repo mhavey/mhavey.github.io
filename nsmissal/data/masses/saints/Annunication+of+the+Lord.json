@@ -1,44 +1,44 @@
 {
 	"proper": "saints",
 	"title": "Annunication of the Lord",
-	"uri": "saints/Annunication+of+the+Lord",
+	"uri": "http://jude.org/ns-missal/saints/Annunication+of+the+Lord",
 	"calendar": "fixed(Mar,25)",
 	"rank": "Solemnity",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Heb 10:5, 7",
-			"uri": "saints/Annunication+of+the+Lord/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/Annunication+of+the+Lord/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "Is 7:10-14; 8:10",
-			"uri": "saints/Annunication+of+the+Lord/reading/1ST"
+			"uri": "http://jude.org/ns-missal/saints/Annunication+of+the+Lord/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 40:7-8a, 8b-9, 10, 11 | resp 8a and 9a",
-			"uri": "saints/Annunication+of+the+Lord/reading/PS"
+			"uri": "http://jude.org/ns-missal/saints/Annunication+of+the+Lord/reading/PS"
 		},
 		{
 			"readingType": "2ND",
 			"citation": "Heb 10:4-10",
-			"uri": "saints/Annunication+of+the+Lord/reading/2ND"
+			"uri": "http://jude.org/ns-missal/saints/Annunication+of+the+Lord/reading/2ND"
 		},
 		{
 			"readingType": "GOSPELVERSE",
 			"citation": "Jn 1:14ab",
-			"uri": "saints/Annunication+of+the+Lord/reading/GOSPELVERSE"
+			"uri": "http://jude.org/ns-missal/saints/Annunication+of+the+Lord/reading/GOSPELVERSE"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Lk 1:26-38",
-			"uri": "saints/Annunication+of+the+Lord/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/saints/Annunication+of+the+Lord/reading/GOSPEL"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Is 7:14",
-			"uri": "saints/Annunication+of+the+Lord/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/Annunication+of+the+Lord/reading/COMMUNION+ANTIPHON"
 		}
 	]
 }

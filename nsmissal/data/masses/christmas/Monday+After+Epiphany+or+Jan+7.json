@@ -2,99 +2,99 @@
 	"proper": "time",
 	"season": "christmas",
 	"title": "Monday After Epiphany or Jan 7",
-	"uri": "christmas/Monday+After+Epiphany+or+Jan+7",
+	"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "noref",
 			"note": "Monday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 1:14",
 			"note": "Monday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Ps 118(117): 26-27",
 			"note": "Tuesday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/2"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/2"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Eph 2:4; Rom 8:3",
 			"note": "Tuesday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/2"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/2"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Is 9:1",
 			"note": "Wednesday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/3"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/3"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "1 Jn 1:2",
 			"note": "Wednesday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/3"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/3"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Cf. Jn 1:1",
 			"note": "Thursday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/4"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/4"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 3:16",
 			"note": "Thursday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/4"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/4"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Ps 112(111): 4",
 			"note": "Friday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/5"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/5"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "1 Jn 4:9",
 			"note": "Friday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/5"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/5"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Gal 4:4-5",
 			"note": "Saturday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/6"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/ENTRANCE+ANTIPHON/6"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 1:16",
 			"note": "Saturday",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/6"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/COMMUNION+ANTIPHON/6"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "1 Jn 3:22-4:6",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/1ST"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 2:7bc-8,10-12a | resp 8ab",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/PS"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/PS"
 		},
 		{
 			"readingType": "GA",
 			"citation": "Cf. Mt 4:23",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/GA"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/GA"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Mt 4:12-17, 23-25",
-			"uri": "christmas/Monday+After+Epiphany+or+Jan+7/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/christmas/Monday+After+Epiphany+or+Jan+7/reading/GOSPEL"
 		}
 	]
 }

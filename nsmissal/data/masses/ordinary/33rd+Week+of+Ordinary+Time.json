@@ -2,117 +2,117 @@
 	"proper": "time",
 	"season": "ordinary",
 	"title": "33rd Week of Ordinary Time",
-	"uri": "ordinary/33rd+Week+of+Ordinary+Time",
+	"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Jer 29:11, 12, 14",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Ps 73(72):28",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/reading/COMMUNION+ANTIPHON"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Mk 11:23-24",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/reading/COMMUNION+ANTIPHON/2"
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/reading/COMMUNION+ANTIPHON/2"
 		},
 		{
 			"title": "Sunday",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday",
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday",
 			"readings": [
 				{
 					"title": "A",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/A",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/A",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Prv 31:10-13, 19-20, 30-31",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 128:1-2, 3, 4-5 | resp Cf. 1a",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "1 Thes 5:1-6",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/2ND"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Jn 15:4a, 5b",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/GA"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Mt 25:14-30",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/A/reading/GOSPEL"
 						}
 					]
 				},
 				{
 					"title": "B",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/B",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/B",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Dn 12:1-3",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 16:5, 8, 9-10, 11 | resp 1",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "Heb 10:11-14, 18",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/2ND"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Lk 21:36",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/GA"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Mk 13:24-32",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/B/reading/GOSPEL"
 						}
 					]
 				},
 				{
 					"title": "C",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/C",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/C",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Mal 3:19-20a",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 98:5-6, 7-8, 9 | resp Cf. 9",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "2 Thes 3:7-12",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/2ND"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Lk 21:28",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/GA"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Lk 21:5-19",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Sunday/C/reading/GOSPEL"
 						}
 					]
 				}
@@ -120,47 +120,47 @@
 		},
 		{
 			"title": "Monday",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/Monday",
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Monday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Jn 8:12",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Monday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Monday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 18:35-43",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Monday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Monday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Monday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Monday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "1 Mc 1:10-15, 41-43, 54-57, 62-63",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Monday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Monday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 119:53, 61, 134, 150, 155, 158 | resp Cf. 88",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Monday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Monday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Monday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Monday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Rev 1:1-4; 2:1-5",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Monday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Monday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 1:1-2, 3, 4 and 6 | resp Rev 2:17",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Monday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Monday/II/reading/PS"
 						}
 					]
 				}
@@ -168,47 +168,47 @@
 		},
 		{
 			"title": "Tuesday",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/Tuesday",
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Tuesday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "1 Jn 4:10b",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Tuesday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Tuesday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 19:1-10",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Tuesday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Tuesday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Tuesday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Tuesday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "2 Mc 6:18-31",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Tuesday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Tuesday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 3:2-3, 4-5, 6-7 | resp 6b",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Tuesday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Tuesday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Tuesday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Tuesday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Rev 3:1-6, 14-22",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Tuesday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Tuesday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 15:2-3a, 3bc-4ab, 5 | resp Rev 3:21",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Tuesday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Tuesday/II/reading/PS"
 						}
 					]
 				}
@@ -216,47 +216,47 @@
 		},
 		{
 			"title": "Wednesday",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/Wednesday",
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Wednesday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Cf. Jn 15:16",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Wednesday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Wednesday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 19:11-28",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Wednesday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Wednesday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Wednesday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Wednesday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "2 Mc 7:1, 20-31",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Wednesday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Wednesday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 17:1bcd, 5-6, 8b and 15 | resp 15b",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Wednesday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Wednesday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Wednesday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Wednesday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Rev 4:1-11",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Wednesday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Wednesday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 150:1b-2, 3-4, 5-6 | resp 1b",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Wednesday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Wednesday/II/reading/PS"
 						}
 					]
 				}
@@ -264,47 +264,47 @@
 		},
 		{
 			"title": "Thursday",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/Thursday",
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Thursday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Ps 95:8",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Thursday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Thursday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 19:41-44",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Thursday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Thursday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Thursday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Thursday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "1 Mc 2:15-29",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Thursday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Thursday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 50:1b-2, 5-6, 14-15 | resp 23b",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Thursday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Thursday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Thursday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Thursday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Rev 5:1-10",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Thursday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Thursday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 149:1b-2, 3-4, 5-6a and 9b | resp Rev 5:10",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Thursday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Thursday/II/reading/PS"
 						}
 					]
 				}
@@ -312,47 +312,47 @@
 		},
 		{
 			"title": "Friday",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/Friday",
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Friday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Jn 10:27",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Friday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Friday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 19:45-48",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Friday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Friday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Friday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Friday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "1 Mc 4:36-37, 52-59",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Friday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Friday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "1 Chr 29:10bcd, 11abc, 11d-12a, 12bcd | resp 13b",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Friday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Friday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Friday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Friday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Rev 10:8-11",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Friday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Friday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 119:14, 24, 72, 103, 111, 131 | resp 103a",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Friday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Friday/II/reading/PS"
 						}
 					]
 				}
@@ -360,47 +360,47 @@
 		},
 		{
 			"title": "Saturday",
-			"uri": "ordinary/33rd+Week+of+Ordinary+Time/Saturday",
+			"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Saturday",
 			"readings": [
 				{
 					"readingType": "GA",
 					"citation": "Cf. 2 Tm 1:10",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Saturday/reading/GA"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Saturday/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 20:27-40",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Saturday/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Saturday/reading/GOSPEL"
 				},
 				{
 					"title": "I",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Saturday/I",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Saturday/I",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "1 Mc 6:1-13",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Saturday/I/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Saturday/I/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 9:2-3, 4 and 6, 6 and 19 | resp Cf. 16a",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Saturday/I/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Saturday/I/reading/PS"
 						}
 					]
 				},
 				{
 					"title": "II",
-					"uri": "ordinary/33rd+Week+of+Ordinary+Time/Saturday/II",
+					"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Saturday/II",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Rev 11:4-12",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Saturday/II/reading/1ST"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Saturday/II/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 144:1, 2, 9-10 | resp 1b",
-							"uri": "ordinary/33rd+Week+of+Ordinary+Time/Saturday/II/reading/PS"
+							"uri": "http://jude.org/ns-missal/ordinary/33rd+Week+of+Ordinary+Time/Saturday/II/reading/PS"
 						}
 					]
 				}

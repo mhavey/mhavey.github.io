@@ -1,39 +1,39 @@
 {
 	"proper": "saints",
 	"title": "St Lawrence Deacon and Martyr",
-	"uri": "saints/St+Lawrence+Deacon+and+Martyr",
+	"uri": "http://jude.org/ns-missal/saints/St+Lawrence+Deacon+and+Martyr",
 	"calendar": "fixed(Aug,10)",
 	"rank": "Feast",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "noref",
-			"uri": "saints/St+Lawrence+Deacon+and+Martyr/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/St+Lawrence+Deacon+and+Martyr/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "2 Cor 9:6-10",
-			"uri": "saints/St+Lawrence+Deacon+and+Martyr/reading/1ST"
+			"uri": "http://jude.org/ns-missal/saints/St+Lawrence+Deacon+and+Martyr/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 112:1-2,5-6,7-8, 9 | resp 5",
-			"uri": "saints/St+Lawrence+Deacon+and+Martyr/reading/PS"
+			"uri": "http://jude.org/ns-missal/saints/St+Lawrence+Deacon+and+Martyr/reading/PS"
 		},
 		{
 			"readingType": "GA",
 			"citation": "Jn 8:12bc",
-			"uri": "saints/St+Lawrence+Deacon+and+Martyr/reading/GA"
+			"uri": "http://jude.org/ns-missal/saints/St+Lawrence+Deacon+and+Martyr/reading/GA"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Jn 12:24-26",
-			"uri": "saints/St+Lawrence+Deacon+and+Martyr/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/saints/St+Lawrence+Deacon+and+Martyr/reading/GOSPEL"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Cf. Jn 12:26",
-			"uri": "saints/St+Lawrence+Deacon+and+Martyr/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/saints/St+Lawrence+Deacon+and+Martyr/reading/COMMUNION+ANTIPHON"
 		}
 	]
 }

@@ -2,169 +2,169 @@
 	"proper": "time",
 	"season": "christmas",
 	"title": "Nativity",
-	"uri": "christmas/Nativity",
+	"uri": "http://jude.org/ns-missal/christmas/Nativity",
 	"readings": [
 		{
 			"title": "Vigil",
-			"uri": "christmas/Nativity/Vigil",
+			"uri": "http://jude.org/ns-missal/christmas/Nativity/Vigil",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Ex 16:6-7",
-					"uri": "christmas/Nativity/Vigil/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Vigil/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Is 62:1-5",
-					"uri": "christmas/Nativity/Vigil/reading/1ST"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Vigil/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 89: 4-5, 16-17, 27, 29 | resp 2a",
-					"uri": "christmas/Nativity/Vigil/reading/PS"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Vigil/reading/PS"
 				},
 				{
 					"readingType": "2ND",
 					"citation": "Acts 13:16-17, 22-25",
-					"uri": "christmas/Nativity/Vigil/reading/2ND"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Vigil/reading/2ND"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "christmas/Nativity/Vigil/reading/GA"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Vigil/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Mt 1:1-25",
-					"uri": "christmas/Nativity/Vigil/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Vigil/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Cf. Is 40:5",
-					"uri": "christmas/Nativity/Vigil/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Vigil/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Night",
-			"uri": "christmas/Nativity/Night",
+			"uri": "http://jude.org/ns-missal/christmas/Nativity/Night",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Ps 2:7",
-					"uri": "christmas/Nativity/Night/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Night/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Is 9:1-6",
-					"uri": "christmas/Nativity/Night/reading/1ST"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Night/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 96: 1-2, 2-3, 11-12, 13 | resp Lk 2:11",
-					"uri": "christmas/Nativity/Night/reading/PS"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Night/reading/PS"
 				},
 				{
 					"readingType": "2ND",
 					"citation": "Ti 2:11-14",
-					"uri": "christmas/Nativity/Night/reading/2ND"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Night/reading/2ND"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Lk 2:10-11",
-					"uri": "christmas/Nativity/Night/reading/GA"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Night/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 2:1-14",
-					"uri": "christmas/Nativity/Night/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Night/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Jn 1:14",
-					"uri": "christmas/Nativity/Night/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Night/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Dawn",
-			"uri": "christmas/Nativity/Dawn",
+			"uri": "http://jude.org/ns-missal/christmas/Nativity/Dawn",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Is 9:1, 5; Lk 1:33",
-					"uri": "christmas/Nativity/Dawn/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Dawn/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Is 62:11-12",
-					"uri": "christmas/Nativity/Dawn/reading/1ST"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Dawn/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 97:1, 6, 11-12",
-					"uri": "christmas/Nativity/Dawn/reading/PS"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Dawn/reading/PS"
 				},
 				{
 					"readingType": "2ND",
 					"citation": "Ti 3:4-7",
-					"uri": "christmas/Nativity/Dawn/reading/2ND"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Dawn/reading/2ND"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Lk 2:14",
-					"uri": "christmas/Nativity/Dawn/reading/GA"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Dawn/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 2:15-20",
-					"uri": "christmas/Nativity/Dawn/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Dawn/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Cf. Zec 9:9",
-					"uri": "christmas/Nativity/Dawn/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Dawn/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Day",
-			"uri": "christmas/Nativity/Day",
+			"uri": "http://jude.org/ns-missal/christmas/Nativity/Day",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Is 9:5",
-					"uri": "christmas/Nativity/Day/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Day/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Is 52:7-10",
-					"uri": "christmas/Nativity/Day/reading/1ST"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Day/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 98:1, 2-3, 3-4, 5-6 | resp 3c",
-					"uri": "christmas/Nativity/Day/reading/PS"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Day/reading/PS"
 				},
 				{
 					"readingType": "2ND",
 					"citation": "Heb 1:1-6",
-					"uri": "christmas/Nativity/Day/reading/2ND"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Day/reading/2ND"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "christmas/Nativity/Day/reading/GA"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Day/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Jn 1:1-18",
-					"uri": "christmas/Nativity/Day/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Day/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Cf.Ps 98(97):3",
-					"uri": "christmas/Nativity/Day/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/christmas/Nativity/Day/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		}

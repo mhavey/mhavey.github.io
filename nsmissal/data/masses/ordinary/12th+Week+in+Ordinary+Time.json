@@ -1,0 +1,410 @@
+{
+	"proper": "time",
+	"season": "ordinary",
+	"title": "12th Week in Ordinary Time",
+	"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Ps 28(27): 8-9",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Ps 145(144): 15",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 10:11, 15",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON/2"
+		},
+		{
+			"title": "Sunday",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday",
+			"readings": [
+				{
+					"title": "A",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/A",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Jer 20:10-13",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/A/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 69:8-10, 14, 17, 33-35 | resp 14c",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/A/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Rom 5:12-15",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/A/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Jn 15: 26b, 27a",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/A/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mt 10:26-33",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/A/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "B",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/B",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Jb 38: 1 8-11",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/B/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 107: 23-24, 25-26, 28-29, 30-31 | resp 1b",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/B/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "2 Cor 5:14-17",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/B/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Lk 7:16",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/B/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mk 4:35-41",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/B/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "C",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/C",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Zec 12:10-11, 13:1",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/C/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 63:2, 3-4, 5-6, 8-9 | resp 2b",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/C/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Gal 3:26-29",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/C/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Jn 10:27",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/C/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Lk 9:18-24",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/C/reading/GOSPEL"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Monday",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Monday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Heb 4:12",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Monday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 7:1-5",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Monday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Monday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Gn 12:1-9",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Monday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 33:12-13, 18-19, 20 and 22 | resp 12",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Monday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Monday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "2 Kgs 17:5-8, 13-15a, 18",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Monday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 60:3, 4-5, 12-13 | resp 7b",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Monday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Tuesday",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Tuesday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Jn 8:12",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Tuesday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 7:6, 12-14",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Tuesday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Tuesday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Gn 13:2, 5-18",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Tuesday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 15:2-3a, 3bc-4ab, 5 | resp 1b",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Tuesday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Tuesday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "2 Kgs 19:9b-11, 14-21, 31-35a, 36",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Tuesday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 48:2-3ab, 3cd-4, 10-11 | resp Cf. 9d",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Tuesday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Wednesday",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Wednesday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Jn 15:4a, 5b",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Wednesday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 7:15-20",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Wednesday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Wednesday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Gn 15:1-12, 17-18",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Wednesday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 105: 1-2, 3-4, 6-7, 8-9 | resp 8a",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Wednesday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Wednesday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "2 Kgs 22:8-13; 23:1-3",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Wednesday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 119:33, 34, 35, 36, 37, 40 | resp 33a",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Wednesday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Thursday",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Thursday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Jn 14:23",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Thursday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 7:21-29",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Thursday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Thursday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Gn 16:1-12, 15-16",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Thursday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 106: 1b-2, 3-4a, 4b-5 | resp 1b",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Thursday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Thursday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "2 Kgs 24:8-17",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Thursday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 79: 1b-2, 3-5, 8, 9 | resp 9",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Thursday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Friday",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Friday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Mt 8:17",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Friday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 8:1-4",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Friday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Friday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Gn 17:1, 9-10, 15-22",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Friday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 128:1-2, 3, 4-5 | resp 4",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Friday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Friday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "2 Kgs 25:1-12",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Friday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 137:1-2, 3, 4-5, 6 | resp 6ab",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Friday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Saturday",
+			"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Mt 8:17",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 8:5-17",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Gn 18:1-15",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Lk 1:46-47, 48-49, 50 and 53, 54-55 | resp Cf. 54b",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Lam 2:2, 10-14, 18-19",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 74, 1b-2, 3-5, 6-7, 20-21 | resp 19b",
+							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday/II/reading/PS"
+						}
+					]
+				}
+			]
+		}
+	]
+}

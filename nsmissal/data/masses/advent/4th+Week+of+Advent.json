@@ -2,112 +2,112 @@
 	"proper": "time",
 	"season": "advent",
 	"title": "4th Week of Advent",
-	"uri": "advent/4th+Week+of+Advent",
+	"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent",
 	"readings": [
 		{
 			"title": "Sunday",
-			"uri": "advent/4th+Week+of+Advent/Sunday",
+			"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Is 45:8",
-					"uri": "advent/4th+Week+of+Advent/Sunday/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Is 7:14",
-					"uri": "advent/4th+Week+of+Advent/Sunday/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/reading/COMMUNION+ANTIPHON"
 				},
 				{
 					"title": "A",
-					"uri": "advent/4th+Week+of+Advent/Sunday/A",
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/A",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Is 7:10-14",
-							"uri": "advent/4th+Week+of+Advent/Sunday/A/reading/1ST"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/A/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 24:1-2,3-4,5-6 | resp 7c and 10b",
-							"uri": "advent/4th+Week+of+Advent/Sunday/A/reading/PS"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/A/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "Rom 1:1-7",
-							"uri": "advent/4th+Week+of+Advent/Sunday/A/reading/2ND"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/A/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Mt 1:23",
-							"uri": "advent/4th+Week+of+Advent/Sunday/A/reading/GA"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/A/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Mt 1:18-24",
-							"uri": "advent/4th+Week+of+Advent/Sunday/A/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/A/reading/GOSPEL"
 						}
 					]
 				},
 				{
 					"title": "B",
-					"uri": "advent/4th+Week+of+Advent/Sunday/B",
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/B",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "2 Sm 7:1-5, 8b-12, 14a, 16",
-							"uri": "advent/4th+Week+of+Advent/Sunday/B/reading/1ST"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/B/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 89:2-3, 4-5, 27, 29 | resp 2a",
-							"uri": "advent/4th+Week+of+Advent/Sunday/B/reading/PS"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/B/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "Rom 16:25-27",
-							"uri": "advent/4th+Week+of+Advent/Sunday/B/reading/2ND"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/B/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Lk 1:38",
-							"uri": "advent/4th+Week+of+Advent/Sunday/B/reading/GA"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/B/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Lk 1:26-38",
-							"uri": "advent/4th+Week+of+Advent/Sunday/B/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/B/reading/GOSPEL"
 						}
 					]
 				},
 				{
 					"title": "C",
-					"uri": "advent/4th+Week+of+Advent/Sunday/C",
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/C",
 					"readings": [
 						{
 							"readingType": "1ST",
 							"citation": "Mi 5:1-4a",
-							"uri": "advent/4th+Week+of+Advent/Sunday/C/reading/1ST"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/C/reading/1ST"
 						},
 						{
 							"readingType": "PS",
 							"citation": "Ps 80:2-3,15-16,18-19 | resp 4",
-							"uri": "advent/4th+Week+of+Advent/Sunday/C/reading/PS"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/C/reading/PS"
 						},
 						{
 							"readingType": "2ND",
 							"citation": "Heb 10:5-10",
-							"uri": "advent/4th+Week+of+Advent/Sunday/C/reading/2ND"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/C/reading/2ND"
 						},
 						{
 							"readingType": "GA",
 							"citation": "Lk 1:38",
-							"uri": "advent/4th+Week+of+Advent/Sunday/C/reading/GA"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/C/reading/GA"
 						},
 						{
 							"readingType": "GOSPEL",
 							"citation": "Lk 1:39-45",
-							"uri": "advent/4th+Week+of+Advent/Sunday/C/reading/GOSPEL"
+							"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Sunday/C/reading/GOSPEL"
 						}
 					]
 				}
@@ -115,294 +115,294 @@
 		},
 		{
 			"title": "Dec 17",
-			"uri": "advent/4th+Week+of+Advent/Dec+17",
+			"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+17",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Is 49:13",
-					"uri": "advent/4th+Week+of+Advent/Dec+17/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+17/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Gn 49:2, 8-10",
-					"uri": "advent/4th+Week+of+Advent/Dec+17/reading/1ST"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+17/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 72:1-2, 3-4ab, 7-8, 17 | resp Cf. 7",
-					"uri": "advent/4th+Week+of+Advent/Dec+17/reading/PS"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+17/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "advent/4th+Week+of+Advent/Dec+17/reading/GA"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+17/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Mt 1:1-17",
-					"uri": "advent/4th+Week+of+Advent/Dec+17/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+17/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Cf. Hg 2:7",
-					"uri": "advent/4th+Week+of+Advent/Dec+17/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+17/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Dec 18",
-			"uri": "advent/4th+Week+of+Advent/Dec+18",
+			"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+18",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "noref",
-					"uri": "advent/4th+Week+of+Advent/Dec+18/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+18/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Jer 23:5-8",
-					"uri": "advent/4th+Week+of+Advent/Dec+18/reading/1ST"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+18/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 72:1-2,12-13,18-19 | resp Cf. 7",
-					"uri": "advent/4th+Week+of+Advent/Dec+18/reading/PS"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+18/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "advent/4th+Week+of+Advent/Dec+18/reading/GA"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+18/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Mt 1:18-25",
-					"uri": "advent/4th+Week+of+Advent/Dec+18/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+18/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Mt 1:23",
-					"uri": "advent/4th+Week+of+Advent/Dec+18/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+18/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Dec 19",
-			"uri": "advent/4th+Week+of+Advent/Dec+19",
+			"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+19",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Heb 10:37",
-					"uri": "advent/4th+Week+of+Advent/Dec+19/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+19/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Jgs 13:2-7,24-25a",
-					"uri": "advent/4th+Week+of+Advent/Dec+19/reading/1ST"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+19/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 71:3-4a, 5-6ab, 16-17 | resp Cf. 8",
-					"uri": "advent/4th+Week+of+Advent/Dec+19/reading/PS"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+19/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "advent/4th+Week+of+Advent/Dec+19/reading/GA"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+19/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 1:5-25",
-					"uri": "advent/4th+Week+of+Advent/Dec+19/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+19/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Lk 1:78-79",
-					"uri": "advent/4th+Week+of+Advent/Dec+19/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+19/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Dec 20",
-			"uri": "advent/4th+Week+of+Advent/Dec+20",
+			"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+20",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Is 11:1; 40:5; Lk 3:6",
-					"uri": "advent/4th+Week+of+Advent/Dec+20/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+20/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Is 7:10-14",
-					"uri": "advent/4th+Week+of+Advent/Dec+20/reading/1ST"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+20/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 24:1-2, 3-4ab, 5-6 | resp Cf. 7c and 10b",
-					"uri": "advent/4th+Week+of+Advent/Dec+20/reading/PS"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+20/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "advent/4th+Week+of+Advent/Dec+20/reading/GA"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+20/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 1:26-38",
-					"uri": "advent/4th+Week+of+Advent/Dec+20/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+20/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Lk 1:31",
-					"uri": "advent/4th+Week+of+Advent/Dec+20/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+20/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Dec 21",
-			"uri": "advent/4th+Week+of+Advent/Dec+21",
+			"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+21",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Is 7:14; 8:10",
-					"uri": "advent/4th+Week+of+Advent/Dec+21/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+21/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Sg 2:8-14",
-					"uri": "advent/4th+Week+of+Advent/Dec+21/reading/1ST"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+21/reading/1ST"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Zep 3:14-18a",
-					"uri": "advent/4th+Week+of+Advent/Dec+21/reading/1ST/2"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+21/reading/1ST/2"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 33:2-3,11-12,20-21 | resp 1a;3a",
-					"uri": "advent/4th+Week+of+Advent/Dec+21/reading/PS"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+21/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "advent/4th+Week+of+Advent/Dec+21/reading/GA"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+21/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 1:39-45",
-					"uri": "advent/4th+Week+of+Advent/Dec+21/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+21/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Lk 1:45",
-					"uri": "advent/4th+Week+of+Advent/Dec+21/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+21/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Dec 22",
-			"uri": "advent/4th+Week+of+Advent/Dec+22",
+			"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+22",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Ps 24(23): 7",
-					"uri": "advent/4th+Week+of+Advent/Dec+22/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+22/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "1 Sm 1:24-28",
-					"uri": "advent/4th+Week+of+Advent/Dec+22/reading/1ST"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+22/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "1 Sm 2:1, 4-5, 6-7, 8abcd | resp Cf. 1a",
-					"uri": "advent/4th+Week+of+Advent/Dec+22/reading/PS"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+22/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "advent/4th+Week+of+Advent/Dec+22/reading/GA"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+22/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 1:45-56",
-					"uri": "advent/4th+Week+of+Advent/Dec+22/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+22/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Lk 1:46, 49",
-					"uri": "advent/4th+Week+of+Advent/Dec+22/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+22/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Dec 23",
-			"uri": "advent/4th+Week+of+Advent/Dec+23",
+			"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+23",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Is 9:6; Ps 72(71): 17",
-					"uri": "advent/4th+Week+of+Advent/Dec+23/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+23/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Mal 3:1-4, 23-24",
-					"uri": "advent/4th+Week+of+Advent/Dec+23/reading/1ST"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+23/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 25:4-5ab, 8-9, 10 and 14 | resp Cf. Lk 21:28",
-					"uri": "advent/4th+Week+of+Advent/Dec+23/reading/PS"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+23/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "advent/4th+Week+of+Advent/Dec+23/reading/GA"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+23/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 1:57-66",
-					"uri": "advent/4th+Week+of+Advent/Dec+23/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+23/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Rev 3:20",
-					"uri": "advent/4th+Week+of+Advent/Dec+23/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+23/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Dec 24 morning",
-			"uri": "advent/4th+Week+of+Advent/Dec+24+morning",
+			"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+24+morning",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Gal 4:4",
-					"uri": "advent/4th+Week+of+Advent/Dec+24+morning/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+24+morning/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "2 Sm 7:1-5,8b-12,14a, 16",
-					"uri": "advent/4th+Week+of+Advent/Dec+24+morning/reading/1ST"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+24+morning/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 89:2-3,4-5,27 and 29 | resp 2",
-					"uri": "advent/4th+Week+of+Advent/Dec+24+morning/reading/PS"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+24+morning/reading/PS"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "advent/4th+Week+of+Advent/Dec+24+morning/reading/GA"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+24+morning/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 1:67-79",
-					"uri": "advent/4th+Week+of+Advent/Dec+24+morning/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+24+morning/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Lk 1:68",
-					"uri": "advent/4th+Week+of+Advent/Dec+24+morning/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/advent/4th+Week+of+Advent/Dec+24+morning/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		}

@@ -1,0 +1,410 @@
+{
+	"proper": "time",
+	"season": "ordinary",
+	"title": "31st Week of Ordinary Time",
+	"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Ps 38(37):22-23",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Ps 16(15): 11",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Jn 6:58",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/reading/COMMUNION+ANTIPHON/2"
+		},
+		{
+			"title": "Sunday",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday",
+			"readings": [
+				{
+					"title": "A",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/A",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Mal 1:14b-2:2b, 8-10",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/A/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 131:1, 2,3",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/A/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "1 Thes 2:7b-9, 13",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/A/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Mt 23:9b, 10b",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/A/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mt 23:1-12",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/A/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "B",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/B",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Dt 6:2-6",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/B/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 18:2-3, 3-4, 47, 51 | resp 2",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/B/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Heb 7:23-28",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/B/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Jn 14:23",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/B/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mk 12:28b-34",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/B/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "C",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/C",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Wis 11:22-12:2",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/C/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 145:1-2, 8-9, 10-11, 13, 14 | resp Cf. 1",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/C/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "2 Thes 1:11-2:2",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/C/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Jn 3:16",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/C/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Lk 19:1-10",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Sunday/C/reading/GOSPEL"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Monday",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Monday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Jn 8:31b-32",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Monday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 14:12-14",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Monday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Monday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Rom 11:29-36",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Monday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 69:30-31, 33-34, 36 | resp 14c",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Monday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Monday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Phil 2:1-4",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Monday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 131:1bcde, 2, 3",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Monday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Tuesday",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Tuesday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Mt 11:28",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Tuesday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 14:15-24",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Tuesday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Tuesday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Rom 12:5-16ab",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Tuesday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 131:1bcde, 2",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Tuesday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Tuesday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Phil 2:5-11",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Tuesday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 22:26b-27, 28-30ab, 30e, 31-32 | resp 26a",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Tuesday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Wednesday",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Wednesday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "1 Pt 4:14",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Wednesday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 14:25-33",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Wednesday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Wednesday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Rom 13:8-10",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Wednesday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 112:1b-2, 4-5, 9 | resp 5a",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Wednesday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Wednesday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Phil 2:12-18",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Wednesday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 27:1, 4, 13-14 | resp 1a",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Wednesday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Thursday",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Thursday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Mt 11:28",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Thursday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 15:1-10",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Thursday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Thursday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Rom 14:7-12",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Thursday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 27:1bcde, 4, 13-14 | resp 13",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Thursday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Thursday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Phil 3:3-8a",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Thursday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 105:2-3, 4-5, 6-7 | resp 3b",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Thursday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Friday",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Friday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "1 Jn 2:5",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Friday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 16:1-8",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Friday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Friday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Rom 15:14-21",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Friday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 98:1, 2-3ab, 3cd-4 | resp Cf. 2b",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Friday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Friday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Phil 3:17-4:1",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Friday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 122:1-2, 3-4ab, 4cd-5 | resp 1",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Friday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Saturday",
+			"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Saturday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "2 Cor 8:9",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Saturday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 16:9-15",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Saturday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Saturday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Rom 16:3-9, 16, 22-27",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Saturday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 145:2-3, 4-5, 10-11 | resp 1b",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Saturday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Saturday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Phil 4:10-19",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Saturday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 112:1b-2, 5-6, 8a and 9",
+							"uri": "http://jude.org/ns-missal/ordinary/31st+Week+of+Ordinary+Time/Saturday/II/reading/PS"
+						}
+					]
+				}
+			]
+		}
+	]
+}

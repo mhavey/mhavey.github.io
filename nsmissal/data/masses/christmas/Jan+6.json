@@ -2,104 +2,104 @@
 	"proper": "time",
 	"season": "christmas",
 	"title": "Jan 6",
-	"uri": "christmas/Jan+6",
+	"uri": "http://jude.org/ns-missal/christmas/Jan+6",
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "noref",
 			"note": "Monday",
-			"uri": "christmas/Jan+6/reading/ENTRANCE+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/ENTRANCE+ANTIPHON"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 1:14",
 			"note": "Monday",
-			"uri": "christmas/Jan+6/reading/COMMUNION+ANTIPHON"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/COMMUNION+ANTIPHON"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Ps 118(117): 26-27",
 			"note": "Tuesday",
-			"uri": "christmas/Jan+6/reading/ENTRANCE+ANTIPHON/2"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/ENTRANCE+ANTIPHON/2"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Eph 2:4; Rom 8:3",
 			"note": "Tuesday",
-			"uri": "christmas/Jan+6/reading/COMMUNION+ANTIPHON/2"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/COMMUNION+ANTIPHON/2"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Is 9:1",
 			"note": "Wednesday",
-			"uri": "christmas/Jan+6/reading/ENTRANCE+ANTIPHON/3"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/ENTRANCE+ANTIPHON/3"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "1 Jn 1:2",
 			"note": "Wednesday",
-			"uri": "christmas/Jan+6/reading/COMMUNION+ANTIPHON/3"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/COMMUNION+ANTIPHON/3"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Cf. Jn 1:1",
 			"note": "Thursday",
-			"uri": "christmas/Jan+6/reading/ENTRANCE+ANTIPHON/4"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/ENTRANCE+ANTIPHON/4"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 3:16",
 			"note": "Thursday",
-			"uri": "christmas/Jan+6/reading/COMMUNION+ANTIPHON/4"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/COMMUNION+ANTIPHON/4"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Ps 112(111): 4",
 			"note": "Friday",
-			"uri": "christmas/Jan+6/reading/ENTRANCE+ANTIPHON/5"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/ENTRANCE+ANTIPHON/5"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "1 Jn 4:9",
 			"note": "Friday",
-			"uri": "christmas/Jan+6/reading/COMMUNION+ANTIPHON/5"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/COMMUNION+ANTIPHON/5"
 		},
 		{
 			"readingType": "ENTRANCE ANTIPHON",
 			"citation": "Gal 4:4-5",
 			"note": "Saturday",
-			"uri": "christmas/Jan+6/reading/ENTRANCE+ANTIPHON/6"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/ENTRANCE+ANTIPHON/6"
 		},
 		{
 			"readingType": "COMMUNION ANTIPHON",
 			"citation": "Jn 1:16",
 			"note": "Saturday",
-			"uri": "christmas/Jan+6/reading/COMMUNION+ANTIPHON/6"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/COMMUNION+ANTIPHON/6"
 		},
 		{
 			"readingType": "1ST",
 			"citation": "1 Jn 5:5-13",
-			"uri": "christmas/Jan+6/reading/1ST"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/1ST"
 		},
 		{
 			"readingType": "PS",
 			"citation": "Ps 147:12-13, 14-15, 19-20 | resp 12a",
-			"uri": "christmas/Jan+6/reading/PS"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/PS"
 		},
 		{
 			"readingType": "GA",
 			"citation": "Cf. Mk 9:6",
-			"uri": "christmas/Jan+6/reading/GA"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/GA"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Mk 1:7-11",
-			"uri": "christmas/Jan+6/reading/GOSPEL"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/GOSPEL"
 		},
 		{
 			"readingType": "GOSPEL",
 			"citation": "Lk 3:23-38",
-			"uri": "christmas/Jan+6/reading/GOSPEL/2"
+			"uri": "http://jude.org/ns-missal/christmas/Jan+6/reading/GOSPEL/2"
 		}
 	]
 }

@@ -1,89 +1,89 @@
 {
 	"proper": "saints",
 	"title": "Assumption of the Blessed Virgin Mary",
-	"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary",
+	"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary",
 	"calendar": "fixed(Aug,15)",
 	"rank": "Solemnity",
 	"readings": [
 		{
 			"title": "Vigil",
-			"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil",
+			"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "noref",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "1 Chr 15:3-4,15-16; 16:1-2",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/1ST"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 132:6-7,9-10,13-14 | resp 8",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/PS"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/PS"
 				},
 				{
 					"readingType": "2ND",
 					"citation": "1 Cor 15:54b-57",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/2ND"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/2ND"
 				},
 				{
 					"readingType": "GA",
 					"citation": "Lk 11:28",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/GA"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 11:27-28",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Cf. Lk 11:27",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Vigil/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		},
 		{
 			"title": "Day",
-			"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Day",
+			"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Day",
 			"readings": [
 				{
 					"readingType": "ENTRANCE ANTIPHON",
 					"citation": "Cf. Rev 12:1",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/ENTRANCE+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/ENTRANCE+ANTIPHON"
 				},
 				{
 					"readingType": "1ST",
 					"citation": "Rev 11:19a; 12:1-6a, 10ab",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/1ST"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/1ST"
 				},
 				{
 					"readingType": "PS",
 					"citation": "Ps 45:10, 11, 12, 16 | resp 10bc",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/PS"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/PS"
 				},
 				{
 					"readingType": "2ND",
 					"citation": "1 Cor 15:20-27",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/2ND"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/2ND"
 				},
 				{
 					"readingType": "GA",
 					"citation": "noref",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/GA"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/GA"
 				},
 				{
 					"readingType": "GOSPEL",
 					"citation": "Lk 1:39-56",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/GOSPEL"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/GOSPEL"
 				},
 				{
 					"readingType": "COMMUNION ANTIPHON",
 					"citation": "Lk 1:48-49",
-					"uri": "saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/COMMUNION+ANTIPHON"
+					"uri": "http://jude.org/ns-missal/saints/Assumption+of+the+Blessed+Virgin+Mary/Day/reading/COMMUNION+ANTIPHON"
 				}
 			]
 		}
