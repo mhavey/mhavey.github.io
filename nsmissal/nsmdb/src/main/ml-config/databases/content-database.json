@@ -1,11 +1,14 @@
 {
-  "database-name": "%%DATABASE%%",
-  "range-element-index":[
-  	{"collation":"http://marklogic.com/collation/en", "invalid-values":"reject", 
+	"database-name":"%%DATABASE%%", 
+	"path-namespace":[{"prefix":"es", "namespace-uri":"http://marklogic.com/entity-services"}], 
+	"range-element-index":[
+	{"collation":"http://marklogic.com/collation/en", "invalid-values":"reject", 
   	"localname":"biblicalOrder", "namespace-uri":null, "range-value-positions":false, "scalar-type":"int"}, 
+	{"collation":"http://marklogic.com/collation/en", "invalid-values":"reject", 
+  	"localname":"chapter", "namespace-uri":null, "range-value-positions":false, "scalar-type":"int"}, 
   	{"collation":"http://marklogic.com/collation/en", "invalid-values":"reject", 
-  	"localname":"calendarDate", "namespace-uri":null, "range-value-positions":false, "scalar-type":"data"}
-  ],
-  	"triple-index" : true,
-	"collection-lexicon" : true	
+	"localname":"calendarDate", "namespace-uri":null, "range-value-positions":false, "scalar-type":"date"}
+	],
+	"triple-index":true, 
+	"collection-lexicon":true
 }

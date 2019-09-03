@@ -1,44 +1,114 @@
-/*
-This gradle script is for running CORB jobs on insight. 
-For this we need an XDBC app server. 
-XDBC server should be part of our ml-config. 
-*/
 
 buildscript {
+
   repositories {
-    maven {url 'http://developer.marklogic.com/maven2/'}
+    jcenter{url "http://jcenter.bintray.com/"}
+    mavenLocal()
+    maven { url "http://plugins.gradle.org/m2" }
   }
   dependencies {
-    //Needed for CorbTask to dynamicaly generate properties from CORB Options class
-    classpath 'com.marklogic:marklogic-corb:2.4.1'
+    classpath "com.marklogic:ml-gradle:3.4.0"
+    classpath "net.saliman:gradle-properties-plugin:1.4.6"
   }
 }
 
-
-plugins {
-    id 'java'
-    id "com.marklogic.ml-gradle" version "3.6.0"
-    id 'net.saliman.properties' version '1.4.6'
-}
+apply plugin: "net.saliman.properties"
+apply plugin: "com.marklogic.ml-gradle"
 
 repositories {
-    jcenter()
+  jcenter{url "http://jcenter.bintray.com/"}
 
-    // Needed for corb dependency: XCC
-    maven { url "http://developer.marklogic.com/maven2/" }
+  // Needed for mlcp dependencies
+  maven { url "http://plugins.gradle.org/m2" }
+  maven { url "http://developer.marklogic.com/maven2/" }
+
+  // Needed for hadoop dependencies for mlcp
+  maven { url "http://repository.cloudera.com/artifactory/cloudera-repos/" }
 }
 
 configurations {
-    corb
+  // This configuration captures the dependencies for running mlcp (Content Pump). This is only needed if you want
+  // to run mlcp via Gradle tasks. If you do, using com.marklogic.gradle.task.MlcpTask is a useful starting point, as
+  // shown below.  Need to force to use certain version of xml-apis library.
+  mlcp {
+      resolutionStrategy {
+        force "xml-apis:xml-apis:1.4.01"
+      }
+    }
 }
 
 dependencies {
-    corb 'com.marklogic:marklogic-corb:2.4.1'
-    compile 'com.marklogic:marklogic-xcc:9.0.4'
+  mlcp "com.marklogic:mlcp:9.0.6"
+  mlcp "org.apache.commons:commons-csv:1.2"
+  mlcp files("lib")
+}
+
+task ingestBible(type: com.marklogic.gradle.task.MlcpTask) {
+  def projectDir = new File("${projectDir}")
+  def gitDir = projectDir.getParentFile().getAbsolutePath()
+
+println gitDir
+
+  def dataDir = gitDir + "/data"
+  def regex = '"' + dataDir + ",''"
+
+  classpath = configurations.mlcp
+  command = "IMPORT"
+  host = mlHost
+  port = mlAppServicesPort.toInteger()
+
+  document_type = "json"
+  input_file_path =  dataDir + "/bible/bible.csv"
+  input_file_type ="delimited_text" 
+
+  output_collections= "nsm,bibleChapter" 
+  output_permissions= "rest-reader,read,rest-writer,update" 
+  output_uri_prefix = "/nsm/bibleChapter"
+  output_uri_suffix = ".json"
+  output_uri_replace = regex
+  generate_uri = "true"
+  data_type = "biblicalOrder,number,chapter,number,verses,number"
+
+  transform_module="/coverage.sjs"
+  transform_function="initCoverage"
+  transform_param="dummy"
+}
+
+task organizeBible(type: com.marklogic.gradle.task.ServerEvalTask) {
+
+def js = "'use strict';\n"
+js += 'declareUpdate();'
+js += 'const lib = require("/coverage.sjs");\n'
+js += 'lib.organizeBible();\n'
+  javascript = js;
+}
+
+task ingestMasses(type: com.marklogic.gradle.task.MlcpTask) {
+  def projectDir = new File("${projectDir}")
+  def gitDir = projectDir.getParentFile().getAbsolutePath()
+  def dataDir = gitDir + "/data"
+  def regex = '"' + dataDir + ",''"
+
+  classpath = configurations.mlcp
+  command = "IMPORT"
+  host = mlHost
+  port = mlAppServicesPort.toInteger()
+
+  document_type = "json"
+  input_file_path =  dataDir + "/masses"
+
+  output_uri_prefix = "/nsm"
+  output_uri_replace = regex
+  output_collections= "nsm,masses" 
+  output_permissions= "rest-reader,read,rest-writer,update" 
+
 }
 
 task loadData() {
-
+  dependsOn "ingestMasses"
+  dependsOn "ingestBible"
+  dependsOn "organizeBible"
+  tasks.findByName('organizeBible').mustRunAfter 'ingestBible'
 }
 
 task runReports() {

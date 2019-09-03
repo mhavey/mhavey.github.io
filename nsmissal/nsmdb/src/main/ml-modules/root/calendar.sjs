@@ -1,1 +1,3 @@
-hi
+function x() {
+	
+}
