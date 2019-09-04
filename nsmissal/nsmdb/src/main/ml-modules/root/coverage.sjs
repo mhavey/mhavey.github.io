@@ -64,10 +64,12 @@ function cover() {
 		coverWalk(doc, context);
 	}
 
+/*
 	for (var mod in context.mods) {
 		var modRecord = context.mods[mod];
 		xdmp.documentInsert(modRecord.uri, modRecord.doc, context.props); 
 	}
+*/
 }
 
 function addCover(readingIRI, book, chapter, verse, context) {
@@ -112,8 +114,28 @@ function linkCitationToVerses(reading, context) {
   if (reading.citation.toUpperCase() == "NOREF") return;
   
   // strip out the noisy Cf. 
-  var cleanCit = fn.replace(reading.citation, "Cf.", "");
+  var cleanCit = fn.replace(reading.citation, "Cf.", "").trim();
   xdmp.log("Linking " + reading.uri + " " + cleanCit);
+
+  // determine the book; it's either one string (Jn) or a number then a string (1 Thes)
+  var toks = cleanCit.split(" ");
+  var book = "";
+  if (toks.length > 1 && toks[0] == "1" || toks[0] == "2" || toks[0] == "3") {
+  	book = toks[0] + " " + toks[1];
+  }
+  else if (toks.length > 0) {
+  	book = toks[0];
+  }
+  var bookSpec;
+  if (book != "") bookSpec = context.bibleToc[book];
+  if (!bookSpec || bookSpec == null)  {
+  	xdmp.log("Illegal citation " + JSON.stringify(reading), "error");
+  	return;
+  }
+
+xdmp.log("Book " + book + " for " + JSON.stringify(reading));
+
+/*
 
   // start left; the part before the first colon is the book and chapter; extract it 
   var firstColonIdx = reading.citation.indexOf(":");
@@ -130,8 +152,10 @@ function linkCitationToVerses(reading, context) {
   //var chapter
 
   // add the cover
+  // TODO - call this in a loop
+  addCover(f.uri, book, chapter, verse, context);
 
-
+*/
 }
 
 module.exports = {
