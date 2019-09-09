@@ -1,9 +1,11 @@
-const sem = require("/MarkLogic/semantics.xqy");
-
 const BIBLE_TOC_URI = "/bible.json";
 const NSM = "http://jude.org/ns-missal/";
 const NSM_VERSE = NSM + "verse";
 const NSM_HAS_COVER = NSM + "hasCover";
+
+//
+// TODO - change the sem part to use nsmSem.sjs
+//
 
 function verseIRI(book, chapter, verse) {return sem.iri(NSM + book + "/" + chapter + "/" + verse);}
 
@@ -113,9 +115,9 @@ function linkCitationToVerses(reading, context) {
   // ignore noref
   if (reading.citation.toUpperCase() == "NOREF") return;
   
-  // strip out the noisy Cf. 
+  // strip out the noisy Cf.  and see 
   var cleanCit = fn.replace(reading.citation, "Cf.", "").trim();
-  xdmp.log("Linking " + reading.uri + " " + cleanCit);
+  cleanCit = fn.replace(reading.citation, "see", "").trim();
 
   // determine the book; it's either one string (Jn) or a number then a string (1 Thes)
   var toks = cleanCit.split(" ");
@@ -129,11 +131,15 @@ function linkCitationToVerses(reading, context) {
   var bookSpec;
   if (book != "") bookSpec = context.bibleToc[book];
   if (!bookSpec || bookSpec == null)  {
-  	xdmp.log("Illegal citation " + JSON.stringify(reading), "error");
+  	xdmp.log("Data sin - invalid book in " + JSON.stringify(reading), "error");
   	return;
   }
 
-xdmp.log("Book " + book + " for " + JSON.stringify(reading));
+  // determine the chapter
+  var restOfCit = fn.substringAfter(cleanCit, book).trim();
+  toks = restOfCit.split(":");
+
+
 
 /*
 
@@ -159,6 +165,7 @@ xdmp.log("Book " + book + " for " + JSON.stringify(reading));
 }
 
 module.exports = {
+  NSM: NSM,
   organizeBible : organizeBible,
   initCoverage: initCoverage,
   cover: cover
