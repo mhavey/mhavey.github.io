@@ -1,0 +1,410 @@
+{
+	"proper": "time",
+	"season": "ordinary",
+	"title": "19th Week of Ordinary Time",
+	"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Ps 74(73): 20, 19, 22, 23",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Ps 147:12, 14",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Jn 6:51",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON/2"
+		},
+		{
+			"title": "Sunday",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday",
+			"readings": [
+				{
+					"title": "A",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/A",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Kgs 19:9a, 11-13a",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/A/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 85:9. 10, 11-12, 13-14 | resp 8",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/A/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Rom 9:1-5",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/A/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Cf. Ps 130:5",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/A/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mt 14:22-33",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/A/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "B",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/B",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Kgs 19:4-8",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/B/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 34: 2-3, 4-5, 6-7, 8-9 | resp 9a",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/B/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Eph 4:20-5:2",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/B/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Jn 6:51",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/B/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Jn 6:41-51",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/B/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "C",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/C",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Wis 18:6-9",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/C/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 33:1, 12, 18-19, 20-22 | resp 12b",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/C/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Heb 11:1-2, 8-19",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/C/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Mt 24:42a, 44",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/C/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Lk 12:32-48",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Sunday/C/reading/GOSPEL"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Monday",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Monday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Cf. 2 Thes 2:14",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Monday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 14:22-27",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Monday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Monday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Dt 10:12-22",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Monday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 147:12-13, 14-15, 19-20 | resp 12a",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Monday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Monday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Ez 1:2-5, 24-28c",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Monday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 148:1-2, 11-12, 13, 14",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Monday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Tuesday",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Tuesday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Mt 11:29ab",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Tuesday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 18:1-5, 10, 12-14",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Tuesday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Tuesday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Dt 31:1-8",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Tuesday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Dt 32:3-4ab, 7, 8, 9 and 12 | resp 9a",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Tuesday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Tuesday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Ez 2:8-3:4",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Tuesday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 119: 14, 24, 72, 103, 111, 131 | resp 103a",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Tuesday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Wednesday",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Wednesday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "2 Cor 5:19",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Wednesday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 18:15-20",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Wednesday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Wednesday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Dt 34:1-2",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Wednesday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 66:1-3a, 5 and 8, 16-17 | resp Cf. 20a and 10b",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Wednesday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Wednesday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Ez 9:1-7; 10:18-22",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Wednesday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 113:1-2, 3-4, 5-6 | resp 4b",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Wednesday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Thursday",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Thursday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Ps 119:135",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Thursday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 18:21 – 19:1",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Thursday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Thursday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Jos 3:7-10a, 11, 13-17",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Thursday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 114:1-2, 3-4, 5-6",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Thursday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Thursday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Ez 12:1-12",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Thursday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 78:56-57, 58-59, 61-62 | resp Cf. 7b",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Thursday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Friday",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Friday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Cf. 1 Thes 2:13",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Friday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 19:3-12",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Friday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Friday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Jos 24:1-13",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Friday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 136: 1-3, 16-18, 21-22 and 24",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Friday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Friday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Ez 16:1-15, 60, 63",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Friday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Is 12:2-3, 4bcd, 5-6 | resp 1c",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Friday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Saturday",
+			"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Saturday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Cf. Mt 11:25",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Saturday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Mt 19:13-15",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Saturday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Saturday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Jos 24:14-29",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Saturday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 16:1-2a and 5, 7-8, 11 | resp Cf. 5a",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Saturday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Saturday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Ez 18:1-10, 13b, 30-32",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Saturday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 51:12-13, 14-15, 18-19 | resp 12a",
+							"uri": "http://jude.org/ns-missal/ordinary/19th+Week+in+Ordinary+Time/Saturday/II/reading/PS"
+						}
+					]
+				}
+			]
+		}
+	]
+}

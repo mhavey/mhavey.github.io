@@ -1,4 +1,3 @@
-
 buildscript {
 
   repositories {
@@ -9,11 +8,15 @@ buildscript {
   dependencies {
     classpath "com.marklogic:ml-gradle:3.4.0"
     classpath "net.saliman:gradle-properties-plugin:1.4.6"
+    classpath 'com.marklogic:marklogic-corb:2.4.1'
   }
 }
 
-apply plugin: "net.saliman.properties"
-apply plugin: "com.marklogic.ml-gradle"
+plugins {
+    id 'java'
+    id 'net.saliman.properties' version '1.4.6'
+    id 'com.marklogic.ml-gradle' version '3.4.0'
+}
 
 repositories {
   jcenter{url "http://jcenter.bintray.com/"}
@@ -27,9 +30,7 @@ repositories {
 }
 
 configurations {
-  // This configuration captures the dependencies for running mlcp (Content Pump). This is only needed if you want
-  // to run mlcp via Gradle tasks. If you do, using com.marklogic.gradle.task.MlcpTask is a useful starting point, as
-  // shown below.  Need to force to use certain version of xml-apis library.
+  corb
   mlcp {
       resolutionStrategy {
         force "xml-apis:xml-apis:1.4.01"
@@ -40,6 +41,8 @@ configurations {
 dependencies {
   mlcp "com.marklogic:mlcp:9.0.6"
   mlcp "org.apache.commons:commons-csv:1.2"
+  compile 'com.marklogic:marklogic-xcc:9.0.4'
+  corb 'com.marklogic:marklogic-corb:2.4.1'
   mlcp files("lib")
 }
 
@@ -66,10 +69,6 @@ task _ingestBible(type: com.marklogic.gradle.task.MlcpTask) {
   output_uri_replace = regex
   generate_uri = "true"
   data_type = "biblicalOrder,number,chapter,number,verses,number"
-
-  transform_module="/coverage.sjs"
-  transform_function="initCoverage"
-  transform_param="dummy"
 }
 
 task _organizeBible(type: com.marklogic.gradle.task.ServerEvalTask) {
@@ -78,6 +77,33 @@ def js = "'use strict';\n"
 js += 'declareUpdate();'
 js += 'const lib = require("/coverage.sjs");\n'
 js += 'lib.organizeBible();\n'
+  javascript = js;
+}
+
+task _cover(type: com.marklogic.gradle.task.ServerEvalTask) {
+
+def js = "'use strict';\n"
+js += 'declareUpdate();'
+js += 'const lib = require("/coverage.sjs");\n'
+js += 'lib.cover();\n'
+  javascript = js;
+}
+
+task _linkMassesToReadings(type: com.marklogic.gradle.task.ServerEvalTask) {
+
+def js = "'use strict';\n"
+js += 'declareUpdate();'
+js += 'const lib = require("/coverage.sjs");\n'
+js += 'lib.linkMassesToReadings();\n'
+  javascript = js;
+}
+
+task _buildCalendar(type: com.marklogic.gradle.task.ServerEvalTask) {
+[]
+def js = "'use strict';\n"
+js += 'declareUpdate();'
+js += 'const lib = require("/calendar.sjs");\n'
+js += 'for (var y = 2012; y < 2050; y++) {lib.buildCalendar(y);}\n'
   javascript = js;
 }
 
@@ -99,25 +125,44 @@ task _ingestMasses(type: com.marklogic.gradle.task.MlcpTask) {
   output_uri_replace = regex
   output_collections= "nsm,masses" 
   output_permissions= "rest-reader,read,rest-writer,update" 
-
 }
 
-task _cover(type: com.marklogic.gradle.task.ServerEvalTask) {
+ext {
+   // XCC URL for running corb task below
+   contentXccUrl = "xcc://${mlUsername}:${mlPassword}@${mlHost}:${mlAppServicesPort}"
+}
+ 
+task _runCalendarReport(type: com.marklogic.gradle.task.CorbTask) {
+  def cols = "ADVENT_YEAR,MASS,DATE"
 
-def js = "'use strict';\n"
-js += 'declareUpdate();'
-js += 'const lib = require("/coverage.sjs");\n'
-js += 'lib.cover();\n'
-  javascript = js;
+  xccConnectionUri = contentXccUrl
+  urisModule = "/corb/calendar/uris.sjs"
+  processTask="com.marklogic.developer.corb.ExportBatchToFileTask"
+  processModule = "/corb/calendar/process.sjs"
+  batchSize="2"
+  threadCount="8"
+  exportFileName = "../data/reports/calendar.csv"
+  preBatchTask="com.marklogic.developer.corb.PreBatchUpdateFileTask"
+  exportFileTopContent=cols
+}
+
+task _runCoverageReport() {
 }
 
 task loadData() {
   dependsOn "_ingestMasses"
   dependsOn "_ingestBible"
   dependsOn "_organizeBible"
+  dependsOn "_linkMassesToReadings"
+  dependsOn "_buildCalendar"
+  dependsOn "_cover"
   tasks.findByName('_organizeBible').mustRunAfter '_ingestBible'
+  tasks.findByName('_cover').mustRunAfter '_organizeBible'
+  tasks.findByName('_linkMassesToReadings').mustRunAfter '_ingestMasses'
+  tasks.findByName('_buildCalendar').mustRunAfter '_linkMassesToReadings'
 }
 
 task runReports() {
-  dependsOn "_cover"
+  dependsOn "_runCalendarReport"
+  dependsOn "_runCoverageReport"
 }

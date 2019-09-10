@@ -1,13 +1,6 @@
+const nsem = require("nsmSem.sjs");
+
 const BIBLE_TOC_URI = "/bible.json";
-const NSM = "http://jude.org/ns-missal/";
-const NSM_VERSE = NSM + "verse";
-const NSM_HAS_COVER = NSM + "hasCover";
-
-//
-// TODO - change the sem part to use nsmSem.sjs
-//
-
-function verseIRI(book, chapter, verse) {return sem.iri(NSM + book + "/" + chapter + "/" + verse);}
 
 function organizeBible() {
 	var bible = {};
@@ -35,23 +28,34 @@ function organizeBible() {
 			}
 		}
 		bible[doc.abbrev].verses.push(doc.verses);
+
+
+		// create triples for the verses
+		for (var v = 1; v <= doc.verses; v++) nsem.addVerse(doc.abbrev, doc.chapter, v);
 	}
 
 	xdmp.documentInsert(BIBLE_TOC_URI, bible, {collections: ["nsm", "bible"], permissions: savedPerms});
 }
 
-function initCoverage(content, context) {
-	var newDoc = content.value.toObject();
-	newDoc.triples = [];
-	for (var i = 1; i <= newDoc.verses; i++) {
-		newDoc.triples.push(sem.triple(
-			verseIRI(newDoc.book, newDoc.chapter, i), 
-			sem.curieExpand("rdfs:type"), 
-			sem.iri(NSM_VERSE)));
+function linkMassesToReadings() {
+	var docs = cts.search(cts.collectionQuery("masses"));
+	for (var odoc of docs) {
+		var doc = odoc.toObject();
+		mrWalk(doc, null);
 	}
-    content.value = xdmp.unquote(xdmp.quote(newDoc));
-	return content;
-};
+}
+
+function mrWalk(doc, father) {
+	if (doc.uri) {
+		if (doc.readingType) {
+			nsem.linkMassToReading(father, doc.uri);
+		}
+		else {
+			if (father != null) nsem.linkMassToParent(doc.uri, father);
+			if (doc.readings) doc.readings.forEach(r => mrWalk(r, doc.uri));
+		}
+	}
+}
 
 function cover() {
 	var context = {
@@ -63,17 +67,11 @@ function cover() {
 	for (var odoc of docs) {
 		var uri = fn.documentUri(odoc);
 		var doc = odoc.toObject();
-		coverWalk(doc, context);
+		//coverWalk(doc, context);
 	}
-
-/*
-	for (var mod in context.mods) {
-		var modRecord = context.mods[mod];
-		xdmp.documentInsert(modRecord.uri, modRecord.doc, context.props); 
-	}
-*/
 }
 
+/*
 function addCover(readingIRI, book, chapter, verse, context) {
 
 	var thisMod = context.mods[book + "/" + chapter];
@@ -138,7 +136,7 @@ function linkCitationToVerses(reading, context) {
   // determine the chapter
   var restOfCit = fn.substringAfter(cleanCit, book).trim();
   toks = restOfCit.split(":");
-
+*/
 
 
 /*
@@ -162,11 +160,9 @@ function linkCitationToVerses(reading, context) {
   addCover(f.uri, book, chapter, verse, context);
 
 */
-}
 
 module.exports = {
-  NSM: NSM,
+  linkMassesToReadings: linkMassesToReadings,
   organizeBible : organizeBible,
-  initCoverage: initCoverage,
   cover: cover
 };

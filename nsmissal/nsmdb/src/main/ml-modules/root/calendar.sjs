@@ -1,11 +1,9 @@
 const nsem = require("nsmSem.sjs");
 
 const FIRST_C_YEAR = 2012; // begins advent 2012
-const ABC_YEARS = "CAB".split();
+const ABC_YEARS = ["C", "A", "B"];
 const FIRST_I_YEAR = 2013; // is this true?
 const I__II_YEARS = ["I", "II"];
-
-const REPORT_HEADERS = ["MASS_URI", "DATE"];
 
 // https://www.irt.org/articles/js052/index.htm
 function getEasterDate(Y) {
@@ -60,7 +58,7 @@ function addMassDate(uri, context, arg1, arg2) {
 	else date = arg1;
 
 	// now link the date to uri
-	nsem.link(uri, nsem.NSM + "hasDate", date); // TODO - sanity check - fail if uri predicate does NOT exist; 
+	nsem.linkMassToDate(uri, context.adventYear, date);
 }
 
 function ith(n) {
@@ -70,7 +68,7 @@ function ith(n) {
 	case 3: case 23: case 33: return n + "rd"; break;
 	default:
 		if (n <= 0 || n > 34) throw "Illegal ith for " + n;
-		return n + "nth";
+		return n + "th";
 	}
 }
 
@@ -78,13 +76,15 @@ function buildReport(years) {
 	years.forEach(y => null);
 }
 
-function buildCalendarYear(adventYear) {
+function buildCalendar(adventYear) {
 	if (adventYear < FIRST_C_YEAR) throw "Year too early, must be at least " + FIRST_C_YEAR;
 	var context = {
+		adventYear: adventYear,
 		easterYear: adventYear + 1,
 		sundayCycle: ABC_YEARS[(adventYear - FIRST_C_YEAR) % ABC_YEARS.length],
 		weekdayCycle: I__II_YEARS[(adventYear + 1 - FIRST_I_YEAR) % I__II_YEARS.length],
-		christmasDate: new Date(adventYear, 11, 25),
+		christmasDate: getDate(adventYear, 12, 25),
+		easterDate: getEasterDate(adventYear + 1),
 		firstDayNextYear: getFirstDayOfNextYear(adventYear + 1)
 	};
 	context.christmasDayOfWeek = context.christmasDate.getDay();
@@ -151,23 +151,23 @@ function buildCalendarYear(adventYear) {
 	//
 
 	addMassDate("http://jude.org/ns-missal/christmas/Nativity", context, context.christmasDate);
-	addMassDate("http://jude.org/ns-missal/christmas/Jan+1,+Mary+Mother+of+God", context, 1, 1);
+	addMassDate("http://jude.org/ns-missal/christmas/Jan+1+Mary+Mother+of+God", context, 1, 1);
 
 	if (context.christmasDayOfWeek == 0) {
 		addMassDate("http://jude.org/ns-missal/christmas/Holy+Family/" + context.sundayCycle, context, 12, 30);
 		context.epiphanyDate = addDays(context.christmasDate, 14);
-		addMassDate("http://jude.org/ns-missal/christmas/Epiphany", context, epiphanyDate);
+		addMassDate("http://jude.org/ns-missal/christmas/Epiphany", context, context.epiphanyDate);
 	} else {
 		addMassDate("http://jude.org/ns-missal/christmas/Holy+Family/" + context.sundayCycle, context, addDays(context.advent4Date, 7));
 		context.epiphanyDate  = addDays(context.advent4Date, 14);
-		addMassDate("http://jude.org/ns-missal/christmas/Epiphany", context, context, epiphanyDate);
-		addMassDate("http://jude.org/ns-missal/christmas/Dec+30,+6th+Day+Octave", context, 12, 30);
+		addMassDate("http://jude.org/ns-missal/christmas/Epiphany", context, context.epiphanyDate);
+		addMassDate("http://jude.org/ns-missal/christmas/Dec+30+6th+Day+Octave", context, 12, 30);
 	}
 
 	var octave29 = getDate(context.adventYear, 12, 29);
-	if (getDayOfWeek(octave29) > 0) addMassDate("http://jude.org/ns-missal/christmas/Dec+29,+5th+Day+Octave", context, octave29);
+	if (getDayOfWeek(octave29) > 0) addMassDate("http://jude.org/ns-missal/christmas/Dec+29+5th+Day+Octave", context, octave29);
 	var octave31 = getDate(context.adventYear, 12, 31);
-	if (getDayOfWeek(octave31) > 0) addMassDate("http://jude.org/ns-missal/christmas/Dec+31,+7th+Day+Octave", context, octave31);
+	if (getDayOfWeek(octave31) > 0) addMassDate("http://jude.org/ns-missal/christmas/Dec+31+7th+Day+Octave", context, octave31);
 
 	context.epiphanyDayOfMonth = getDayOfMonth(context.epiphanyDate);
 	if (context.epiphanyDayOfMonth < 7) context.baptismDate = addDays(context.epiphanyDate, 7);
@@ -206,7 +206,7 @@ function buildCalendarYear(adventYear) {
 	addMassDate("http://jude.org/ns-missal/lent/Ash+Wednesday",context, context.ashWednesdayDate);
 	addMassDate("http://jude.org/ns-missal/lent/Thursday+after+Ash+Wednesday",context, addDays(context.easterDate, -45));
 	addMassDate("http://jude.org/ns-missal/lent/Friday+after+Ash+Wednesday",context, addDays(context.easterDate, -44));
-	addMassDate("hhttp://jude.org/ns-missal/lent/Saturday+after+Ash+Wednesday",context, addDays(context.easterDate, -43));
+	addMassDate("http://jude.org/ns-missal/lent/Saturday+after+Ash+Wednesday",context, addDays(context.easterDate, -43));
 
 	var week1 = 1; 
 	var week2 = 5;
@@ -214,17 +214,17 @@ function buildCalendarYear(adventYear) {
 	var startPos = -42;
 	for (var we = week1; we <= week2; we++) {
 		for (da = 0; da < days.length; da++) {
-			addMassDate("http://jude.org/ns-missal/lent/" + ith(we) + "Week+of+Lent/" + days[da],context, addDays(context.easterDate, startPos));
+			addMassDate("http://jude.org/ns-missal/lent/" + ith(we) + "+Week+of+Lent/" + days[da],context, addDays(context.easterDate, startPos));
 			startPos++;
 		}
 	}
 
 	addMassDate("http://jude.org/ns-missal/lent/Palm+Sunday/Mass/" + context.sundayCycle,context, addDays(context.easterDate, -7));
 	addMassDate("http://jude.org/ns-missal/lent/Monday+of+Holy+Week",context, addDays(context.easterDate, -6));
-	addMassDate("hhttp://jude.org/ns-missal/lent/Tuesday+of+Holy+Week",context, addDays(context.easterDate, -5));
+	addMassDate("http://jude.org/ns-missal/lent/Tuesday+of+Holy+Week",context, addDays(context.easterDate, -5));
 	addMassDate("http://jude.org/ns-missal/lent/Wednesday+of+Holy+Week",context, addDays(context.easterDate, -4));
 	addMassDate("http://jude.org/ns-missal/lent/Thursday+Chrism+Mass",context, addDays(context.easterDate, -3));
-	addMassDate("http://jude.org/ns-missal/triduum/Thursday+of+the+Lord%e2%80%99s+Supper",context, addDays(context.easterDate, -3));
+	addMassDate("http://jude.org/ns-missal/triduum/Thursday+of+the+Lords+Supper",context, addDays(context.easterDate, -3));
 	addMassDate("http://jude.org/ns-missal/triduum/Good+Friday",context, addDays(context.easterDate, -2));
 	addMassDate("http://jude.org/ns-missal/triduum/Easter+Vigil",context, addDays(context.easterDate, -1));
 
@@ -246,7 +246,7 @@ function buildCalendarYear(adventYear) {
 	startPos = 7;
 	for (var we = week1; we <= week2; we++) {
 		for (da = 0; da < days.length; da++) {
-			addMassDate("http://jude.org/ns-missal/easter/" + ith(we) + "Week+of+Easter" + days[da],context, addDays(context.easterDate, startPos));
+			addMassDate("http://jude.org/ns-missal/easter/" + ith(we) + "+Week+of+Easter/" + days[da],context, addDays(context.easterDate, startPos));
 			startPos++;
 		}
 	}
@@ -260,7 +260,7 @@ function buildCalendarYear(adventYear) {
  	addMassDate("http://jude.org/ns-missal/easter/7th+Week+of+Easter/Saturday", context, addDays(context.easterDate, 48));
 
  	context.pentecostDate = addDays(context.easterDate, 49);
-	addMassDate("http://jude.org/ns-missal/easter/7th+Week+of+Easter/Pentecost/Day/" + context.sundayCycle, context, pentecostDate);
+	addMassDate("http://jude.org/ns-missal/easter/7th+Week+of+Easter/Pentecost/Day/" + context.sundayCycle, context, context.pentecostDate);
 
 	//
 	// Ordinary 
@@ -268,13 +268,13 @@ function buildCalendarYear(adventYear) {
 	// The farthest wa can go is 9
 	// 
 	context.baptismDayOfWeek = getDayOfWeek(context.baptismDate);
-	var ordinaryZero = ontext.baptismDayOfWeek == 0 ? context.baptismDate : context.epiphanyDate;
+	var ordinaryZero = context.baptismDayOfWeek == 0 ? context.baptismDate : context.epiphanyDate;
 	if (context.baptismDayOfWeek == 0) addMassDate("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Monday/" + context.weekdayCycle, context, addDays(ordinaryZero, 1));
-	addMass("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Tuesday/" + context.weekdayCycle, context, addDays(ordinaryZero, 2));
-	addMass("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Wednesday/" + context.weekdayCycle, context, addDays(ordinaryZero, 3));
-	addMass("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Thursday/" + context.weekdayCycle, context, addDays(ordinaryZero, 4));
-	addMass("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Friday/" + context.weekdayCycle, context, addDays(ordinaryZero, 5));
-	addMass("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Saturday/" + context.weekdayCycle, context, addDays(ordinaryZero, 6));
+	addMassDate("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Tuesday/" + context.weekdayCycle, context, addDays(ordinaryZero, 2));
+	addMassDate("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Wednesday/" + context.weekdayCycle, context, addDays(ordinaryZero, 3));
+	addMassDate("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Thursday/" + context.weekdayCycle, context, addDays(ordinaryZero, 4));
+	addMassDate("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Friday/" + context.weekdayCycle, context, addDays(ordinaryZero, 5));
+	addMassDate("http://jude.org/ns-missal/ordinary/1st+Week+in+Ordinary+Time/Saturday/" + context.weekdayCycle, context, addDays(ordinaryZero, 6));
 
 	startPos = 7;
 	week1 = 2; 
@@ -283,12 +283,12 @@ function buildCalendarYear(adventYear) {
 		"Wednesday/" + context.weekdayCycle, "Thursday/" + context.weekdayCycle, "Friday/" + context.weekdayCycle, 
 		"Saturday/" + context.weekdayCycle];
 	var endOrdinaryTime1 = false;
-	for (var we = week1; we <= week2 && endOrdinaryTime1 == false; w++) {
+	for (var we = week1; we <= week2 && endOrdinaryTime1 == false; we++) {
 		for (da = 0; da < days.length && endOrdinaryTime1 == false; da++) {
 			var d = addDays(ordinaryZero, startPos);
 			startPos++;
 			if (compareDates(d, context.ashWednesdayDate) < 0) {
-				addMass("http://jude.org/ns-missal/ordinary/" + ith(we) + "+Week+in+Ordinary+Time/" + days[da], context, d);
+				addMassDate("http://jude.org/ns-missal/ordinary/" + ith(we) + "+Week+in+Ordinary+Time/" + days[da], context, d);
 			}
 			else {
 				endOrdinaryTime1 = true;
@@ -302,13 +302,13 @@ function buildCalendarYear(adventYear) {
 	// Post-easter: End at 34th; where do we start? - work backwards from 34th
 	//
 
-	addMass("http://jude.org/ns-missal/ordinary/Christ+the+King/" + context.sundayCycle, context, addDays(context.firstDayNextYear, -7));
-	addMass("http://jude.org/ns-missal/ordinary/34th+Week+of+Ordinary+Time/Monday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -6));
-	addMass("http://jude.org/ns-missal/ordinary/34th+Week+of+Ordinary+Time/Tuesday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -5));
-	addMass("http://jude.org/ns-missal/ordinary/34th+Week+of+Ordinary+Time/Wednesday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -4));
-	addMass("http://jude.org/ns-missal/ordinary/34th+Week+of+Ordinary+Time/Thursday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -3));
-	addMass("http://jude.org/ns-missal/ordinary/34th+Week+of+Ordinary+Time/Friday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -2));
-	addMass("http://jude.org/ns-missal/ordinary/34th+Week+of+Ordinary+Time/Saturday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -1));
+	addMassDate("http://jude.org/ns-missal/ordinary/Christ+the+King/" + context.sundayCycle, context, addDays(context.firstDayNextYear, -7));
+	addMassDate("http://jude.org/ns-missal/ordinary/34th+Week+in+Ordinary+Time/Monday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -6));
+	addMassDate("http://jude.org/ns-missal/ordinary/34th+Week+in+Ordinary+Time/Tuesday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -5));
+	addMassDate("http://jude.org/ns-missal/ordinary/34th+Week+in+Ordinary+Time/Wednesday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -4));
+	addMassDate("http://jude.org/ns-missal/ordinary/34th+Week+in+Ordinary+Time/Thursday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -3));
+	addMassDate("http://jude.org/ns-missal/ordinary/34th+Week+in+Ordinary+Time/Friday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -2));
+	addMassDate("http://jude.org/ns-missal/ordinary/34th+Week+in+Ordinary+Time/Saturday/" + context.weekdayCycle, context, addDays(context.firstDayNextYear, -1));
 
 	context.trinityDate = addDays(context.pentecostDate, 7);
 	context.bodyBloodDate = addDays(context.pentecostDate, 14);
@@ -319,7 +319,7 @@ function buildCalendarYear(adventYear) {
 
 	week2 = 33;
 	week1 = 6;
-	var startWeekPos = addDays(context.firstDayNextYear, -14);
+	var startWeekPos = -14;
 	var hitPentecost = false;
 	for (var we = week2; we >= week1 && hitPentecost == false; we--) {
 		for (da = 0; da < days.length; da++) {
@@ -331,7 +331,7 @@ function buildCalendarYear(adventYear) {
 				// already got these; skip
 			}
 			else {
-				addMass("http://jude.org/ns-missal/ordinary/" + ith(we) + "+Week+in+Ordinary+Time/" + days[da], context, d);
+				addMassDate("http://jude.org/ns-missal/ordinary/" + ith(we) + "+Week+in+Ordinary+Time/" + days[da], context, d);
 			}
 		}
 		startWeekPos -= 7;
@@ -344,7 +344,7 @@ function buildCalendarYear(adventYear) {
 	addMassDate("http://jude.org/ns-missal/saints/Conversion+of+St+Paul+the+Apostle",context, 1, 25);
 	addMassDate("http://jude.org/ns-missal/saints/Presentation+of+the+Lord",context, 2, 2);
 	addMassDate("http://jude.org/ns-missal/saints/Chair+of+St+Peter+the+Apostle", context, 2, 22);
-	addMassDate("http://jude.org/ns-missal/saints/St+Jospeh,+Spouse+of+the+Blessed+Virgin+Mary",context, 3, 19);
+	addMassDate("http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary",context, 3, 19);
 	addMassDate("http://jude.org/ns-missal/saints/Annunication+of+the+Lord", context, 3, 25);
 	addMassDate("http://jude.org/ns-missal/saints/St+Mark+Evangelist",context, 4, 25);
 	addMassDate("http://jude.org/ns-missal/saints/Sts+Philip+and+James+Apostles", context, 5, 3);
@@ -360,8 +360,8 @@ function buildCalendarYear(adventYear) {
 	addMassDate("http://jude.org/ns-missal/saints/St+Bartholemew+Apostle", context, 8, 24);
 	addMassDate("http://jude.org/ns-missal/saints/Nativity+of+the+Blessed+Virgin+Mary", context, 9, 8);
 	addMassDate("http://jude.org/ns-missal/saints/Exaltation+of+the+Holy+Cross", context, 9, 14);
-	addMassDate("http://jude.org/ns-missal/saints/Sts+Michael,+Gabriel+and+Raphael+Archangels", context, 9, 29);
-	addMassDate("http://jude.org/ns-missal/saints/St.+Matthew+Apostle+and+Evagelist", context, 9, 21);
+	addMassDate("http://jude.org/ns-missal/saints/Sts+Michael+Gabriel+and+Raphael+Archangels", context, 9, 29);
+	addMassDate("http://jude.org/ns-missal/saints/St+Matthew+Apostle+and+Evagelist", context, 9, 21);
 	addMassDate("http://jude.org/ns-missal/saints/St+Luke+Evangelist", context, 10, 18);
 	addMassDate("http://jude.org/ns-missal/saints/Sts+Simon+and+Jude+Apostles", context, 10, 28);
 	addMassDate("http://jude.org/ns-missal/saints/All+Saints", context, 11, 1);
@@ -373,11 +373,10 @@ function buildCalendarYear(adventYear) {
 	addMassDate("http://jude.org/ns-missal/saints/St+Stephen", context, 12, 26);
 	addMassDate("http://jude.org/ns-missal/saints/St+John+the+Apostle+and+Evangelist",context, 12, 27);
 	addMassDate("http://jude.org/ns-missal/saints/Holy+Innocents+Martyrs", context, 12, 28);
+
+	return context;
 }
 
 module.exports = {
-  determineCalendar: determineCalendar,
-  REPORT_HEADERS, 
-  determineReportYears,
-  buildReport
+  buildCalendar: buildCalendar
 };

@@ -1,0 +1,49 @@
+{
+	"proper": "saints",
+	"title": "St Jospeh, Spouse of the Blessed Virgin Mary",
+	"uri": "http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary",
+	"calendar": "fixed(Mar,19)",
+	"rank": "Solemnity",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Lk 12:42",
+			"uri": "http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "2 Sm 7:4-5a,12-14a, 16",
+			"uri": "http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 89:2-3, 4-5, 27 and 29 | resp 37",
+			"uri": "http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary/reading/PS"
+		},
+		{
+			"readingType": "2ND",
+			"citation": "Rom 4:13, 16-18, 22",
+			"uri": "http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary/reading/2ND"
+		},
+		{
+			"readingType": "GOSPELVERSE",
+			"citation": "Ps 84:5",
+			"uri": "http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary/reading/GOSPELVERSE"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Mt 1:16, 18-21, 24a",
+			"uri": "http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary/reading/GOSPEL"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 2:41-51a",
+			"uri": "http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary/reading/GOSPEL/2"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Mt 25:21",
+			"uri": "http://jude.org/ns-missal/saints/St+Joseph+Spouse+of+the+Blessed+Virgin+Mary/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}

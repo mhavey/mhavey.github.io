@@ -1,0 +1,410 @@
+{
+	"proper": "time",
+	"season": "ordinary",
+	"title": "22nd Week of Ordinary Time",
+	"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Cf. Ps 86(85):3, 5",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Cf. Ps 31(30): 20",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Mt 5:9-10",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/reading/COMMUNION+ANTIPHON/2"
+		},
+		{
+			"title": "Sunday",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday",
+			"readings": [
+				{
+					"title": "A",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/A",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Jer 20:7-9",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/A/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 63:2, 3-4, 5-6, 8-9 | resp 2b",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/A/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Rom 12:1-2",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/A/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Cf. Eph 1:17-18",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/A/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mt 16:21-27",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/A/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "B",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/B",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Dt 4:1-2, 6-8",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/B/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 15:2-3,3-4, 4-5 | resp 1a",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/B/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Jas 1:17-18, 21b-22, 27",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/B/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Jas 1:18",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/B/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Mk 7:1-8, 14-15, 21-23",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/B/reading/GOSPEL"
+						}
+					]
+				},
+				{
+					"title": "C",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/C",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Sir 3:17-18, 20, 28-29",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/C/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 68:4-5, 6-7, 10-11 | resp Cf. 11b",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/C/reading/PS"
+						},
+						{
+							"readingType": "2ND",
+							"citation": "Heb 12: 18-19, 22-24a",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/C/reading/2ND"
+						},
+						{
+							"readingType": "GA",
+							"citation": "Mt 11:29ab",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/C/reading/GA"
+						},
+						{
+							"readingType": "GOSPEL",
+							"citation": "Lk 14:1, 7-14",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Sunday/C/reading/GOSPEL"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Monday",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Monday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Cf. Lk 4:18",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Monday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 4:16-30",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Monday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Monday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Thes 4:13-18",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Monday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 96:1 and 3, 4-5, 11-12, 13 | resp 13b",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Monday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Monday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Cor 2:1-5",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Monday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 119:97, 98, 99, 100, 101, 102 | resp 97",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Monday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Tuesday",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Tuesday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Lk 7:16",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Tuesday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 4:31-37",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Tuesday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Tuesday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Thes 5:1-6, 9-11",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Tuesday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 27:1-4, 13-14 | resp 13",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Tuesday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Tuesday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Cor 2:10b-16",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Tuesday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 145:8-9, 10-11, 12-13ab, 13cd-14 | resp 17",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Tuesday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Wednesday",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Wednesday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Lk 4:18",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Wednesday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 4:38-44",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Wednesday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Wednesday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Col 1:1-8",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Wednesday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 52:10, 11 | resp 10",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Wednesday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Wednesday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Cor 3:1-9",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Wednesday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 33:12-13, 14-15, 20-21 | resp 12",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Wednesday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Thursday",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Thursday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "noref",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Thursday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 5:1-11",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Thursday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Thursday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Col 1:9-14",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Thursday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 98:2-3ab, 3cd-4, 5-6  | resp 2",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Thursday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Thursday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Cor 3:18-23",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Thursday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 24:1bc-2, 3-4ab, 5-6 |resp 1",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Thursday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Friday",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Friday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Jn 8:12",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Friday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 5:33-39",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Friday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Friday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Col 1:15-20",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Friday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 100:1b-2, 3, 4, 5 | resp 2b",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Friday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Friday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Cor 4:1-5",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Friday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 37:3-4,5-6,27-28,39-40 | resp 39a",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Friday/II/reading/PS"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Saturday",
+			"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Saturday",
+			"readings": [
+				{
+					"readingType": "GA",
+					"citation": "Jn 14:6",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Saturday/reading/GA"
+				},
+				{
+					"readingType": "GOSPEL",
+					"citation": "Lk 6:1-5",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Saturday/reading/GOSPEL"
+				},
+				{
+					"title": "I",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Saturday/I",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "Col 1:21-23",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Saturday/I/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 54:3-4, 6 and 8 | resp 6",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Saturday/I/reading/PS"
+						}
+					]
+				},
+				{
+					"title": "II",
+					"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Saturday/II",
+					"readings": [
+						{
+							"readingType": "1ST",
+							"citation": "1 Cor 4:6b-15",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Saturday/II/reading/1ST"
+						},
+						{
+							"readingType": "PS",
+							"citation": "Ps 145:17-18, 19-20, 21 | resp 18",
+							"uri": "http://jude.org/ns-missal/ordinary/22nd+Week+in+Ordinary+Time/Saturday/II/reading/PS"
+						}
+					]
+				}
+			]
+		}
+	]
+}

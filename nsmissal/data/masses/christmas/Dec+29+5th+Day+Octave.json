@@ -1,0 +1,38 @@
+{
+	"proper": "time",
+	"season": "christmas",
+	"title": "Dec 29, 5th Day Octave",
+	"uri": "http://jude.org/ns-missal/christmas/Dec+29+5th+Day+Octave",
+	"readings": [
+		{
+			"readingType": "ENTRANCE ANTIPHON",
+			"citation": "Jn 3:16",
+			"uri": "http://jude.org/ns-missal/christmas/Dec+29+5th+Day+Octave/reading/ENTRANCE+ANTIPHON"
+		},
+		{
+			"readingType": "1ST",
+			"citation": "1 Jn 2:3-11",
+			"uri": "http://jude.org/ns-missal/christmas/Dec+29+5th+Day+Octave/reading/1ST"
+		},
+		{
+			"readingType": "PS",
+			"citation": "Ps 96:1-2a, 2b-3, 5b-6 | resp 11a",
+			"uri": "http://jude.org/ns-missal/christmas/Dec+29+5th+Day+Octave/reading/PS"
+		},
+		{
+			"readingType": "GA",
+			"citation": "Lk 2:32",
+			"uri": "http://jude.org/ns-missal/christmas/Dec+29+5th+Day+Octave/reading/GA"
+		},
+		{
+			"readingType": "GOSPEL",
+			"citation": "Lk 2: 22-35",
+			"uri": "http://jude.org/ns-missal/christmas/Dec+29+5th+Day+Octave/reading/GOSPEL"
+		},
+		{
+			"readingType": "COMMUNION ANTIPHON",
+			"citation": "Lk 1:78",
+			"uri": "http://jude.org/ns-missal/christmas/Dec+29+5th+Day+Octave/reading/COMMUNION+ANTIPHON"
+		}
+	]
+}
