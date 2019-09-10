@@ -326,7 +326,7 @@ function buildCalendar(adventYear) {
 	var hitPentecost = false;
 	for (var we = week2; we >= week1 && hitPentecost == false; we--) {
 		for (da = 0; da < days.length; da++) {
-			var d = addDays(ordinaryZero, startWeekPos + da);
+			var d = addDays(context.firstDayNextYear, startWeekPos + da);
 			if (compareDates(d, context.pentecostDate) == 0) hitPentecost = true;
 			else if (compareDates(d, context.trinityDate) == 0 || 
 				compareDates(d, context.bodyBloodDate) == 0 || 

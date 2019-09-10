@@ -29,9 +29,6 @@ function addVerse(book, chapter, verse, triples) {
 
 function linkMassToDate(mass, adventYear, date, triples) {
 	checkExists(mass);
-
-xdmp.log("LINK_" + mass + " " + date);
-
 	var xd = xs.date(date);
 	var massDate = sem.iri(NSM + adventYear + "_" + xd);
 	triples.push(sem.triple(sem.iri(mass), sem.iri(NSM + "hasMassDate"), massDate));
