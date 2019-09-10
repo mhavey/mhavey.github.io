@@ -31,7 +31,9 @@ function organizeBible() {
 
 
 		// create triples for the verses
-		for (var v = 1; v <= doc.verses; v++) nsem.addVerse(doc.abbrev, doc.chapter, v);
+		var triples = [];
+		for (var v = 1; v <= doc.verses; v++) nsem.addVerse(doc.abbrev, doc.chapter, v, triples);
+		nsem.saveTriples("verses/" + doc.abbrev + "/" + doc.chapter, triples);
 	}
 
 	xdmp.documentInsert(BIBLE_TOC_URI, bible, {collections: ["nsm", "bible"], permissions: savedPerms});
@@ -41,18 +43,20 @@ function linkMassesToReadings() {
 	var docs = cts.search(cts.collectionQuery("masses"));
 	for (var odoc of docs) {
 		var doc = odoc.toObject();
-		mrWalk(doc, null);
+		var triples = [];
+		mrWalk(doc, null, triples);
+		nsem.saveTriples("mr/" + fn.documentUri(doc), triples);
 	}
 }
 
-function mrWalk(doc, father) {
+function mrWalk(doc, father, triples) {
 	if (doc.uri) {
 		if (doc.readingType) {
-			nsem.linkMassToReading(father, doc.uri);
+			nsem.linkMassToReading(father, doc.uri, triples);
 		}
 		else {
-			if (father != null) nsem.linkMassToParent(doc.uri, father);
-			if (doc.readings) doc.readings.forEach(r => mrWalk(r, doc.uri));
+			if (father != null) nsem.linkMassToParent(doc.uri, father, triples);
+			if (doc.readings) doc.readings.forEach(r => mrWalk(r, doc.uri, triples));
 		}
 	}
 }

@@ -5,22 +5,23 @@ const ABC_YEARS = ["C", "A", "B"];
 const FIRST_I_YEAR = 2013; // is this true?
 const I__II_YEARS = ["I", "II"];
 
-// https://www.irt.org/articles/js052/index.htm
-function getEasterDate(Y) {
-    var C = Math.floor(Y/100);
-    var N = Y - 19*Math.floor(Y/19);
-    var K = Math.floor((C - 17)/25);
-    var I = C - Math.floor(C/4) - Math.floor((C - K)/3) + 19*N + 15;
-    I = I - 30*Math.floor((I/30));
-    I = I - Math.floor(I/28)*(1 - Math.floor(I/28)*Math.floor(29/(I + 1))*Math.floor((21 - N)/11));
-    var J = Y + Math.floor(Y/4) + I + 2 - C + Math.floor(C/4);
-    J = J - 7*Math.floor(J/7);
-    var L = I - J;
-    var M = 3 + Math.floor((L + 40)/44);
-    var D = L + 28 - 31*Math.floor(M/4);
-  
-    return new Date(Y,M,D);
-}
+function getEasterDate(year) {
+		var a = Math.floor(year % 19);
+		var b = Math.floor(year / 100);
+		var c = Math.floor(year % 100);
+		var d = Math.floor(b / 4);
+		var e = Math.floor(b % 4);
+		var f = Math.floor((b + 8) / 25);
+		var g = Math.floor((b - f + 1) / 3);
+		var h = Math.floor((19 * a + b - d - g + 15) % 30);
+		var i = Math.floor(c / 4);
+		var k = Math.floor(c % 4);
+		var l = Math.floor((32 + 2 * e + 2 * i - h - k) % 7);
+		var m = Math.floor((a + 11 * h + 22 * l) / 451);
+		var n = Math.floor((h + l - 7 * m + 114) / 31);
+		var p = Math.floor((h + l - 7 * m + 114) % 31);
+		return new Date(year, n - 1, p + 1);
+	}
 
 function getFirstDayOfNextYear(easterYear) {
 	var xmas = getDate(easterYear, 12, 25);
@@ -53,12 +54,12 @@ function addMassDate(uri, context, arg1, arg2) {
 		// if we're calculating the date, which year to use?
 		// adventYear if M/D >= M/D of advent year; else easterYear
 		if (compareDates(context.advent1Date,  aDate) <= 0) date = aDate;
-		date = getDate(context.easterYear, arg1, arg2);
+		else date = getDate(context.easterYear, arg1, arg2);
 	}
 	else date = arg1;
 
 	// now link the date to uri
-	nsem.linkMassToDate(uri, context.adventYear, date);
+	nsem.linkMassToDate(uri, context.adventYear, date, context.triples);
 }
 
 function ith(n) {
@@ -85,7 +86,8 @@ function buildCalendar(adventYear) {
 		weekdayCycle: I__II_YEARS[(adventYear + 1 - FIRST_I_YEAR) % I__II_YEARS.length],
 		christmasDate: getDate(adventYear, 12, 25),
 		easterDate: getEasterDate(adventYear + 1),
-		firstDayNextYear: getFirstDayOfNextYear(adventYear + 1)
+		firstDayNextYear: getFirstDayOfNextYear(adventYear + 1), 
+		triples: []
 	};
 	context.christmasDayOfWeek = context.christmasDate.getDay();
 	context.advent4Date = context.christmasDayOfWeek == 0 ? 
@@ -161,7 +163,8 @@ function buildCalendar(adventYear) {
 		addMassDate("http://jude.org/ns-missal/christmas/Holy+Family/" + context.sundayCycle, context, addDays(context.advent4Date, 7));
 		context.epiphanyDate  = addDays(context.advent4Date, 14);
 		addMassDate("http://jude.org/ns-missal/christmas/Epiphany", context, context.epiphanyDate);
-		addMassDate("http://jude.org/ns-missal/christmas/Dec+30+6th+Day+Octave", context, 12, 30);
+		var octave30 = getDate(context.adventYear, 12, 30);
+		if (getDayOfWeek(octave30) > 0) addMassDate("http://jude.org/ns-missal/christmas/Dec+30+6th+Day+Octave", context, octave30);
 	}
 
 	var octave29 = getDate(context.adventYear, 12, 29);
@@ -373,6 +376,8 @@ function buildCalendar(adventYear) {
 	addMassDate("http://jude.org/ns-missal/saints/St+Stephen", context, 12, 26);
 	addMassDate("http://jude.org/ns-missal/saints/St+John+the+Apostle+and+Evangelist",context, 12, 27);
 	addMassDate("http://jude.org/ns-missal/saints/Holy+Innocents+Martyrs", context, 12, 28);
+
+	nsem.saveTriples("calendar/" + adventYear, context.triples);
 
 	return context;
 }
