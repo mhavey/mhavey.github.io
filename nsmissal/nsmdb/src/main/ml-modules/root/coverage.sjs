@@ -6,6 +6,7 @@ function organizeBible() {
 	var bible = {};
 	var savedPerms = null;
 	var order2Book = {};
+	var bookTriples = [];
 	var docs = cts.search(cts.collectionQuery("bibleChapter"), cts.indexOrder(cts.elementReference(fn.QName("", "chapter"))));
 	for (var odoc of docs) {
 		var doc = odoc.toObject();
@@ -22,20 +23,23 @@ function organizeBible() {
 				biblicalOrder: doc.biblicalOrder,
 				verses: []
 			};
+			nsem.addBook(doc.abbrev, doc.book, doc.biblicalOrder, bookTriples); 
 		} else {
 			if (bible[doc.abbrev].title != doc.book || bible[doc.abbrev].biblicalOrder != doc.biblicalOrder) {
 				throw "Data sin: Inconsistent data " + uri + " for " + doc.abbrev;
 			}
 		}
+
+		var triples = []; // chapter and verse triples
+		nsem.addChapter(doc.abbrev, doc.chapter, triples);
 		bible[doc.abbrev].verses.push(doc.verses);
 
 
-		// create triples for the verses
-		var triples = [];
 		for (var v = 1; v <= doc.verses; v++) nsem.addVerse(doc.abbrev, doc.chapter, v, triples);
 		nsem.saveTriples("verses/" + doc.abbrev + "/" + doc.chapter, triples);
 	}
 
+	nsem.saveTriples("books", bookTriples);
 	xdmp.documentInsert(BIBLE_TOC_URI, bible, {collections: ["nsm", "bible"], permissions: savedPerms});
 }
 
@@ -45,7 +49,18 @@ function linkMassesToReadings() {
 		var doc = odoc.toObject();
 		var triples = [];
 		mrWalk(doc, null, triples);
-		nsem.saveTriples("mr/" + fn.documentUri(doc), triples);
+		nsem.saveTriples("mr/" + fn.documentUri(odoc), triples);
+	}
+}
+
+function cover() {
+	const bibleToc = cts.doc(BIBLE_TOC_URI).toObject();
+	var docs = cts.search(cts.collectionQuery("masses"));
+	for (var odoc of docs) {
+		var doc = odoc.toObject();
+		var triples = [];
+		coverWalk(doc, bibleToc, triples); 
+		nsem.saveTriples("cover/" + fn.documentUri(odoc), triples);
 	}
 }
 
@@ -61,109 +76,29 @@ function mrWalk(doc, father, triples) {
 	}
 }
 
-function cover() {
-	var context = {
-		bibleToc: cts.doc(BIBLE_TOC_URI).toObject(), 
-		props: null,
-		mods: {}
-	};
-	var docs = cts.search(cts.collectionQuery("masses"));
-	for (var odoc of docs) {
-		var uri = fn.documentUri(odoc);
-		var doc = odoc.toObject();
-		//coverWalk(doc, context);
-	}
-}
-
-/*
-function addCover(readingIRI, book, chapter, verse, context) {
-
-	var thisMod = context.mods[book + "/" + chapter];
-	if (!thisMod) {
-		var odoc = fn.head(cts.search(cts.andQuery([
-			cts.collectionQuery("bibleChapter"),
-			cts.jsonPropertyValueQuery("book", book),
-			cts.jsonPropertyValueQuery("chapter", chapter)
-		])));
-		if (!odoc || odoc == null) {
-			throw "Data sin: for reading " + readingIRI + " failed to find *" + book + "*" + chapter + "*";
+function coverWalk(doc, bibleToc, triples) {
+	if (doc.uri) {
+		if (doc.readingType) {
+			parseCitation(doc.citation, bibleToc).forEach(
+				cv => nsem.coverVerseWithReading(doc.uri, cv.bookAbbrev, cv.chapterNum, cv.verseNum, triples));
 		}
-		var uri = fn.documentUri(odoc);
-		if (context.props == null) {
-			context.props = {
-				collections: xdmp.documentGetCollections(uri), 
-				permissions: xdmp.dls.documentGetPermissions(uri)
-			};
+		else {
+			if (doc.readings) doc.readings.forEach(r => coverWalk(r, bibleToc, triples));
 		}
-		context.mods[book + "/" + chapter] = {
-			uri: uri, 
-			doc: odoc.toObject()
-		};
-	}
-
-	thisMod.doc.triples.push(sem.triple(verseIRI(book, chapter, verse), sem.iri(NSM_HAS_COVER), sem.iri(readingIRI)));
+	}	
 }
 
-function coverWalk(doc, context) {
-	if (!doc.readings) return;
-	doc.readings.forEach(function (f) {
-		if (f.readingType) linkCitationToVerses(f, context);
-		else if (f.readings) coverWalk(f, context);    
-  	});
+function parseCitation(citation, bibleToc) {
+	var verses = [];
+
+	verses.push({
+		bookAbbrev: "Gn",
+		chapterNum: 1,
+		verseNum: 2
+	});
+
+	return verses;
 }
-
-function linkCitationToVerses(reading, context) {
-  
-  // ignore noref
-  if (reading.citation.toUpperCase() == "NOREF") return;
-  
-  // strip out the noisy Cf.  and see 
-  var cleanCit = fn.replace(reading.citation, "Cf.", "").trim();
-  cleanCit = fn.replace(reading.citation, "see", "").trim();
-
-  // determine the book; it's either one string (Jn) or a number then a string (1 Thes)
-  var toks = cleanCit.split(" ");
-  var book = "";
-  if (toks.length > 1 && toks[0] == "1" || toks[0] == "2" || toks[0] == "3") {
-  	book = toks[0] + " " + toks[1];
-  }
-  else if (toks.length > 0) {
-  	book = toks[0];
-  }
-  var bookSpec;
-  if (book != "") bookSpec = context.bibleToc[book];
-  if (!bookSpec || bookSpec == null)  {
-  	xdmp.log("Data sin - invalid book in " + JSON.stringify(reading), "error");
-  	return;
-  }
-
-  // determine the chapter
-  var restOfCit = fn.substringAfter(cleanCit, book).trim();
-  toks = restOfCit.split(":");
-*/
-
-
-/*
-
-  // start left; the part before the first colon is the book and chapter; extract it 
-  var firstColonIdx = reading.citation.indexOf(":");
-  
-  xdmp.log("Got " + reading.uri + " *" + cleanCit.substring(0, firstColonIdx).trim() + "*");
-  
-  if (firstColonIdx < 0) throw "Unable to find book 1 " + reading.uri + " *" + cleanCit + "*";
-  var bookChap1 = reading.citation.substring(0, firstColonIdx).trim();
-  
-  // If this has A(B), ingore the (B)
-  // Also handle the case where there is no chapter; this is valid for the books that have just one chapter
-  
-  // next extract the chapter  
-  //var chapter
-
-  // add the cover
-  // TODO - call this in a loop
-  addCover(f.uri, book, chapter, verse, context);
-
-*/
 
 module.exports = {
   linkMassesToReadings: linkMassesToReadings,

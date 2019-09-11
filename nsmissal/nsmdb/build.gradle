@@ -146,7 +146,18 @@ task _runCalendarReport(type: com.marklogic.gradle.task.CorbTask) {
   exportFileTopContent=cols
 }
 
-task _runCoverageReport() {
+task _runCoverageReport(type: com.marklogic.gradle.task.CorbTask) {
+  def cols = "BOOK_ORDER,BOOK_ABBREV,BOOK,CHAPTER,VERSE,READING"
+
+  xccConnectionUri = contentXccUrl
+  urisModule = "/corb/coverage/uris.sjs"
+  processTask="com.marklogic.developer.corb.ExportBatchToFileTask"
+  processModule = "/corb/coverage/process.sjs"
+  batchSize="2"
+  threadCount="8"
+  exportFileName = "../data/reports/coverage.csv"
+  preBatchTask="com.marklogic.developer.corb.PreBatchUpdateFileTask"
+  exportFileTopContent=cols
 }
 
 task loadData() {
