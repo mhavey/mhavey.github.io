@@ -1,4 +1,5 @@
 const nsem = require("nsmSem.sjs");
+const cit = require("citationParser.sjs");
 
 const BIBLE_TOC_URI = "/bible.json";
 
@@ -79,25 +80,13 @@ function mrWalk(doc, father, triples) {
 function coverWalk(doc, bibleToc, triples) {
 	if (doc.uri) {
 		if (doc.readingType) {
-			parseCitation(doc.citation, bibleToc).forEach(
+			cit.parseCitation(doc.citation, bibleToc).forEach(
 				cv => nsem.coverVerseWithReading(doc.uri, cv.bookAbbrev, cv.chapterNum, cv.verseNum, triples));
 		}
 		else {
 			if (doc.readings) doc.readings.forEach(r => coverWalk(r, bibleToc, triples));
 		}
 	}	
-}
-
-function parseCitation(citation, bibleToc) {
-	var verses = [];
-
-	verses.push({
-		bookAbbrev: "Gn",
-		chapterNum: 1,
-		verseNum: 2
-	});
-
-	return verses;
 }
 
 module.exports = {
