@@ -134,7 +134,7 @@
 				},
 				{
 					"readingType": "GOSPEL",
-					"citation": "Mt 10:24 – 11:1",
+					"citation": "Mt 10:24-11:1",
 					"uri": "http://jude.org/ns-missal/ordinary/15th+Week+in+Ordinary+Time/Monday/reading/GOSPEL"
 				},
 				{
@@ -308,7 +308,7 @@
 						},
 						{
 							"readingType": "PS",
-							"citation": "Ps 102:13-14ab.15, 16-18,19-21 | resp 20b",
+							"citation": "Ps 102:13-14ab, 15, 16-18,19-21 | resp 20b",
 							"uri": "http://jude.org/ns-missal/ordinary/15th+Week+in+Ordinary+Time/Thursday/II/reading/PS"
 						}
 					]
@@ -335,7 +335,7 @@
 					"readings": [
 						{
 							"readingType": "1ST",
-							"citation": "Ex 11:10 – 12:14",
+							"citation": "Ex 11:10-12:14",
 							"uri": "http://jude.org/ns-missal/ordinary/15th+Week+in+Ordinary+Time/Friday/I/reading/1ST"
 						},
 						{
@@ -399,7 +399,7 @@
 					"readings": [
 						{
 							"readingType": "1ST",
-							"citation": "Mi 2:1-15",
+							"citation": "Mi 2:1-5",
 							"uri": "http://jude.org/ns-missal/ordinary/15th+Week+in+Ordinary+Time/Saturday/II/reading/1ST"
 						},
 						{

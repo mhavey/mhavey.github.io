@@ -81,7 +81,7 @@ function coverWalk(doc, bibleToc, triples) {
 	if (doc.uri) {
 		if (doc.readingType) {
 			cit.parseCitation(doc.citation, bibleToc).forEach(
-				cv => nsem.coverVerseWithReading(doc.uri, cv.bookAbbrev, cv.chapterNum, cv.verseNum, triples));
+				cv => nsem.coverVerseWithReading(doc.uri, cv.book, cv.chapter, cv.verse, triples));
 		}
 		else {
 			if (doc.readings) doc.readings.forEach(r => coverWalk(r, bibleToc, triples));

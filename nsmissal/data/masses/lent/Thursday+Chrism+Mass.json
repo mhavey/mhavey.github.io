@@ -26,7 +26,8 @@
 		},
 		{
 			"readingType": "GOSPELVERSE",
-			"citation": "Is 61:1 (cited in Lk 4:18)",
+			"orig_citation": "Is 61:1 (cited in Lk 4:18)",
+			"citation": "Is 61:1l; Lk 4:18",
 			"uri": "http://jude.org/ns-missal/lent/Thursday+Chrism+Mass/reading/GOSPELVERSE"
 		},
 		{

@@ -203,6 +203,7 @@ function parseBCV(citation, context) {
       case "ranged":
         switch(event) {
           case ",": case "and": case "or":
+            handled = true;
             sm.currentTerm = "";
             sm.state = "anding";
             break;
@@ -265,7 +266,7 @@ function isValidChapter(term, context) {
     var numChapters =context.bibleToc[context.currentBook].verses.length;
     if (chapter < numChapters) return true;
 
-    xdmp.log("CHAPTER OUT OF RANGE in " + context.currentBook + " chapter " + chapter + " actual num " + numChapters); 
+    xdmp.log("BREF - CHAPTER OUT OF RANGE in " + context.currentBook + " chapter " + chapter + " actual num " + numChapters); 
     return false;
   } catch(e) {
     return false;
@@ -293,7 +294,7 @@ function actualVerse(term, context, altChapter) {
     goodVerse = Iint(goodVerse);
     if (goodVerse <= numVersesInChapter) return goodVerse;
 
-    xdmp.log("VERSE OUT OF RANGE in " + context.currentBook + "/" + chapter + " verse " + goodVerse + " actual " + numVersesInChapter); 
+    xdmp.log("BREF - VERSE OUT OF RANGE in " + context.currentBook + "/" + chapter + " verse " + goodVerse + " actual " + numVersesInChapter); 
     return null;
   }
   catch(e) {
@@ -308,7 +309,7 @@ function eventIsVerselike(term) {
 
 function hasVerse(c, v, context) {
   // make sure no dupes
-  for (var i = 0; i < context.verses; i++) {
+  for (var i = 0; i < context.verses.length; i++) {
     if (context.verses[i].book == context.currentBook && context.verses[i].chapter == c && context.verses[i].verse == v) return true;
   }
   return false;
@@ -320,7 +321,7 @@ function pushValidVerse(sverse, context) {
 
   var chapter = Iint(context.currentChapter);
 
-  if (hasVerse(chapter, verse, context)) return true;
+  if (hasVerse(chapter, verse, context) == true) return true;
   context.verses.push({book: context.currentBook, chapter: chapter, verse: verse});
   return true;
 }
@@ -375,7 +376,7 @@ function mysplit(s, sep) {
       if (j < toks.length - 1) rtoks.push(sep);
     }    
   }
-  return rtoks.map(str => str.trim()).filter(s => s != "");
+  return rtoks.map(str => str.trim()).filter(s => s != "" && s.toLowerCase() != "cf." && s.toLowerCase() != "see");
 }
 
 function parseCitation(citation, bibleToc) {

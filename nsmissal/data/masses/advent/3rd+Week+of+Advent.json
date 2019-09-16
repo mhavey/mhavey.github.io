@@ -39,7 +39,8 @@
 						},
 						{
 							"readingType": "GA",
-							"citation": "Is 61:1 (Lk 4:18)",
+							"orig_citation": "Is 61:1 (Lk 4:18)",
+							"citation": "Is 61:1;Lk 4:18",
 							"uri": "http://jude.org/ns-missal/advent/3rd+Week+of+Advent/Sunday/A/reading/GA"
 						},
 						{
@@ -70,7 +71,8 @@
 						},
 						{
 							"readingType": "GA",
-							"citation": "Is 61:1 (Lk 4:18)",
+							"orig_citation": "Is 61:1 (Lk 4:18)",
+							"citation": "Is 61:1;Lk 4:18",
 							"uri": "http://jude.org/ns-missal/advent/3rd+Week+of+Advent/Sunday/B/reading/GA"
 						},
 						{
@@ -101,7 +103,8 @@
 						},
 						{
 							"readingType": "GA",
-							"citation": "Is 61:1 (cited in Lk 4:18)",
+							"orig_citation": "Is 61:1 (cited in Lk 4:18)",
+							"citation": "Is 61:1; Lk 4:18",
 							"uri": "http://jude.org/ns-missal/advent/3rd+Week+of+Advent/Sunday/C/reading/GA"
 						},
 						{

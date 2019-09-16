@@ -60,7 +60,7 @@
 					"readings": [
 						{
 							"readingType": "1ST",
-							"citation": "Jb 38: 1 8-11",
+							"citation": "Jb 38: 1, 8-11",
 							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Sunday/B/reading/1ST"
 						},
 						{
@@ -399,7 +399,7 @@
 						},
 						{
 							"readingType": "PS",
-							"citation": "Ps 74, 1b-2, 3-5, 6-7, 20-21 | resp 19b",
+							"citation": "Ps 74: 1b-2, 3-5, 6-7, 20-21 | resp 19b",
 							"uri": "http://jude.org/ns-missal/ordinary/12th+Week+in+Ordinary+Time/Saturday/II/reading/PS"
 						}
 					]

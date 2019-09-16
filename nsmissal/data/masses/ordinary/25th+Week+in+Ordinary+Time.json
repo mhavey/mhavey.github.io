@@ -316,7 +316,7 @@
 			"readings": [
 				{
 					"readingType": "GA",
-					"citation": "Mt 10:45",
+					"citation": "Mk 10:45",
 					"uri": "http://jude.org/ns-missal/ordinary/25th+Week+in+Ordinary+Time/Friday/reading/GA"
 				},
 				{
@@ -369,7 +369,7 @@
 				},
 				{
 					"readingType": "GOSPEL",
-					"citation": "Lk 9:43b – 45",
+					"citation": "Lk 9:43b - 45",
 					"uri": "http://jude.org/ns-missal/ordinary/25th+Week+in+Ordinary+Time/Saturday/reading/GOSPEL"
 				},
 				{
@@ -394,7 +394,7 @@
 					"readings": [
 						{
 							"readingType": "1ST",
-							"citation": "Eccl 11:9 – 12:8",
+							"citation": "Eccl 11:9 - 12:8",
 							"uri": "http://jude.org/ns-missal/ordinary/25th+Week+in+Ordinary+Time/Saturday/II/reading/1ST"
 						},
 						{

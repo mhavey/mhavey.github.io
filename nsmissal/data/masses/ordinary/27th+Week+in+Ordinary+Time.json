@@ -138,7 +138,8 @@
 					"readings": [
 						{
 							"readingType": "1ST",
-							"citation": "Jon 1:1 – 2:1-2, 11",
+							"orig_citation": "Jon 1:1-2:1-2, 11",
+							"citation": "Jon 1:1-2:1, 1-2, 11",
 							"uri": "http://jude.org/ns-missal/ordinary/27th+Week+in+Ordinary+Time/Monday/I/reading/1ST"
 						},
 						{

@@ -6,7 +6,7 @@
 	"readings": [
 		{
 			"readingType": "ENTRANCE ANTIPHON",
-			"citation": "Ps 95(94);6-7",
+			"citation": "Ps 95(94):6-7",
 			"uri": "http://jude.org/ns-missal/ordinary/5th+Week+in+Ordinary+Time/reading/ENTRANCE+ANTIPHON"
 		},
 		{
@@ -159,7 +159,7 @@
 						},
 						{
 							"readingType": "PS",
-							"citation": "Ps 132:6-7. 8-10 | resp 8a",
+							"citation": "Ps 132:6-7, 8-10 | resp 8a",
 							"uri": "http://jude.org/ns-missal/ordinary/5th+Week+in+Ordinary+Time/Monday/II/reading/PS"
 						}
 					]
