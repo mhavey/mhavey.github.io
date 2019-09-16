@@ -1,23 +1,28 @@
-'use strict';
+const SEP = [":", ",", "-", "(", ")", " "];
+const EOS = 42;
+const VERSE_LETTERS = "abcdefghijklmnopqrstuvwxyz".split("");
+const CV_NUMBERS = "0123456789".split("");
 
 function parseBCV(citation, context) {
-  const SEP = [":", ",", "-", "(", ")", " "];
-  const EOS = 42;
+  xdmp.log("Starting SM for " + citation);
+  
   var toks = [citation];
   SEP.forEach(function(x) { toks = mysplit(toks, x); } );
   
   // now run the state machine
   var sm = {
-    state: "init";
+    state: "init",
     currentTerm: "",
     rangeSourceChapter: "",
     rangeSourceVerse: ""
   };
-  toks = toks.push(EOS); // add an EOS marker
+  toks.push(EOS); // add an EOS marker
+
   for (var i = 0; i < toks.length; i++) /* feed the event stream */ {
     var event = toks[i];
     
-    xdmp.log("SM in event *" + event + "* citation *" + citation + "* sm " + JSON.stringify(sm));
+    xdmp.log("SM in event *" + event + "* citation *" + citation + "* sm " + JSON.stringify(sm) + " ctx: book/chapter/verses *" 
+             + context.currentBook + "*" + context.currentChapter + "*" + JSON.stringify(context.verses));
     
     var handled = false;
     switch(sm.state) {
@@ -54,9 +59,8 @@ function parseBCV(citation, context) {
             }
             break;            
           case "and": case ",": // This is like  in "b c:a | resp x and y". Adding verse x to current book b chapter c
-            if (isValidVerse(sm.currentTerm, context) == true) {
+            if (pushValidVerse(sm.currentTerm, context) == true) {
               handled = true;
-              pushVerse(sm.currentTerm, context);
               sm.currentTerm = "";
               sm.state = "anding";
             }
@@ -64,16 +68,15 @@ function parseBCV(citation, context) {
           case "-": // This is like  in "b c:a | resp x-y". Ranging from verse x in current book b chapter c
             if (isValidVerse(sm.currentTerm, context) == true) {
               handled = true;
-              sm.rangeStart=sm.currentTerm;
+              sm.rangeSourceVerse=sm.currentTerm;
+              sm.rangeSourceChapter=context.currentChapter;
               sm.currentTerm = "";
               sm.state = "ranging";
             }
             break;
           case EOS: // This like "b c:a | resp x". Adding verse x in current book b chapter c
-            if (isValidVerse(sm.currentTerm, context) == true) {
+            if (pushValidVerse(sm.currentTerm, context) == true) {
               handled = true;
-              pushVerse(sm.currentTerm, context);
-              sm.currentTerm = "";
               sm.state = "complete";
             }
             break;            
@@ -117,9 +120,8 @@ function parseBCV(citation, context) {
       case "versing":
         switch(event) {
           case "and": case ",":
-            if (isValidVerse(sm.currentTerm, context) == true) {
+            if (pushValidVerse(sm.currentTerm, context) == true) {
               handled = true;
-              pushVerse(sm.currentTerm, context);
               sm.currentTerm = "";
               sm.state = "anding";
             }
@@ -127,69 +129,72 @@ function parseBCV(citation, context) {
           case "-":
             if (isValidVerse(sm.currentTerm, context) == true) {
               handled = true;
-              sm.rangeStart=sm.currentTerm;
+              sm.rangeSourceVerse=sm.currentTerm;
+              sm.rangeSourceChapter=context.currentChapter;
               sm.currentTerm = "";
               sm.state = "ranging";
             }
             break;
           case EOS:
-            if (isValidVerse(sm.currentTerm, context) == true) {
+            if (pushValidVerse(sm.currentTerm, context) == true) {
               handled = true;
-              pushVerse(sm.currentTerm, context);
-              sm.currentTerm = "";
               sm.state = "complete";
             }
-            break;            
+            break;
         }
         break;                   
       case "ranging":
-        if (eventIsNumber(event)) { // this is like "b c:v1-v2" where v2 is a number (it could be either a new chapter or a verse)
+        if (eventIsVerselike(event) == true) { // b c:v1-v2. Here v2 will be either a verse or a chapter)
           handled = true;
           sm.currentTerm = event;
-          sm.state = "ranged";
-        }
-        else if (isVerselike(event) == true && isValidVerse(event, context) == true) { // this is like "b c:v1-v2", where v2 is something like "5ab" (obviously a verse)
-          handled = true;
-          pushVerseRange(sm.rangeStart, event, context); // this will push the verse range [sm.rangeStart, event]
-          sm.currentTerm = "";
-          sm.rangeStart = "";
-          sm.state = "versing";
+          sm.state = "rangeTargeting";
         }
         break;
-      case "ranged": 
+      case "rangeTargeting":
         switch(event) {
-          case "and": case ",":
-            if (isValidVerse(sm.currentTerm, context) == true) {
+          case ",": case "and":
+            if (pushValidRange(sm.rangeSourceChapter, sm.rangeSourceVerse, sm.currentTerm, context) == true) {
               handled = true;
-              pushVerseRange(sm.rangeStart, sm.currentTerm, context); // this will push the verse range [sm.rangeStart, event]
-              sm.currentTerm = "";
-              sm.rangeStart = "";
-              sm.state = "versing";
+              sm.rangeSourceVerse = "";
+              sm.rangeSourceChapter = "";
+              sm.currentTerm = ""; 
+              sm.state = "anding";
             }
             break;
-          case ":": // "b c:v-c2:v2". Here we process the ":" after c2. 
+          case ":":
             if (isValidChapter(sm.currentTerm, context) == true) {
               handled = true;
               context.currentChapter = sm.currentTerm;
-              
-              sm.rangeStart=sm.currentTerm;
-              sm.currentTerm = "";
-              sm.state = "chaptered";
-              
-              
-              // TODO when I get the v2, I need to somehow set range c:v - c2:v2
-              
+              sm.state = "rangeChaptered";
             }
             break;
-          case EOS:
-            if isValidVerse(sm.currentTerm, context) == true) {
+          case EOS: 
+            if (pushValidRange(sm.rangeSourceChapter, sm.rangeSourceVerse, sm.currentTerm, context) == true) {
               handled = true;
-              pushVerseRange(sm.rangeStart, sm.currentTerm, context); // this will push the verse range [sm.rangeStart, event]
-              sm.currentTerm = "";
-              sm.rangeStart = "";
               sm.state = "complete";
             }
-            break;            
+            break;
+        }
+        break;
+      case "rangeChaptered": 
+        if (pushValidRange(sm.rangeSourceChapter, sm.rangeSourceVerse, event, context) == true) {
+          handled = true;
+          sm.rangeSourceVerse = "";
+          sm.rangeSourceChapter = "";
+          sm.currentTerm = ""; 
+          sm.state = "ranged";
+        }
+        break;
+      case "ranged":
+        switch(event) {
+          case ",": case "and":
+            sm.currentTerm = "";
+            sm.state = "anding";
+            break;
+          case EOS: 
+            handled = true;
+            sm.state = "complete";
+            break;
         }
         break;
       case "complete":
@@ -198,15 +203,143 @@ function parseBCV(citation, context) {
         throw "Invalid state *" + state + "*";
     }
     
-    xdmp.log("SM out event *" + event + "* citation *" + citation + "* sm " + JSON.stringify(sm));
+    xdmp.log("SM out event *" + event + "* citation *" + citation + "* sm " + JSON.stringify(sm) + " ctx: book/chapter/verses *" 
+             + context.currentBook + "*" + context.currentChapter + "*" + JSON.stringify(context.verses));
     if (handled == false) throw "In state " + sm.state + " unhandled event " + event;
   }
   
   if (sm.state != "complete") throw "State machine concluded in incomplete state " + sm.state;
 }
 
-function isWord(w, sep) {
-  return sep.indexOf(w[0]) < 0;
+function buildBook(event, seps, context, sm) {
+
+  // must be a word that doesn't start with a separator
+  if (event.length == 0 || seps.indexOf(event[0]) >= 0) return false;
+
+  // build the current term
+  if (sm.currentTerm == "") sm.currentTerm = event;
+  else sm.currentTerm += " " + event;
+
+  // is the current term a book of the bible?
+  for (var book in context.bibleToc) {
+    if (""+book == sm.currentTerm) {
+
+      // it's a bible book! Check it if's a unibook
+      if (context.bibleToc[book].verses.length == 1) {
+        context.currentChapter = "1";
+        sm.state = "chaptered";
+      }
+      else {
+        context.currentChapter = "";
+        sm.state = "booked";
+      }
+      context.currentBook = sm.currentTerm;
+      sm.currentTerm = "";
+      return true;
+    }
+  }
+
+  sm.state = "booking";
+  return true;
+}
+
+function isValidChapter(term, context) {
+  if (context.currentBook == "") return false;
+  try {
+    var chapter = Iint(term) - 1; // make zero-based
+    return chapter < context.bibleToc[context.currentBook].verses.length;
+  } catch(e) {
+    return false;
+  }
+}
+
+function isValidVerse(term, context) {
+  return actualVerse(term, context) != null;
+}
+
+function actualVerse(term, context, altChapter) {
+   if (context.currentBook == "") return null
+  if (context.currentChapter == "") return null;
+  try {
+    var chapter = altChapter ? altChapter : Iint(context.currentChapter);
+    var numVersesInChapter = context.bibleToc[context.currentBook].verses[chapter - 1]; 
+
+    // reduce the verse to a number; strip the letters
+    if (term[0] == "0") return false;
+    var goodVerse = term.split("").filter(s => CV_NUMBERS.indexOf(s) >= 0).join("");
+    if (goodVerse.length == 0) return null;
+    if (goodVerse[0] == "0") return null;
+    goodVerse = Iint(goodVerse);
+    if (goodVerse <= numVersesInChapter) return goodVerse;
+    else return null;
+  }
+  catch(e) {
+    return null;
+  } 
+}
+
+function eventIsVerselike(term) {
+  // notice CV_NUMBERS.indexOf checks > 0. "=0" not allowed. the term cannot start with a zero
+  return term.length > 0 && CV_NUMBERS.indexOf(term[0]) > 0;
+}
+
+function hasVerse(c, v, context) {
+  // make sure no dupes
+  for (var i = 0; i < context.verses; i++) {
+    if (context.verses[i].book == context.currentBook && context.verses[i].chapter == c && context.verses[i].verse == v) return true;
+  }
+  return false;
+}
+
+function pushValidVerse(sverse, context) {
+  var verse = actualVerse(sverse, context);
+  if (verse == null) return false;
+
+  var chapter = Iint(context.currentChapter);
+
+  if (hasVerse(chapter, verse, context)) return true;
+  context.verses.push({book: context.currentBook, chapter: chapter, verse: verse});
+  return true;
+}
+
+function pushValidRange(sSourceChapter, sSourceVerse, sTargetVerse, context) {
+  try {
+    var sourceChapter = Iint(sSourceChapter);
+    var targetChapter = Iint(context.currentChapter);
+    var numSourceVerses = context.bibleToc[context.currentBook].verses[sourceChapter - 1];
+    var sourceVerse = actualVerse(sSourceVerse, context, sourceChapter);
+    var targetVerse = actualVerse(sTargetVerse, context);
+    if (sourceVerse == null || targetVerse == null) return false;
+
+    // case 1 - source and target chapters are the same
+    if (sourceChapter == targetChapter) {
+      if (sourceVerse >= targetVerse) return false; // backwards
+      for (var v = sourceVerse; v <= targetVerse; v++) {
+        if (hasVerse(sourceChapter, v, context)) continue;
+        context.verses.push({book: context.currentBook, chapter: sourceChapter, verse: v});
+      }
+      return true;
+    }
+    else if (sourceChapter < targetChapter) {
+      for (var c = sourceChapter; c <= targetChapter; c++) {
+        var startVerse = c == sourceChapter ? sourceVerse : 1;
+        var endVerse = c == targetChapter ? targetVerse : numSourceVerses;
+        for (var v = startVerse; v <= endVerse; v++) {
+          if (hasVerse(c, v, context)) continue;
+          context.verses.push({book: context.currentBook, chapter: c, verse: v});
+        }
+      }
+      return true;
+    }
+    else return false; // it's illegal to go backwards!
+  } catch (e) {
+    xdmp.log("pushValidRange " + sourceChapter + " " + targetChapter + " " + numSourceVerses + " " + sourceVerse + " " + targetVerse + "-e" + e);
+    return false;
+  }
+}
+
+function Iint(s) {
+  return parseInt("" + xs.integer(s));
 }
 
 function mysplit(s, sep) {
@@ -223,8 +356,8 @@ function mysplit(s, sep) {
 }
 
 function parseCitation(citation, bibleToc) {
-	var context = {currentBook: "", currentChapter: "", verses: []}, bibleToc: bibleToc};
-	var mainAndResp = citation.split("|"); 
+  var context = {currentBook: "", currentChapter: "", verses: [], bibleToc: bibleToc};
+  var mainAndResp = citation.split("|"); 
   switch(mainAndResp.length) {
     case 1:
       break;
@@ -236,8 +369,9 @@ function parseCitation(citation, bibleToc) {
       throw "Illegal citation resp length " + mainAndResp.length + " in " + citation;
   }
   mainAndResp.forEach(mr => mr.split(";").forEach(cx => parseBCV(cx, context)));
-  return context;
+  return context.verses;
 }
 
-var citation = "Cf. Ps 95(94) 3:2-4;4:1-4 and 6 | resp (see 1); Is 1:1";
-parseCitation(citation, null)
+module.exports = {
+  parseCitation: parseCitation
+};
