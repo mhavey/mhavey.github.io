@@ -29,7 +29,7 @@
 					"readings": [
 						{
 							"readingType": "1ST",
-							"citation": "Sir 27:30 – 28:7",
+							"citation": "Sir 27:30 - 28:7",
 							"uri": "http://jude.org/ns-missal/ordinary/24th+Week+in+Ordinary+Time/Sunday/A/reading/1ST"
 						},
 						{
@@ -191,7 +191,7 @@
 						},
 						{
 							"readingType": "PS",
-							"citation": "Ps 101;1b-2ab, 2cd-3ab, 5, 6 | resp 2",
+							"citation": "Ps 101:1b-2ab, 2cd-3ab, 5, 6 | resp 2",
 							"uri": "http://jude.org/ns-missal/ordinary/24th+Week+in+Ordinary+Time/Tuesday/I/reading/PS"
 						}
 					]

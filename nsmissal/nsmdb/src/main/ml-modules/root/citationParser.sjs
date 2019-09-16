@@ -58,7 +58,7 @@ function parseBCV(citation, context) {
               sm.state = "bracketing";
             }
             break;            
-          case "and": case ",": // This is like  in "b c:a | resp x and y". Adding verse x to current book b chapter c
+          case "and": case "or": case ",": // This is like  in "b c:a | resp x and y". Adding verse x to current book b chapter c
             if (pushValidVerse(sm.currentTerm, context) == true) {
               handled = true;
               sm.currentTerm = "";
@@ -84,6 +84,7 @@ function parseBCV(citation, context) {
             handled = buildBook(event, SEP, context, sm);
             break;       
         }
+        break;
       case "booked": // if we're booked, we want a chapter to come next "b c:d". Here we are processing the "c"
         if (isValidChapter(event, context) == true) {
           context.currentChapter = event;
@@ -106,20 +107,27 @@ function parseBCV(citation, context) {
         handled = true;
         switch(event) {
           case ")": // "b c(c2):d". Here we are processing the ")"
-            state = "chaptering"; 
+            sm.state = "chaptering"; 
             break;
         }
+        break;
       case "chaptered":
-      case "anding":
         if (isValidVerse(event, context) == true) { // sanity check it must start with a digit
           handled = true;
           sm.currentTerm = event; 
           sm.state = "versing";
         }
         break;
+      case "anding":  // TODO - this can be either a chapter or a verse. It can be the "e" in either "B c:d, e:f" or "B c:d, e"
+        if (eventIsVerselike(event) == true) {
+          sm.state = "versing";
+          sm.currentTerm= event;
+          handled = true;
+        }
+        break;
       case "versing":
         switch(event) {
-          case "and": case ",":
+          case "and": case "or": case ",":
             if (pushValidVerse(sm.currentTerm, context) == true) {
               handled = true;
               sm.currentTerm = "";
@@ -133,6 +141,13 @@ function parseBCV(citation, context) {
               sm.rangeSourceChapter=context.currentChapter;
               sm.currentTerm = "";
               sm.state = "ranging";
+            }
+            break;
+          case ":":
+            if (isValidChapter(sm.currentTerm, context) == true) {
+              handled = true;
+              context.currentChapter = sm.currentTerm;
+              sm.state = "chaptered";
             }
             break;
           case EOS:
@@ -152,7 +167,7 @@ function parseBCV(citation, context) {
         break;
       case "rangeTargeting":
         switch(event) {
-          case ",": case "and":
+          case ",": case "and": case "or":
             if (pushValidRange(sm.rangeSourceChapter, sm.rangeSourceVerse, sm.currentTerm, context) == true) {
               handled = true;
               sm.rangeSourceVerse = "";
@@ -187,7 +202,7 @@ function parseBCV(citation, context) {
         break;
       case "ranged":
         switch(event) {
-          case ",": case "and":
+          case ",": case "and": case "or":
             sm.currentTerm = "";
             sm.state = "anding";
             break;
@@ -247,7 +262,11 @@ function isValidChapter(term, context) {
   if (context.currentBook == "") return false;
   try {
     var chapter = Iint(term) - 1; // make zero-based
-    return chapter < context.bibleToc[context.currentBook].verses.length;
+    var numChapters =context.bibleToc[context.currentBook].verses.length;
+    if (chapter < numChapters) return true;
+
+    xdmp.log("CHAPTER OUT OF RANGE in " + context.currentBook + " chapter " + chapter + " actual num " + numChapters); 
+    return false;
   } catch(e) {
     return false;
   }
@@ -258,7 +277,8 @@ function isValidVerse(term, context) {
 }
 
 function actualVerse(term, context, altChapter) {
-   if (context.currentBook == "") return null
+
+  if (context.currentBook == "") return null
   if (context.currentChapter == "") return null;
   try {
     var chapter = altChapter ? altChapter : Iint(context.currentChapter);
@@ -269,9 +289,12 @@ function actualVerse(term, context, altChapter) {
     var goodVerse = term.split("").filter(s => CV_NUMBERS.indexOf(s) >= 0).join("");
     if (goodVerse.length == 0) return null;
     if (goodVerse[0] == "0") return null;
+
     goodVerse = Iint(goodVerse);
     if (goodVerse <= numVersesInChapter) return goodVerse;
-    else return null;
+
+    xdmp.log("VERSE OUT OF RANGE in " + context.currentBook + "/" + chapter + " verse " + goodVerse + " actual " + numVersesInChapter); 
+    return null;
   }
   catch(e) {
     return null;
@@ -356,19 +379,26 @@ function mysplit(s, sep) {
 }
 
 function parseCitation(citation, bibleToc) {
+  if (citation.trim().toLowerCase() == "noref") return [];
+
   var context = {currentBook: "", currentChapter: "", verses: [], bibleToc: bibleToc};
-  var mainAndResp = citation.split("|"); 
-  switch(mainAndResp.length) {
-    case 1:
-      break;
-    case 2:
-      var temp = mainAndResp[2].trim();
-      if (fn.startsWith(temp.toLowerCase, "resp")) mainAndResp[2] = temp.substring(4);
-      break;
-    default:
-      throw "Illegal citation resp length " + mainAndResp.length + " in " + citation;
+  try {
+    var mainAndResp = citation.split("|"); 
+    switch(mainAndResp.length) {
+      case 1:
+        break;
+      case 2:
+        var temp = mainAndResp[1].trim();
+        if (fn.startsWith(temp.toLowerCase(), "resp")) mainAndResp[1] = temp.substring(4);
+        break;
+      default:
+        throw "Illegal citation resp length " + mainAndResp.length + " in " + citation;
+    }
+    mainAndResp.forEach(mr => mr.split(";").forEach(cx => parseBCV(cx, context)));    
+  } catch(e) {
+    xdmp.log("ERROR parsing citation *" + citation + "* error is " + e, "error");
+    context.verses = [];
   }
-  mainAndResp.forEach(mr => mr.split(";").forEach(cx => parseBCV(cx, context)));
   return context.verses;
 }
 
