@@ -13,7 +13,7 @@ If you want to actually standup your own NSM database, this is the folder for yo
 - Gradle
 - MarkLogic 9.x or 10.x. You'll need a live instance running.
 
-Setting up the NSM database is optional. You don't actually need to setup a database. The reports, which contain the interesting findings, are here: <../data/reports>[../data/reports].
+Setting up the NSM database is optional. You don't actually need to setup a database. The reports, which contain the interesting findings, are here: [../data/reports](../data/reports).
 
 ## Setting Up
 
