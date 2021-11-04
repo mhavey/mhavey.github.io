@@ -1,341 +1,378 @@
-	<html>
-	<head>
-	<title>Apartment Puzzle</title>
+<html>
+   <head>
+      <title>Apartment Puzzle</title>
 
-	<script type="text/javascript">
-	//https://www.youtube.com/watch?v=rw4s4M3hFfs
-	var DEBUG = false;
+      <script type="text/javascript">
 
-	function log(rule, thisDist, b, a, wdist, edist) {
-	   const d = thisDist.amenities[a] ? `${thisDist.amenities[a].dist}-${thisDist.amenities[a].dir}` : "";
-	   thisDist.log.push(`${b} ${a} ${rule} ${d} ${wdist} ${edist}`);
-	}
+//https://www.youtube.com/watch?v=rw4s4M3hFfs
+var DEBUG = false;
 
-	// Function to walk from one block (b) to amenities
-	function walk(blocks, b, tracker) {
-	   const thisDist = {
-	      amenities: [],
-	      shortestDist: 0,
-	      east: {},
-	      eastq: {},
-	      queueLen: 0,
-	      lookaheadDist: 0,
-	      log: []
-	   };
-	   for (const a in blocks[b]) {
-	      // find wdist and edist and do some tracking of east lookaheads
-	      const wdist = (tracker.lastDistance && tracker.lastDistance.amenities && tracker.lastDistance.amenities[a] && (tracker.lastDistance.amenities[a].dir == "W" || tracker.lastDistance.amenities[a].dir == "")) ? tracker.lastDistance.amenities[a].dist + 1 : blocks.length;
-	      if (tracker.lastDistance && tracker.lastDistance.east && tracker.lastDistance.east[a] && tracker.lastDistance.east[a].pos > b) {
-	         thisDist.east[a] = tracker.lastDistance.east[a].pos;
-	      }
-	      const edist = thisDist.east[a] ? tracker.lastDistance && tracker.lastDistance.east && tracker.lastDistance.east[a].pos - b : blocks.length;
-	      // Rules
-	      if (blocks[b][a]) {
-	         // 1. The amenity is on current block
-	         thisDist.amenities[a] = {
-	            dist: 0,
-	            dir: ""
-	         };
-	         if (DEBUG) log("R1", thisDist, b, a, wdist, edist);
-	      } else if (wdist == 1) {
-	         // 2. The amenity is one to the W. That's the best we can do. 
-	         thisDist.amenities[a] = {
-	            dist: wdist,
-	            dir: "W"
-	         };
-	         if (DEBUG) log("R2", thisDist, b, a, wdist, edist);
-	      } else if (wdist < blocks.length && edist < blocks.length) {
-	         // 3. We know distance both to E and W. Choose min
-	         thisDist.amenities[a] = {
-	            dist: Math.min(edist, wdist),
-	            dir: wdist < edist ? "W" : "E"
-	         };
-	         if (DEBUG) log("R3", thisDist, b, a, wdist, edist);
-	      } else if (wdist < blocks.length && edist == blocks.length) {
-	         // 4. The amenity is > 1 to the W. We don't know how far to E, so we will need to walk it. Queue it.
-	         thisDist.eastq[a] = {
-	            wdist: wdist
-	         };
-	         thisDist.lookaheadDist = Math.max(thisDist.lookaheadDist, wdist + 1);
-	         thisDist.queueLen++;
-	         if (DEBUG) log("R4", thisDist, b, a, wdist, edist);
-	      } else if (wdist == blocks.length && edist < blocks.length) {
-	         // 5. The amenity is only to the E
-	         thisDist.amenities[a] = {
-	            dist: edist,
-	            dir: "E"
-	         };
-	         if (DEBUG) log("R5", thisDist, b, a, wdist, edist);
-	      } else if (wdist == blocks.length && edist == blocks.length) {
-	         // 6. The amenity is not to the W and we don't know if it is E. Queue it.
-	         thisDist.eastq[a] = {
-	            wdist: wdist
-	         };
-	         thisDist.lookaheadDist = blocks.length;
-	         thisDist.queueLen++;
-	         if (DEBUG) log("R6", thisDist, b, a, wdist, edist);
-	      } else {
-	         throw "Unexpected " + b + " " + wdist + " " + edist;
-	      }
-	      if (thisDist.amenities[a]) thisDist.shortestDist = Math.max(thisDist.amenities[a].dist, thisDist.shortestDist);
-	   }
-	   // walk east to find all the missings
-	   for (var be = b + 1; be < thisDist.lookaheadDist && thisDist.queueLen; be++) {
-	      for (const a in blocks[be]) {
-	         if (!blocks[be][a]) continue;
-	         if (!thisDist.east[a]) thisDist.east[a] = {
-	            pos: be
-	         };
-	         if (thisDist.eastq[a]) {
-	            const edist = be - b;
-	            const wdist = thisDist.eastq[a].wdist;
-	            // 7. We now know how to E and W amenity is. 
-	            thisDist.amenities[a] = {
-	               dist: Math.min(wdist, edist),
-	               dir: wdist < edist ? "W" : "E"
-	            };
-	            if (DEBUG) log("R7", thisDist, b, a, wdist, edist);
-	            thisDist.shortestDist = Math.max(thisDist.amenities[a].dist, thisDist.shortestDist);
-	            delete thisDist.eastq[a];
-	            thisDist.queueLen--;
-	         }
-	      }
-	   }
-	   // didn't find all the easts
-	   if (thisDist.queueLen > 0) {
-	      for (const a in thisDist.eastq) {
-	         if (thisDist.eastq[a].wdist == blocks.length) throw "Unreachable discovered at " + b;
-	         else {
-	            // 9. The amenity is only W
-	            thisDist.amenities[a] = {
-	               dist: thisDist.eastq[a].wdist,
-	               dir: "W"
-	            };
-	            if (DEBUG) log("R8", thisDist, b, a, null, null);
-	            thisDist.shortestDist = Math.max(thisDist.amenities[a].dist, thisDist.shortestDist);
-	            delete thisDist.eastq[a];
-	            thisDist.queueLen--;
-	         }
-	      }
-	   }
-	   return thisDist;
-	}
-	// Main logic
-	function solvePuzzle(blocks) {
-	   if (blocks.length == 0) return null;
-	   // track our progress    
-	   const tracker = {
-	      numBlocks: blocks.length,
-	      numAmenities: Object.keys(blocks[0]).length,
-	      timeStart: Date.now(),
-	      lastDistance: {},
-	      shortestDist: blocks.length,
-	      selectedApt: blocks.length,
-	      blockDebug: []
-	   };
-	   // For each block, walk to nearest amenities
-	   for (var b = 0; b < blocks.length; b++) {
-	      // check this block
-	      thisDist = walk(blocks, b, tracker);
-	      if (DEBUG) tracker.blockDebug.push(thisDist);
-	      // resolve shortest dist
-	      tracker.lastDistance = thisDist;
-	      if (thisDist.shortestDist < tracker.shortestDist) {
-	         tracker.shortestDist = thisDist.shortestDist;
-	         tracker.selectedApt = b;
-	      }
-	      if (tracker.shortestDist === 0) {
-	         // we found one a block with all amenities
-	         break;
-	      } else if (tracker.shortestDist >= blocks.length) {
-	         // unreachable
-	         return null;
-	      }
-	   }
-	   tracker.durationMS = Date.now() - tracker.timeStart;
-	   tracker.size = tracker.numBlocks * tracker.numAmenities;
-	   tracker.durationPerSizeS = tracker.durationMS / (1000 * tracker.size);
-	   delete tracker.lastDistance;
-	   return tracker;
-	}
+function log(rule, thisDist, b, a, wdist, edist) {
+   const d = thisDist.amenities[a] ? `${thisDist.amenities[a].dist}-${thisDist.amenities[a].dir}` : "";
+   thisDist.log.push(`${b} ${a} ${rule} ${d} ${wdist} ${edist}`);
+}
 
-	function createBigPuzzle(blen, amens, prob) {
-	   const blocks = [];
-	   for (var i = 0; i < blen; i++) {
-	      const bamens = {};
-	      for (var j = 0; j < amens.length; j++) bamens[amens[j]] = (Math.random() < prob);
-	      blocks.push(bamens);
-	   }
-	   return blocks;
-	}
+// Function to walk from one block (b) to amenities
+function walk(blocks, b, tracker) {
+   const thisDist = {
+      amenities: [],
+      shortestDist: 0,
+      east: {},
+      eastq: {},
+      queueLen: 0,
+      lookaheadDist: 0,
+      log: [],
+   };
+   for (const a in blocks[b]) {
+      // find wdist and edist and do some tracking of east lookaheads
+      const wdist =
+         tracker.lastDistance && tracker.lastDistance.amenities && tracker.lastDistance.amenities[a] && (tracker.lastDistance.amenities[a].dir == "W" || tracker.lastDistance.amenities[a].dir == "")
+            ? tracker.lastDistance.amenities[a].dist + 1
+            : blocks.length;
+      if (tracker.lastDistance && tracker.lastDistance.east && tracker.lastDistance.east[a] && tracker.lastDistance.east[a].pos > b) {
+         thisDist.east[a] = tracker.lastDistance.east[a].pos;
+      }
+      const edist = thisDist.east[a] ? tracker.lastDistance && tracker.lastDistance.east && tracker.lastDistance.east[a].pos - b : blocks.length;
+      // Rules
+      if (blocks[b][a]) {
+         // 1. The amenity is on current block
+         thisDist.amenities[a] = {
+            dist: 0,
+            dir: "",
+         };
+         if (DEBUG) log("R1", thisDist, b, a, wdist, edist);
+      } else if (wdist == 1) {
+         // 2. The amenity is one to the W. That's the best we can do.
+         thisDist.amenities[a] = {
+            dist: wdist,
+            dir: "W",
+         };
+         if (DEBUG) log("R2", thisDist, b, a, wdist, edist);
+      } else if (wdist < blocks.length && edist < blocks.length) {
+         // 3. We know distance both to E and W. Choose min
+         thisDist.amenities[a] = {
+            dist: Math.min(edist, wdist),
+            dir: wdist < edist ? "W" : "E",
+         };
+         if (DEBUG) log("R3", thisDist, b, a, wdist, edist);
+      } else if (wdist < blocks.length && edist == blocks.length) {
+         // 4. The amenity is > 1 to the W. We don't know how far to E, so we will need to walk it. Queue it.
+         thisDist.eastq[a] = {
+            wdist: wdist,
+         };
+         thisDist.lookaheadDist = Math.max(thisDist.lookaheadDist, wdist + 1);
+         thisDist.queueLen++;
+         if (DEBUG) log("R4", thisDist, b, a, wdist, edist);
+      } else if (wdist == blocks.length && edist < blocks.length) {
+         // 5. The amenity is only to the E
+         thisDist.amenities[a] = {
+            dist: edist,
+            dir: "E",
+         };
+         if (DEBUG) log("R5", thisDist, b, a, wdist, edist);
+      } else if (wdist == blocks.length && edist == blocks.length) {
+         // 6. The amenity is not to the W and we don't know if it is E. Queue it.
+         thisDist.eastq[a] = {
+            wdist: wdist,
+         };
+         thisDist.lookaheadDist = blocks.length;
+         thisDist.queueLen++;
+         if (DEBUG) log("R6", thisDist, b, a, wdist, edist);
+      } else {
+         throw "Unexpected " + b + " " + wdist + " " + edist;
+      }
+      if (thisDist.amenities[a]) thisDist.shortestDist = Math.max(thisDist.amenities[a].dist, thisDist.shortestDist);
+   }
+   // walk east to find all the missings
+   for (var be = b + 1; be < thisDist.lookaheadDist && thisDist.queueLen; be++) {
+      for (const a in blocks[be]) {
+         if (!blocks[be][a]) continue;
+         if (!thisDist.east[a])
+            thisDist.east[a] = {
+               pos: be,
+            };
+         if (thisDist.eastq[a]) {
+            const edist = be - b;
+            const wdist = thisDist.eastq[a].wdist;
+            // 7. We now know how to E and W amenity is.
+            thisDist.amenities[a] = {
+               dist: Math.min(wdist, edist),
+               dir: wdist < edist ? "W" : "E",
+            };
+            if (DEBUG) log("R7", thisDist, b, a, wdist, edist);
+            thisDist.shortestDist = Math.max(thisDist.amenities[a].dist, thisDist.shortestDist);
+            delete thisDist.eastq[a];
+            thisDist.queueLen--;
+         }
+      }
+   }
+   // didn't find all the easts
+   if (thisDist.queueLen > 0) {
+      for (const a in thisDist.eastq) {
+         if (thisDist.eastq[a].wdist == blocks.length) throw "Unreachable discovered at " + b;
+         else {
+            // 9. The amenity is only W
+            thisDist.amenities[a] = {
+               dist: thisDist.eastq[a].wdist,
+               dir: "W",
+            };
+            if (DEBUG) log("R8", thisDist, b, a, null, null);
+            thisDist.shortestDist = Math.max(thisDist.amenities[a].dist, thisDist.shortestDist);
+            delete thisDist.eastq[a];
+            thisDist.queueLen--;
+         }
+      }
+   }
+   return thisDist;
+}
+// Main logic
+function solvePuzzle(blocks) {
+   if (blocks.length == 0) return null;
+   // track our progress
+   const tracker = {
+      numBlocks: blocks.length,
+      numAmenities: Object.keys(blocks[0]).length,
+      timeStart: Date.now(),
+      lastDistance: {},
+      shortestDist: blocks.length,
+      selectedApt: blocks.length,
+      blockDebug: [],
+   };
+   // For each block, walk to nearest amenities
+   for (var b = 0; b < blocks.length; b++) {
+      // check this block
+      thisDist = walk(blocks, b, tracker);
+      if (DEBUG) tracker.blockDebug.push(thisDist);
+      // resolve shortest dist
+      tracker.lastDistance = thisDist;
+      if (thisDist.shortestDist < tracker.shortestDist) {
+         tracker.shortestDist = thisDist.shortestDist;
+         tracker.selectedApt = b;
+      }
+      if (tracker.shortestDist === 0) {
+         // we found one a block with all amenities
+         break;
+      } else if (tracker.shortestDist >= blocks.length) {
+         // unreachable
+         return null;
+      }
+   }
+   tracker.durationMS = Date.now() - tracker.timeStart;
+   tracker.size = tracker.numBlocks * tracker.numAmenities;
+   tracker.durationPerSizeS = tracker.durationMS / (1000 * tracker.size);
+   delete tracker.lastDistance;
+   return tracker;
+}
 
-	const TEST1 = [{
-	   "gym": true,
-	   "school": true,
-	   "store": false
-	}, {
-	   "gym": false,
-	   "school": true,
-	   "store": false
-	}, {
-	   "gym": true,
-	   "school": true,
-	   "store": true
-	}, {
-	   "gym": false,
-	   "school": false,
-	   "store": false
-	}, {
-	   "gym": false,
-	   "school": false,
-	   "store": true
-	}];
-	const TEST2 = [{
-	   "gym": true,
-	   "school": true,
-	   "store": false
-	}, {
-	   "gym": false,
-	   "school": true,
-	   "store": false
-	}, {
-	   "gym": false,
-	   "school": false,
-	   "store": false
-	}, {
-	   "gym": false,
-	   "school": false,
-	   "store": false
-	}, {
-	   "gym": false,
-	   "school": false,
-	   "store": true
-	}];
-	const TEST3 = [{
-	   "gym": true,
-	   "school": true,
-	   "store": false
-	}];
-	const TEST4 = [{
-	   x: true,
-	   y: true,
-	   z: false,
-	   w: false,
-	   m: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: true,
-	   w: false,
-	   m: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: true,
-	   w: true,
-	   m: false
-	}, {
-	   x: true,
-	   y: false,
-	   z: false,
-	   w: false,
-	   m: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false,
-	   w: false,
-	   m: true
-	}];
-	const TEST5 = [{
-	   x: true,
-	   y: true,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: false
-	}, {
-	   x: false,
-	   y: false,
-	   z: true
-	}];
+function createBigPuzzle(blen, amens, prob) {
+   const blocks = [];
+   for (var i = 0; i < blen; i++) {
+      const bamens = {};
+      for (var j = 0; j < amens.length; j++) bamens[amens[j]] = Math.random() < prob;
+      blocks.push(bamens);
+   }
+   return blocks;
+}
 
-	function runtests() {
-	   DEBUG = true;
-	   console.log("Case 1");
-	   console.log(solvePuzzle(TEST1));
-	   console.log("Case 2");
-	   console.log(solvePuzzle(TEST2));
-	   console.log("Case 4");
-	   console.log(solvePuzzle(TEST4));
-	   console.log("Case 5");
-	   console.log(solvePuzzle(TEST5));
-	   //console.log(solvePuzzle(TEST3));
-	   DEBUG = false;
-	   console.log(solvePuzzle(createBigPuzzle(1000,
-	      ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
-	   console.log(solvePuzzle(createBigPuzzle(10000,
-	      ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
-	   console.log(solvePuzzle(createBigPuzzle(100000,
-	      ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
-	   console.log(solvePuzzle(createBigPuzzle(1000000,
-	      ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
-	   /*
+const TEST1 = [
+   {
+      gym: true,
+      school: true,
+      store: false,
+   },
+   {
+      gym: false,
+      school: true,
+      store: false,
+   },
+   {
+      gym: true,
+      school: true,
+      store: true,
+   },
+   {
+      gym: false,
+      school: false,
+      store: false,
+   },
+   {
+      gym: false,
+      school: false,
+      store: true,
+   },
+];
+const TEST2 = [
+   {
+      gym: true,
+      school: true,
+      store: false,
+   },
+   {
+      gym: false,
+      school: true,
+      store: false,
+   },
+   {
+      gym: false,
+      school: false,
+      store: false,
+   },
+   {
+      gym: false,
+      school: false,
+      store: false,
+   },
+   {
+      gym: false,
+      school: false,
+      store: true,
+   },
+];
+const TEST3 = [
+   {
+      gym: true,
+      school: true,
+      store: false,
+   },
+];
+const TEST4 = [
+   {
+      x: true,
+      y: true,
+      z: false,
+      w: false,
+      m: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: true,
+      w: false,
+      m: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: true,
+      w: true,
+      m: false,
+   },
+   {
+      x: true,
+      y: false,
+      z: false,
+      w: false,
+      m: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+      w: false,
+      m: true,
+   },
+];
+const TEST5 = [
+   {
+      x: true,
+      y: true,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: false,
+   },
+   {
+      x: false,
+      y: false,
+      z: true,
+   },
+];
+
+function runtests() {
+   DEBUG = true;
+   console.log("Case 1");
+   console.log(solvePuzzle(TEST1));
+   console.log("Case 2");
+   console.log(solvePuzzle(TEST2));
+   console.log("Case 4");
+   console.log(solvePuzzle(TEST4));
+   console.log("Case 5");
+   console.log(solvePuzzle(TEST5));
+   //console.log(solvePuzzle(TEST3));
+   DEBUG = false;
+   console.log(solvePuzzle(createBigPuzzle(1000, ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
+   console.log(solvePuzzle(createBigPuzzle(10000, ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
+   console.log(solvePuzzle(createBigPuzzle(100000, ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
+   console.log(solvePuzzle(createBigPuzzle(1000000, ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
+   /*
 		console.log(solvePuzzle(createBigPuzzle(10000000, 
 	        ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"],
 	        0.05)));
 	     */
-	}
+}
 
-	</script>
-	</head>
-	<body>
-	<h1>Apartment Puzzle</h1>
-	<button onclick="runtests();" value="button">Run</button>
-	</body>
-	</html>
+
+      </script>
+   </head>
+   <body>
+      <h1>Apartment Puzzle</h1>
+      <button onclick="runtests();" value="button">Run</button>
+   </body>
+</html>
