@@ -111,7 +111,7 @@ function walk(blocks, b, tracker) {
       for (const a in thisDist.eastq) {
          if (thisDist.eastq[a].wdist == blocks.length) throw "Unreachable discovered at " + b;
          else {
-            // 9. The amenity is only W
+            // 8. The amenity is only W
             thisDist.amenities[a] = {
                dist: thisDist.eastq[a].wdist,
                dir: "W",
@@ -158,8 +158,8 @@ function solvePuzzle(blocks) {
       }
    }
    tracker.durationMS = Date.now() - tracker.timeStart;
+   tracker.durationS = tracker.durationMS / 1000;;
    tracker.size = tracker.numBlocks * tracker.numAmenities;
-   tracker.durationPerSizeS = tracker.durationMS / (1000 * tracker.size);
    delete tracker.lastDistance;
    return tracker;
 }
@@ -357,15 +357,24 @@ function runtests() {
    console.log(solvePuzzle(TEST5));
    //console.log(solvePuzzle(TEST3));
    DEBUG = false;
-   console.log(solvePuzzle(createBigPuzzle(1000, ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
-   console.log(solvePuzzle(createBigPuzzle(10000, ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
-   console.log(solvePuzzle(createBigPuzzle(100000, ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
-   console.log(solvePuzzle(createBigPuzzle(1000000, ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"], 0.05)));
-   /*
-		console.log(solvePuzzle(createBigPuzzle(10000000, 
-	        ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"],
-	        0.05)));
-	     */
+   const AMENS = ["library", "school", "church", "restaurant", "gym", "subway", "recroom", "haveytorium", "bar"];
+   const AMENS_MORE = ["x", "y", "z", "a", "b", "c", "d", "e", "f", "g"];
+   const AMENS2 = AMENS.concat(AMENS_MORE);
+   const COLS = ["numBlocks", "numAmenities", "size", "durationS"];
+   console.log(COLS.join(","));
+   function dump(tracker) {
+   		console.log(COLS.map(c => tracker[c]).join(","));
+   }
+   dump(solvePuzzle(createBigPuzzle(1000, AMENS, 0.05)));
+   dump(solvePuzzle(createBigPuzzle(1000, AMENS2, 0.05)));
+   dump(solvePuzzle(createBigPuzzle(10000, AMENS, 0.05)));
+   dump(solvePuzzle(createBigPuzzle(10000, AMENS2, 0.05)));
+   dump(solvePuzzle(createBigPuzzle(100000, AMENS, 0.05)));
+   dump(solvePuzzle(createBigPuzzle(100000, AMENS2, 0.05)));
+   dump(solvePuzzle(createBigPuzzle(1000000, AMENS, 0.05)));
+   dump(solvePuzzle(createBigPuzzle(1000000, AMENS2, 0.05)));
+   dump(solvePuzzle(createBigPuzzle(10000000, AMENS, 0.05)));
+   dump(solvePuzzle(createBigPuzzle(10000000, AMENS2, 0.05)));
 }
 
 
