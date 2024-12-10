@@ -13,7 +13,7 @@ function checkExists(s) {
 
 function addBook(bookAbbrev, bookName, biblicalOrder, triples) {
 	const bookIRI = sem.iri(NSM + xdmp.urlEncode(bookAbbrev));
-	triples.push(sem.triple(bookIRI, sem.curieExpand("rdfs:type"), sem.iri(NSM+"book")));
+	triples.push(sem.triple(bookIRI, sem.curieExpand("rdf:type"), sem.iri(NSM+"book")));
 	triples.push(sem.triple(bookIRI, sem.curieExpand("rdfs:label"), bookName));
 	triples.push(sem.triple(bookIRI, sem.iri(NSM + "bookCode"), bookAbbrev));
 	triples.push(sem.triple(bookIRI, sem.iri(NSM + "biblicalOrder"), biblicalOrder));
@@ -22,7 +22,7 @@ function addBook(bookAbbrev, bookName, biblicalOrder, triples) {
 function addChapter(bookAbbrev, chapterNum, triples) {
 	const bookIRI = sem.iri(NSM + xdmp.urlEncode(bookAbbrev));
 	const chapterIRI = sem.iri(NSM + xdmp.urlEncode(bookAbbrev + "/" + chapterNum));
-	triples.push(sem.triple(chapterIRI, sem.curieExpand("rdfs:type"), sem.iri(NSM+"chapter")));
+	triples.push(sem.triple(chapterIRI, sem.curieExpand("rdf:type"), sem.iri(NSM+"chapter")));
 	triples.push(sem.triple(chapterIRI, sem.iri(NSM + "hasChapterNum"), chapterNum));
 	triples.push(sem.triple(chapterIRI, sem.iri(NSM + "hasParentBook"), bookIRI));
 }
@@ -30,14 +30,14 @@ function addChapter(bookAbbrev, chapterNum, triples) {
 function addVerse(bookAbbrev, chapterNum, verseNum, triples) {
 	const chapterIRI = sem.iri(NSM + xdmp.urlEncode(bookAbbrev + "/" + chapterNum));
 	const verseIRI = sem.iri(NSM + xdmp.urlEncode(bookAbbrev + "/" + chapterNum + "/" + verseNum));
-	triples.push(sem.triple(verseIRI, sem.curieExpand("rdfs:type"), sem.iri(NSM+"verse")));
+	triples.push(sem.triple(verseIRI, sem.curieExpand("rdf:type"), sem.iri(NSM+"verse")));
 	triples.push(sem.triple(verseIRI, sem.iri(NSM + "hasVerseNum"), verseNum));
 	triples.push(sem.triple(verseIRI, sem.iri(NSM + "hasParentChapter"), chapterIRI));
 }
 
 function linkMassToReading(massIRI, readingIRI, triples) {
-	triples.push(sem.triple(sem.iri(massIRI), sem.curieExpand("rdfs:type"), sem.iri(NSM + "mass")));
-	triples.push(sem.triple(sem.iri(readingIRI), sem.curieExpand("rdfs:type"), sem.iri(NSM + "reading")));
+	triples.push(sem.triple(sem.iri(massIRI), sem.curieExpand("rdf:type"), sem.iri(NSM + "mass")));
+	triples.push(sem.triple(sem.iri(readingIRI), sem.curieExpand("rdf:type"), sem.iri(NSM + "reading")));
 	triples.push(sem.triple(sem.iri(massIRI), sem.iri(NSM + "hasReading"), sem.iri(readingIRI)));
 }
 
@@ -50,7 +50,7 @@ function linkMassToDate(massIRI, adventYear, date, triples) {
 	var xd = xs.date(date);
 	var massDateIRI = sem.iri(NSM + adventYear + "_" + xd);
 	triples.push(sem.triple(sem.iri(massIRI), sem.iri(NSM + "hasMassDate"), massDateIRI));
-	triples.push(sem.triple(massDateIRI, sem.curieExpand("rdfs:type"), sem.iri(NSM + "massDate")));
+	triples.push(sem.triple(massDateIRI, sem.curieExpand("rdf:type"), sem.iri(NSM + "massDate")));
 	triples.push(sem.triple(massDateIRI, sem.iri(NSM + "hasAdventYear"), adventYear));
 	triples.push(sem.triple(massDateIRI, sem.iri(NSM + "hasDate"), xd));
 }
