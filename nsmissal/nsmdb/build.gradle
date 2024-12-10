@@ -1,49 +1,59 @@
-buildscript {
 
-  repositories {
-    jcenter{url "http://jcenter.bintray.com/"}
-    mavenLocal()
-    maven { url "http://plugins.gradle.org/m2" }
-  }
-  dependencies {
-    classpath "com.marklogic:ml-gradle:3.4.0"
-    classpath "net.saliman:gradle-properties-plugin:1.4.6"
-    classpath 'com.marklogic:marklogic-corb:2.4.1'
-  }
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        //Needed for CorbTask to dynamically generate properties from CoRB Options class
+        classpath "com.marklogic:marklogic-corb:${corbVersion}"
+    }
 }
+
 
 plugins {
     id 'java'
-    id 'net.saliman.properties' version '1.4.6'
-    id 'com.marklogic.ml-gradle' version '3.4.0'
+    id "net.saliman.properties" version "1.5.2"
+    id 'com.marklogic.ml-gradle' version "5.0.0"
 }
 
 repositories {
-  jcenter{url "http://jcenter.bintray.com/"}
-
-  // Needed for mlcp dependencies
-  maven { url "http://plugins.gradle.org/m2" }
-  maven { url "http://developer.marklogic.com/maven2/" }
-
-  // Needed for hadoop dependencies for mlcp
-  maven { url "http://repository.cloudera.com/artifactory/cloudera-repos/" }
+    mavenCentral()
 }
 
 configurations {
   corb
   mlcp {
-      resolutionStrategy {
-        force "xml-apis:xml-apis:1.4.01"
-      }
+    attributes {
+      attribute(TargetJvmEnvironment.TARGET_JVM_ENVIRONMENT_ATTRIBUTE, objects.named(TargetJvmEnvironment.class, TargetJvmEnvironment.STANDARD_JVM))
     }
+  }
 }
 
 dependencies {
-  mlcp "com.marklogic:mlcp:9.0.6"
-  mlcp "org.apache.commons:commons-csv:1.2"
-  compile 'com.marklogic:marklogic-xcc:9.0.4'
-  corb 'com.marklogic:marklogic-corb:2.4.1'
+    // required to run CoRB2
+    corb "com.marklogic:marklogic-corb:${corbVersion}"
+    // optional
+    //corb 'org.jasypt:jasypt:1.9.2' // would be necessary to leverage JasyptDecrypter
+
+  mlcp "com.marklogic:mlcp:11.3.0"
+
+  // Since MLCP 11.2, have not been able to get logging to work via a log4j2.xml or
+  // log4j2.properties file. MLCP 11.2 removed logback as a direct dependency. Adding it back
+  // results in logging working correctly.
+  mlcp "ch.qos.logback:logback-classic:1.3.14"
+
+  /**
+   * mlcp uses logback for logging, and without a logback configuration file, no MLCP logging will appear.
+   * It is recommended then that your Gradle configuration for mlcp include a directory or some other resource that
+   * provides a logback configuration file.
+   */
   mlcp files("lib")
+}
+
+ext {
+    // XCC URL for running corb task below
+    contentXccUrl = "xcc://${mlUsername}:${mlPassword}@${mlHost}:${mlRestPort}"
 }
 
 task _ingestBible(type: com.marklogic.gradle.task.MlcpTask) {
